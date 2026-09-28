@@ -1,0 +1,21 @@
+$kind: collection
+description: |-
+  StartFragment
+
+  | **Create Delivery Challan** → **POST**  
+  `/api/v1/dc/create`
+
+  | **Find Delivery Challan by ID** → **GET**  
+  `/api/v1/dc/findById/{id}`
+
+  | **Update Delivery Challan** → **PUT**  
+  `/api/v1/dc/update/{id}`
+
+  | **Delete Delivery Challan** → **DELETE**  
+  `/api/v1/dc/delete/{id}`
+
+  | **Pagination & Search** → **GET**  
+  `/api/v1/dc/page?pageNumber=&pageSize=&field=id&direction=desc&search=abc`
+
+  EndFragment
+order: 2000

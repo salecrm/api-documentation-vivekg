@@ -1,0 +1,37 @@
+$kind: http-request
+url: "{{Super Admin Base Url}}/countries/create"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"countryName\": \"BANKOK\",\r
+
+    \t\"countryCode\": \"BKK\",\r
+
+    \t\"countryKey\": \"bkk\",\r
+
+    \t\"isVatApplicable\": true,\r
+
+    \t\"isActive\": true,\r
+
+    \    \"flagMediaId\": 5,\r
+
+    \    \"currency\": [\r
+
+    \        {\r
+
+    \            \"currencyid\": 1,\r
+
+    \            \"isPrimary\": true\r
+
+    \        }\r
+
+    \    ]\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{Super Admin Bearer Token}}"
+order: 1000

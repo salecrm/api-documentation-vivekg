@@ -1,0 +1,12 @@
+$kind: http-request
+url: http://192.168.1.21:8081/api/supplier/page?direction=desc&search=8&field=id
+method: GET
+queryParams:
+  direction: desc
+  search: "8"
+  field: id
+auth:
+  type: bearer
+  credentials:
+    token: "{{crm tanmay}}"
+order: 5000

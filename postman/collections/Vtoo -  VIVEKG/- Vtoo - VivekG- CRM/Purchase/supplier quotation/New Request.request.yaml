@@ -1,0 +1,11 @@
+$kind: http-request
+url: http://192.168.1.227:8081/supplierquotation/uploadimage/18
+method: POST
+body:
+  type: formdata
+  content: []
+auth:
+  type: bearer
+  credentials:
+    token: "{{crm tanmay}}"
+order: 1000

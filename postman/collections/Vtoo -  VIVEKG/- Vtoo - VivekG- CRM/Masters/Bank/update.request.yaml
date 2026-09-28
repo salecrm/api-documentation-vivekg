@@ -1,0 +1,33 @@
+$kind: http-request
+url: http://192.168.1.227:8081/api/v1/bank/update/2
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \"accounttype\": \"Current Account\",\r
+
+    \  \"accountname\": \"Vendor Payment Account\",\r
+
+    \  \"bankname\": \"State Bank of India\",\r
+
+    \  \"currency\": \"INR\",\r
+
+    \  \"accountnumber\": \"34567890012345\",\r
+
+    \  \"accountcode\": \"AC-002\",\r
+
+    \  \"ifsc\": \"SBIN0005678\",\r
+
+    \  \"balancetype\": \"debit\",\r
+
+    \  \"description\": \"Used for vendor payouts and purchase transactions\",\r
+
+    \  \"balance\": 11000.00\r
+
+    }\r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{crm tanmay}}"
+order: 4000

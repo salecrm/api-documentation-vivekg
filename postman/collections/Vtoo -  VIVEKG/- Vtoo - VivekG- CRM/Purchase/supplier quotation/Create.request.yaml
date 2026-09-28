@@ -1,0 +1,111 @@
+$kind: http-request
+url: "{{Base url}}/supplierquotation/create"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \"amounttotal\": 12,\r
+
+    \"cname\": null,\r
+
+    \"couponname\": \"VQ-018\",\r
+
+    \"createdby\": \"admin@vtoo\",\r
+
+    \"createdbydate\": \"2026-02-12\",\r
+
+    \"discountcharge\": 0,\r
+
+    \"email\": \"john.doe@example.com\",\r
+
+    \"grosstotal\": 12,\r
+
+    \"paymentterms\": \"Net 25\",\r
+
+    \"phoneno\": \"9871236545\",\r
+
+    \"remark\": \"aa\",\r
+
+    \"roundofvalue\": 0,\r
+
+    \"shippingcharge\": 0,\r
+
+    \"status\": \"OPEN\",\r
+
+    \"subcontactname\": \"Mr. nike\",\r
+
+    \"subject\": \"asas\",\r
+
+    \"subtotal\": 12,\r
+
+    \"supplierQuotationItems\": [\r
+
+    \    { \r
+
+    \    \"description\": \"aa\", \r
+
+    \    \"partcode\": null, \r
+
+    \    \"qty\": 1, \r
+
+    \    \"price\": 0, \r
+
+    \    \"rate\": 12, \r
+
+    \    \"discount\": 0, \r
+
+    \    \"total\": 12\r
+
+    \    }\r
+
+    \    ],\r
+
+    \"suppliercompanyname\": {\r
+
+    \     \"id\":1\r
+
+    \    },\r
+
+    \"againstRequisition\":\r
+
+    [\r
+
+    \    {\r
+
+    \        \"id\":22\r
+
+    \    },\r
+
+    \    {\r
+
+    \        \"id\":23\r
+
+    \    }\r
+
+    \   \r
+
+    ],\r
+
+    \"suppliername\": \"Mr. nike\",\r
+
+    \"supplierquotationdate\": \"2026-02-12\",\r
+
+    \"supplierquotationno\": \"SuppQuotationNo 101\",\r
+
+    \"suppliervatno\": \"GSTIN27BBBCG1234A1ZV\",\r
+
+    \"updatedby\": null,\r
+
+    \"updatedbydate\": null,\r
+
+    \"vat\": \"0\",\r
+
+    \"vatamount\": 0\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{v2token}}"
+order: 3000

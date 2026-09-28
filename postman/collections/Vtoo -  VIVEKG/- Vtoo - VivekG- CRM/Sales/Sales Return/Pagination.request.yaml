@@ -1,0 +1,23 @@
+$kind: http-request
+url: "{{Base url}}/sr/page?pageNumber=&pageSize=&field=&direction=desc"
+method: GET
+queryParams:
+  - key: pageNumber
+    value: ""
+  - key: pageSize
+    value: ""
+  - key: field
+    value: ""
+  - key: direction
+    value: desc
+  - key: search
+    value: CN-012
+    disabled: true
+  - key: status
+    value: refunded
+    disabled: true
+auth:
+  type: bearer
+  credentials:
+    token: "{{Password}}"
+order: 6000

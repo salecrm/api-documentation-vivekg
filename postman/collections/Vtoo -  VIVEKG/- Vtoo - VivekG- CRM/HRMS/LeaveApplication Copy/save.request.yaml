@@ -1,0 +1,25 @@
+$kind: http-request
+url: "{{Base Url}}/leaveApplication/save"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    // \"date\": \"2025-11-20\",\r
+
+    \    \"reason\": \"abc\",\r
+
+    \    \"user\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"leaveType\": {\r
+
+    \        \"id\": 1\r
+
+    \    }\r
+
+    }"
+order: 2000

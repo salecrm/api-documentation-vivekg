@@ -1,0 +1,101 @@
+$kind: http-request
+url: "{{Base url}}/si/create"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"customer\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"warehouse\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"payment_mode\": \"BANK TRANSFER\",\r
+
+    \    \"invoice_date\": \"2026-02-20\",\r
+
+    \    \"vat_no\": \"27ABCDE1234F1Z5\",\r
+
+    \    \"contactperson\": \"Girish Wagh\",\r
+
+    \    \"sales_person\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"due_date\": \"2026-03-22\",\r
+
+    \    \"subject\": \"Sale of Tata Punch Facelift (ALAKAZAM)\",\r
+
+    \    \"termcondition\": \"Standard warranty applies; Delivery within 7 working days.\",\r
+
+    \    \"payment_terms\": \"Net 30\",\r
+
+    \    \"remarks\": \"Special discount applied to match ex-showroom target of 5.59L.\",\r
+
+    \    \"billing_address\": \"12 Business Park, Andheri East, Mumbai, 400069\",\r
+
+    \    \"shipping_address\": \"Plot 45, MIDC, Andheri East, Mumbai, 400093\",\r
+
+    \    \"items\": [\r
+
+    \        {\r
+
+    \            \"product\": {\r
+
+    \                \"id\": 1\r
+
+    \            },\r
+
+    \            \"so_no\": null,\r
+
+    \            // \"dc_no\": 38,\r
+
+    \            \"description\": \"Tata Punch Facelift\",\r
+
+    \            \"uom\": \"Unit\",\r
+
+    \            \"partcode\": \"TATA-PUNCH-F\",\r
+
+    \            \"qty\": 6199,\r
+
+    \            \"price\": 600000.0,\r
+
+    \            \"rate\": 600000.0,\r
+
+    \            \"discount\": 41000.0,\r
+
+    \            \"total\": 559000.0\r
+
+    \        }\r
+
+    \    ],\r
+
+    \    \"subtotal\": 559000.0,\r
+
+    \    \"shippingcharge\": 0.0,\r
+
+    \    \"discountcharge\": 0.0,\r
+
+    \    \"grosstotal\": 559000.0,\r
+
+    \    \"vat\": 30.0,\r
+
+    \    \"vatamount\": 167700.0,\r
+
+    \    \"amounttotal\": 726700.0,\r
+
+    \    \"roundofvalue\": 0.0\r
+
+    \    // \"deliveryChallanId\": 38\r
+
+    }\r\n"
+order: 2000

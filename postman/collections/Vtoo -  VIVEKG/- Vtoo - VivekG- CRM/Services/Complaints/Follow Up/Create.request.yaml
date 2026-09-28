@@ -1,0 +1,15 @@
+$kind: http-request
+url: "{{Base url}}/complaint/follow-up/create"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"name\": \"John Dis\",\r
+
+    \  \"message\": \"Customer called, issue is under review\",\r
+
+    \  \"complaint\": 5\r
+
+    }"
+order: 1000

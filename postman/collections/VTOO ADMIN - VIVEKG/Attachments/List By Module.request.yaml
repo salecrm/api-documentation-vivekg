@@ -1,0 +1,15 @@
+$kind: http-request
+url: "{{Base url}}/attachments/list-attachments?module=pfp&id=1"
+method: GET
+queryParams:
+  module: pfp
+  id: "1"
+body:
+  type: formdata
+  content:
+    - type: file
+      key: file
+      src: postman-cloud:///1f0cb748-5ca7-4c10-b0f9-73461e3afbb9
+      description: Attach the files that are ment to be uploded
+settings: {}
+order: 4000

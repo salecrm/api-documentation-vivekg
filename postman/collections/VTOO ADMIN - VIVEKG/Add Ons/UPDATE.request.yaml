@@ -1,0 +1,23 @@
+$kind: http-request
+url: "{{Super Admin Base Url}}/add-ons/update/1"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"name\": \"Storage 200MBs\",\r
+
+    \    \"description\": \"200 MBs added to the total storage available\",\r
+
+    \    \"cost\": 110.00,\r
+
+    \    \"storageInMbs\": 200,\r
+
+    \    \"users\": 0\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{Super Admin Bearer Token}}"
+order: 4000

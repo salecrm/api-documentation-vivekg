@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{Base url}}/jv/page?pageNumber=&pageSize=&field=&direction=desc&search="
+method: GET
+queryParams:
+  pageNumber: ""
+  pageSize: ""
+  field: ""
+  direction: desc
+  search: ""
+auth:
+  type: bearer
+  credentials:
+    token: "{{Password}}"
+order: 6000

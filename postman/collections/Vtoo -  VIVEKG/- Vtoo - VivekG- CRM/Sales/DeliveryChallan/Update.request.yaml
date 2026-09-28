@@ -1,0 +1,103 @@
+$kind: http-request
+url: "{{Base url}}/dc/update/31"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"dc_date\": \"2025-11-24\",\r
+
+    \    \"dc_name\": \"DC November\",\r
+
+    \    \"status\": \"Pending\",\r
+
+    \    \"customer\": {\r
+
+    \        \"id\": 3\r
+
+    \    },\r
+
+    \    \"warehouse\": {\r
+
+    \        \"id\": 2\r
+
+    \    },\r
+
+    \    \"sales_person\": {\r
+
+    \    \"id\": 2\r
+
+    \    },\r
+
+    \    \"contactperson\": \"John Dis\",\r
+
+    \    \"payment_terms\": \"Net 30\",\r
+
+    \    \"subject\": \"Monthly Supply\",\r
+
+    \    \"termcondition\": \"Handle with care\",\r
+
+    \    \"transporter\": \"FastTrans Logistics\",\r
+
+    \    \"billing_address\": \"billing wala address\",\r
+
+    \    \"shipping_address\": \"shipping wala address\",\r
+
+    \    \"remarks\": \"Bulk load. Handle carefully.\",\r
+
+    \    \"items\": [\r
+
+    \        {\r
+
+    \            \"product\": {\r
+
+    \                \"id\": 2\r
+
+    \            },\r
+
+    \            \"description\": \"High tensile bolts\",\r
+
+    \            \"uom\": \"PCS\",\r
+
+    \            \"partcode\": \"HTB-002\",\r
+
+    \            \"so_no\": null, //obj\r
+
+    \            \"qty\": 6200,\r
+
+    \            \"price\": 12,\r
+
+    \            \"rate\": 12,\r
+
+    \            \"discount\": 0,\r
+
+    \            \"total\": 38400\r
+
+    \        }\r
+
+    \    ],\r
+
+    \    \"subtotal\": 3738960,\r
+
+    \    \"shippingcharge\": 2000,\r
+
+    \    \"discountcharge\": 0,\r
+
+    \    \"grosstotal\": 3740960,\r
+
+    \    \"vat\": \"8.0\",\r
+
+    \    \"vatamount\": 299276.8,\r
+
+    \    \"amounttotal\": 4040236.8,\r
+
+    \    \"roundofvalue\": 0,\r
+
+    \    \"couponname\": \"DC2025\"\r
+
+    }\r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+order: 3000

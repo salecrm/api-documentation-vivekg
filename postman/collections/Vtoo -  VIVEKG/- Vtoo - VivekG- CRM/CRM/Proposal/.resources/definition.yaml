@@ -1,0 +1,21 @@
+$kind: collection
+description: |-
+  StartFragment
+
+  | **Create Proposal** → **POST**  
+  `/api/v1/proposal/create`
+
+  | **Find Proposal by ID** → **GET**  
+  `/api/v1/proposal/findById/{id}`
+
+  | **Update Proposal** → **PUT**  
+  `/api/v1/proposal/update/{id}`
+
+  | **Delete Proposal** → **DELETE**  
+  `/api/v1/proposal/delete/{id}`
+
+  | **Pagination & Search** → **GET**  
+  `/api/v1/proposal/page?pageNumber=&pageSize=&field=id&direction=desc&search=abc`
+
+  EndFragment
+order: 3000

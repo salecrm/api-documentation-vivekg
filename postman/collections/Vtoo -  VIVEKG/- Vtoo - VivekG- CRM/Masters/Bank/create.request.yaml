@@ -1,0 +1,35 @@
+$kind: http-request
+url: "{{Base url}}/bank/create"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"accounttype\": \"Savings\",\r
+
+    \  \"accountname\": \"Primary Account\",\r
+
+    \  \"bankname\": \"State Bank of India\",\r
+
+    \  \"currency\": \"INR\",\r
+
+    \  \"accountnumber\": \"123456789012\",\r
+
+    \  \"accountcode\": \"SBI001\",\r
+
+    //   \"ifsc\": \"SBIN0001234\",\r
+
+    \  \"balancetype\": \"CREDIT\",\r
+
+    \  \"description\": \"Main savings account for company transactions\",\r
+
+    //   \"balance\": 10000,\r
+
+    \  \"branchname\": \"Mumbai Main Branch\",\r
+
+    //   \"isPrimary\": false,\r
+
+    \  \"bankidentificationcode\": \"SBININBBXXX\"\r
+
+    }\r\n"
+order: 1000

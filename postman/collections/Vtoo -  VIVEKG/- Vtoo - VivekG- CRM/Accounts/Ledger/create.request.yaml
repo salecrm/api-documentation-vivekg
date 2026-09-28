@@ -1,0 +1,25 @@
+$kind: http-request
+url: "{{Base url}}/ledger/create"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"ledgerTitle\": \"Load from Bank\",\r
+
+    \  \"ledgergroup\": 19,\r
+
+    \  \"openingBalance\": 50000.00,\r
+
+    \  \"openingBalanceType\": \"DEBIT\",\r
+
+    \  \"openingBalanceDate\": \"2026-01-03\"\r
+
+    }\r
+
+    \r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+order: 1000

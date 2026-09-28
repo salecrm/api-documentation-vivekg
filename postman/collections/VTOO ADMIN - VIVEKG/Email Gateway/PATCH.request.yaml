@@ -1,0 +1,15 @@
+$kind: http-request
+url: "{{Super Admin Base Url}}/email-gateway/patch/1"
+method: PATCH
+body:
+  type: json
+  content: "{\r
+
+    \        \"description\": \"Primary Gmail SMTP Gateway\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{Super Admin Bearer Token}}"
+order: 3000

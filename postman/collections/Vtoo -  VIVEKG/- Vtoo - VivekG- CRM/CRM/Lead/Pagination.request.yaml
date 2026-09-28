@@ -1,0 +1,10 @@
+$kind: http-request
+url: "{{Base url}}/lead/page?pageNumber=&pageSize=&field=&direction=&search="
+method: GET
+queryParams:
+  pageNumber: ""
+  pageSize: ""
+  field: ""
+  direction: ""
+  search: ""
+order: 6000

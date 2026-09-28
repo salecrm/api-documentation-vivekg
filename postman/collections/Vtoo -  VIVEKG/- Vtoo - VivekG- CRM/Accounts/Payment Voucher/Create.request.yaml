@@ -1,0 +1,47 @@
+$kind: http-request
+url: "{{Base url}}/pv/create"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"voucherDate\": \"2026-02-16\",\r
+
+    \  \"paymentAmount\": 10.0,\r
+
+    \  \"paymentMode\": \"CHEQUE\", //\"BANK TRANSFER\",\r
+
+    \  \"chequeNo\": \"203124\",\r
+
+    \  \"checqueDate\": \"2026-03-31\",\r
+
+    \  \"bank\": {\r
+
+    \    \"id\": 47\r
+
+    \  },\r
+
+    \  \"debitTransaction\": [\r
+
+    \    {\r
+
+    \      \"particular\": {\r
+
+    \        \"id\": 44\r
+
+    \      },\r
+
+    \      \"type\": \"Against Reference\",\r
+
+    \      \"entryType\": \"DEBIT\",\r
+
+    \      \"invoice\": 1,\r
+
+    \      \"amount\": 10.0,\r
+
+    \      \"remark\": \"Initial payment to Horacio Pagani for Pagani Sports Car\"    }\r
+
+    \  ]\r
+
+    }\r\n"
+order: 1000

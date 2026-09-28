@@ -1,0 +1,30 @@
+$kind: collection
+description: |-
+  StartFragment
+
+  | **Create Lead** → **POST**  
+  `/api/v1/lead/create`
+
+  | **Find Lead by ID** → **GET**  
+  `/api/v1/lead/findById/{id}`
+
+  | **Update Lead** → **PUT**  
+  `/api/v1/lead/update/{id}`
+
+  | **Delete Lead** → **DELETE**  
+  `/api/v1/lead/delete/{id}`
+
+  | **Pagination & Search** → **GET**  
+  `/api/v1/lead/page?pageNumber=&pageSize=&field=id&direction=desc&search=abc`
+
+  | **Get All Companies (Dropdown)** → **GET**  
+  `/api/v1/lead/companies`
+
+  | **Get Company Details by ID (Autofill)** → **GET**  
+  `/api/v1/lead/companies/{id}`
+
+  | **Get All Owners / Staff** → **GET**  
+  `/api/v1/lead/owners`
+
+  EndFragment
+order: 1000

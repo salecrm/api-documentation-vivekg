@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{Base url}}/sr/pending/1"
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: "{{Password}}"
+order: 7000

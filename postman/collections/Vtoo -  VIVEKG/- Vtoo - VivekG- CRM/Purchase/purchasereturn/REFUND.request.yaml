@@ -1,0 +1,29 @@
+$kind: http-request
+url: "{{Base url}}/rv/refund"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"returnId\": 27,\r
+
+    \    \"paymentMode\": \"BANK\",\r
+
+    \    \"bankLedger\": 15,\r
+
+    \    \"refundDate\": \"2026-02-17\",\r
+
+    \    \"reference\": \"REFUND OF INV131\",\r
+
+    \    \"description\": \"Refund on damage product\",\r
+
+    \    \"refundAmount\": 1850.75,\r
+
+    \    \"customerLedger\": 13\r
+
+    \    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+order: 8000

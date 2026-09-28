@@ -1,0 +1,41 @@
+$kind: http-request
+url: "{{Super Admin Base Url}}/subscription/pack/patch"
+method: PATCH
+body:
+  type: json
+  content: "[\r
+
+    \    {\r
+
+    \        \"id\": 1,\r
+
+    \        \"addOnId\": 1,\r
+
+    \        \"qty\": 2,\r
+
+    \        \"start_date\": \"2026-09-29T15:56:39.162417\",\r
+
+    \        \"end_date\": \"2026-10-29T15:56:39.162417\"\r
+
+    \    },\r
+
+    \    {\r
+
+    \        // \"id\": 1,\r
+
+    \        \"addOnId\": 1,\r
+
+    \        \"qty\": 1,\r
+
+    \        \"start_date\": \"2026-09-29T15:56:39.162417\",\r
+
+    \        \"end_date\": \"2026-10-29T15:56:39.162417\"\r
+
+    \    }\r
+
+    ]"
+auth:
+  type: bearer
+  credentials:
+    token: "{{Super Admin Bearer Token}}"
+order: 1000

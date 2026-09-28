@@ -1,0 +1,163 @@
+$kind: http-request
+url: "{{Base url}}/product/create-all"
+method: POST
+body:
+  type: json
+  content: "[\r
+
+    \  {\r
+
+    \    \"producttype\": \"CAR\",\r
+
+    \    \"eancode\": 1001,\r
+
+    \    \"glp\": 600000,\r
+
+    \    \"brand\": { \"id\": 2 },\r
+
+    \    \"uom\": { \"id\": 55 },\r
+
+    \    \"purchasecost\": 550000.0,\r
+
+    \    \"preferredvendors\": { \"id\": 1 },\r
+
+    \    \"goods\": \"YES\",\r
+
+    \    \"service\": \"NO\",\r
+
+    \    \"tax\": \"GST28\",\r
+
+    \    \"rate\": 28,\r
+
+    \    \"goodsname\": \"Tata Tiago\",\r
+
+    \    \"servicecharge\": \"0\"\r
+
+    \  },\r
+
+    \  {\r
+
+    \    \"producttype\": \"CAR\",\r
+
+    \    \"eancode\": 1002,\r
+
+    \    \"glp\": 750000,\r
+
+    \    \"brand\": { \"id\": 2 },\r
+
+    \    \"uom\": { \"id\": 55 },\r
+
+    \    \"purchasecost\": 700000.0,\r
+
+    \    \"preferredvendors\": { \"id\": 1 },\r
+
+    \    \"goods\": \"YES\",\r
+
+    \    \"service\": \"NO\",\r
+
+    \    \"tax\": \"GST28\",\r
+
+    \    \"rate\": 28,\r
+
+    \    \"goodsname\": \"Tata Punch\",\r
+
+    \    \"servicecharge\": \"0\"\r
+
+    \  },\r
+
+    \  {\r
+
+    \    \"producttype\": \"CAR\",\r
+
+    \    \"eancode\": 1003,\r
+
+    \    \"glp\": 900000,\r
+
+    \    \"brand\": { \"id\": 2 },\r
+
+    \    \"uom\": { \"id\": 55 },\r
+
+    \    \"purchasecost\": 850000.0,\r
+
+    \    \"preferredvendors\": { \"id\": 1 },\r
+
+    \    \"goods\": \"YES\",\r
+
+    \    \"service\": \"NO\",\r
+
+    \    \"tax\": \"GST28\",\r
+
+    \    \"rate\": 28,\r
+
+    \    \"goodsname\": \"Tata Altroz\",\r
+
+    \    \"servicecharge\": \"0\"\r
+
+    \  },\r
+
+    \  {\r
+
+    \    \"producttype\": \"CAR\",\r
+
+    \    \"eancode\": 1004,\r
+
+    \    \"glp\": 1200000,\r
+
+    \    \"brand\": { \"id\": 2 },\r
+
+    \    \"uom\": { \"id\": 55 },\r
+
+    \    \"purchasecost\": 1120000.0,\r
+
+    \    \"preferredvendors\": { \"id\": 1 },\r
+
+    \    \"goods\": \"YES\",\r
+
+    \    \"service\": \"NO\",\r
+
+    \    \"tax\": \"GST28\",\r
+
+    \    \"rate\": 28,\r
+
+    \    \"goodsname\": \"Tata Nexon\",\r
+
+    \    \"servicecharge\": \"0\"\r
+
+    \  },\r
+
+    \  {\r
+
+    \    \"producttype\": \"CAR\",\r
+
+    \    \"eancode\": 1005,\r
+
+    \    \"glp\": 1800000,\r
+
+    \    \"brand\": { \"id\": 2 },\r
+
+    \    \"uom\": { \"id\": 55 },\r
+
+    \    \"purchasecost\": 1700000.0,\r
+
+    \    \"preferredvendors\": { \"id\": 1 },\r
+
+    \    \"goods\": \"YES\",\r
+
+    \    \"service\": \"NO\",\r
+
+    \    \"tax\": \"GST28\",\r
+
+    \    \"rate\": 28,\r
+
+    \    \"goodsname\": \"Tata Harrier\",\r
+
+    \    \"servicecharge\": \"0\"\r
+
+    \  }\r
+
+    ]\r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+order: 6000

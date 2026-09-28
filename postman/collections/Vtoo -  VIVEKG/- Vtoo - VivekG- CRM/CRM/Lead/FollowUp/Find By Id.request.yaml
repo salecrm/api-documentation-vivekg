@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{Base url}}/lead/follow-up/55"
+method: GET
+order: 2000

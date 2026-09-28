@@ -1,0 +1,29 @@
+$kind: http-request
+url: "{{Base url}}/ledgergroup/update/1"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"id\": 1,\r
+
+    \    \"title\": \"Capital Account\",\r
+
+    \    \"nature\": \"Liability\",\r
+
+    \    \"isSystemGenerated\": true,\r
+
+    \    \"createdby\": \"SYSTEM\",\r
+
+    \    \"updatedby\": null,\r
+
+    \    \"createdbydate\": \"2026-01-03\",\r
+
+    \    \"updatedbydate\": null\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+order: 3000

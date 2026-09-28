@@ -1,0 +1,49 @@
+$kind: http-request
+url: "{{Base Url}}/price-list/create"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"name\": \"Standard Wholesale Price List\",\r
+
+    \  \"description\": \"Default price list for wholesale transactions for 2026\",\r
+
+    \  \"transaction_type\": \"SALE\",\r
+
+    \  \"listType\": \"INDIVIDUAL\",\r
+
+    \  \"priceRatingType\": \"MARK UP\",\r
+
+    \  \"priceRating\": 10\r
+
+    //   \"individualPriceList\": [\r
+
+    //     {\r
+
+    //       \"product\": {\r
+
+    //         \"id\": 1\r
+
+    //       },\r
+
+    //       \"customRate\": 120.50\r
+
+    //     },\r
+
+    //     {\r
+
+    //       \"product\": {\r
+
+    //         \"id\": 2\r
+
+    //       },\r
+
+    //       \"customRate\": 85.00\r
+
+    //     }\r
+
+    //   ]\r
+
+    }"
+order: 1000

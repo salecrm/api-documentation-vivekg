@@ -1,0 +1,8 @@
+$kind: http-request
+url: 192.168.1.7:8080/api/v1/shiftSchedule/getAll
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhYmMiLCJpYXQiOjE3NjE2NDYxOTQsImV4cCI6MTc2MTczMjU5NH0.Wuy6JuVLfOxZ5ZWz5SoW40C0PWkxgeiUD_StTHDFPq8
+order: 3000

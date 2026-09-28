@@ -1,0 +1,27 @@
+$kind: http-request
+url: "{{Base url}}/attendance/save"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"fromtime\":\"22:00:00\",\r
+
+    //    \"totime\":\"06:00:00\",\r
+
+    \   \"remark\": \"test wala\",\r
+
+    \   \"date\": \"2026-06-02\",\r
+
+    \    \"staff\":{\r
+
+    \        \"id\":1\r
+
+    \    }\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{Password}}"
+order: 1000

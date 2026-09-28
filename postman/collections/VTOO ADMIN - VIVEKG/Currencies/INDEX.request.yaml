@@ -1,0 +1,10 @@
+$kind: http-request
+url: "{{Super Admin Base Url}}/currencies/index?search="
+method: GET
+queryParams:
+  search: ""
+auth:
+  type: bearer
+  credentials:
+    token: "{{Super Admin Bearer Token}}"
+order: 6000

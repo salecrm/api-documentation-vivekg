@@ -1,0 +1,23 @@
+$kind: http-request
+url: http://192.168.1.21:8081/api/ledgercategory/update/2
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \"title\": \"Accounts Receivable\",\r
+
+    \  \"createdby\": \"Admin\",\r
+
+    \  \"updatedby\": \"Manager\",\r
+
+    \  \"createdbydate\": \"2025-10-19\",\r
+
+    \  \"updatedbydate\": \"2025-10-23\"\r
+
+    }\r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{crm tanmay}}"
+order: 3000

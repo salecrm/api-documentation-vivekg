@@ -1,0 +1,107 @@
+$kind: http-request
+url: "{{Base url}}/proposal/create"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"company\": {\"id\":1},\r
+
+    \  \"contactname\": \"Robert Johnson\",\r
+
+    \  \"clientname\": \"Global Innovations Ltd.\",\r
+
+    \  \"mobileno\": \"5551234567\",\r
+
+    \  \"email\": \"robert.j@globalinnovations.com\",\r
+
+    \  \"designation\": \"CEO\",\r
+
+    \  \"salesPerson\": 1,\r
+
+    \  \"address\": \"123 Business Park, City\",\r
+
+    \  \"deliveryaddress\": \"456 Warehouse, City\",\r
+
+    \  \"remarks\": \"Proposal for enterprise software implementation.\",\r
+
+    \  \"subject\": \"Made Final Proposal\",\r
+
+    \  \"items\": [\r
+
+    \        {\r
+
+    \      \"product\": {\r
+
+    \        \"id\": 2\r
+
+    \      },\r
+
+    \      \"description\": \"High-end laptop\",\r
+
+    \      \"uom\": \"Piece\",\r
+
+    \      \"partcode\": \"LP15-2025\",\r
+
+    \      \"qty\": 2,\r
+
+    \      \"price\": 1500.0,\r
+
+    \      \"rate\": 3000.0,\r
+
+    \      \"discount\": 100.0,\r
+
+    \      \"total\": 2900.0\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"product\": {\r
+
+    \        \"id\": 3\r
+
+    \      },\r
+
+    \      \"description\": \"Ergonomic wireless mouse\",\r
+
+    \      \"uom\": \"Piece\",\r
+
+    \      \"partcode\": \"WM-01\",\r
+
+    \      \"qty\": 5,\r
+
+    \      \"price\": 25.0,\r
+
+    \      \"rate\": 125.0,\r
+
+    \      \"discount\": 10.0,\r
+
+    \      \"total\": 115.0\r
+
+    \    }\r
+
+    \  ],\r
+
+    \    //   \"leadId\": 63,\r
+
+    \    //   \"rfqId\": 32,\r
+
+    \  \"subtotal\": 0.00,\r
+
+    \  \"shippingcharge\": 0.00,\r
+
+    \  \"discountcharge\": 0.00,\r
+
+    \  \"grosstotal\": 0.00,\r
+
+    \  \"vat\": 0,\r
+
+    \  \"vatamount\": 0.00,\r
+
+    \  \"amounttotal\": 0.00,\r
+
+    \  \"roundofvalue\": 0.00\r
+
+    }"
+order: 2000

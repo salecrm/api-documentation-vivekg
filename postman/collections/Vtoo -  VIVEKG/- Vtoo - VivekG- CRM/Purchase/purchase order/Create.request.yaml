@@ -1,0 +1,117 @@
+$kind: http-request
+url: "{{Base url}}/purchaseorder/create"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"purchaseorderdate\": \"2026-02-16\",\r
+
+    \  \"purchaseorderno\": \"PO-2026-001-PAGANI\",\r
+
+    \  \"subcontactname\": \"Amit Sharma\",\r
+
+    \  \"paymentterms\": \"Due on Receipt\",\r
+
+    \  \"deliverylocation\": \"Main Showroom\",\r
+
+    \  \"deliverydate\": \"2026-03-10\",\r
+
+    \  \"shippingmethod\": \"Flatbed Carrier\",\r
+
+    \  \"subtotal\": 40000000.0,\r
+
+    \  \"shippingcharge\": 0.0,\r
+
+    \  \"discountcharge\": 0.0,\r
+
+    \  \"grosstotal\": 40000000.0,\r
+
+    \  \"vat\": \"40%\",\r
+
+    \  \"vatamount\": 16000000.0,\r
+
+    \  \"amounttotal\": 56000000.0,\r
+
+    \  \"roundofvalue\": 0.0,\r
+
+    \  \"supplierquotationId\":58,\r
+
+    \  \"remark\": \"Converted from PR-2026-00045 for Pagani Sports Car\",\r
+
+    \  \"duedate\": \"2026-03-10\",\r
+
+    \  \"shippingaddress\": \"Enter Shipping Address Here\",\r
+
+    \  \"billingaddress\": \"Enter Billing Address Here\",\r
+
+    \  \"suppliercompanyname\": {\r
+
+    \    \"id\": 1 \r
+
+    \  },\r
+
+    \  \"suppliername\": \"Supplier ID 1\",\r
+
+    \  \"suppliervatno\": \"VAT-PENDING\",\r
+
+    \  \"createdby\": \"amit.sharma\",\r
+
+    \  \"createdbydate\": \"2026-02-16\",\r
+
+    \  \"couponname\": \"PR-01\",\r
+
+    \  \"isCancelled\": false,\r
+
+    \  \"subject\": \"Procurement of Pagani Sports Car\",\r
+
+    \  \"purchaseOrderItems\": [\r
+
+    \    {\r
+
+    \      \"description\": \"Pagani Sports Car\",\r
+
+    \      \"partcode\": \"ST-990-XP\",\r
+
+    \      \"qty\": 100.0,\r
+
+    \      \"price\": 40000000.0,\r
+
+    \      \"rate\": 40000000.0,\r
+
+    \      \"discount\": 0.0,\r
+
+    \      \"total\": 40000000.0,\r
+
+    \      \"uom\": \"Unit\",\r
+
+    \      \"supply\": 0.0,\r
+
+    \      \"status\": \"PENDING\",\r
+
+    \      \"product\": {\r
+
+    \        \"id\": 1\r
+
+    \      }\r
+
+    \    }\r
+
+    \  ],\r
+
+    \  \"againstRequisition\": [\r
+
+    \    {\r
+
+    \      \"id\": 1\r
+
+    \    }\r
+
+    \  ]\r
+
+    }\r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+order: 4000

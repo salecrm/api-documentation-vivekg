@@ -1,0 +1,39 @@
+$kind: http-request
+url: "{{Super Admin Base Url}}/packages/patch/7"
+method: PATCH
+body:
+  type: json
+  content: "{\r
+
+    \  \"packageName\": \"Enterprise ERP Bundle\",\r
+
+    \  \"packageCode\": \"PKG_ENT_01\",\r
+
+    \  \"isActive\": true,\r
+
+    \  \"packageUsage\": 0,\r
+
+    \  \"packageType\": \"SUBSCRIPTION\",\r
+
+    \  \"packageCost\": 499.99,\r
+
+    \  \"description\": \"Comprehensive enterprise package including inventory and HR modules.\",\r
+
+    \  \"storageLimit\": 500.0,\r
+
+    \  \"attachmentSize\": 25.0,\r
+
+    \  \"maximumUsers\": 100,\r
+
+    \  \"maximumBranches\": 5,\r
+
+    \  \"maximumWarehouses\": 10,\r
+
+    \  \"modules\": [1,2,3,4]\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{Super Admin Bearer Token}}"
+order: 3000

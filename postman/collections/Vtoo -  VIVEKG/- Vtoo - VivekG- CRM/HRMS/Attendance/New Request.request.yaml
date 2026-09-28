@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{Base Url}}/settingallinone/taxcomp/toggle"
+method: GET
+order: 8000

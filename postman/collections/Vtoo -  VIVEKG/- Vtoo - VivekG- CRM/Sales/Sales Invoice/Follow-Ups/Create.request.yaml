@@ -1,0 +1,15 @@
+$kind: http-request
+url: "{{Base url}}/sales/follow-up/create"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"name\": \"John Doe\",\r
+
+    \  \"message\": \"Followed up regarding the pending quotation.\",\r
+
+    \  \"sales\": 17\r
+
+    }\r\n"
+order: 1000

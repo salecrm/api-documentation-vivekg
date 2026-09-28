@@ -1,0 +1,29 @@
+$kind: http-request
+url: "{{Base url}}/sla/create"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"name\": \"Gold Support SLA\",\r
+
+    \  \"working\": \"9AM-6PM\",\r
+
+    \  \"active\": \"Yes\",\r
+
+    \  \"responseTime\": 2.0,\r
+
+    \  \"responseType\": \"Hours\",\r
+
+    \  \"resolitionTime\": 24.0,\r
+
+    \  \"resolitionType\": \"Hours\",\r
+
+    \  \"priority\": \"High\"\r
+
+    }\r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+order: 1000

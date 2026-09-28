@@ -1,0 +1,33 @@
+$kind: http-request
+url: "{{Base url}}/ledger/update/20"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"id\": 20,\r
+
+    \    \"ledgerTitle\": \"Load from SBI Bank\",\r
+
+    \    \"ledgergroup\": 19,\r
+
+    \    \"openingBalance\": 50000.0,\r
+
+    \    \"openingBalanceType\": \"DEBIT\",\r
+
+    \    \"openingBalanceDate\": \"2026-01-03\",\r
+
+    \    \"createdby\": \"amit.sharma\",\r
+
+    \    \"updatedby\": null,\r
+
+    \    \"createdbydate\": \"2026-01-06\",\r
+
+    \    \"updatedbydate\": null\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+order: 3000

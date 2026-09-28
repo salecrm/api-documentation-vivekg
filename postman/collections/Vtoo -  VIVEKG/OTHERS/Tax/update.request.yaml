@@ -1,0 +1,25 @@
+$kind: http-request
+url: http://192.168.1.21:8081/api/tax/update/1
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \"name\": \"VAT Tax\",\r
+
+    \  \"value\": 10.0,\r
+
+    \  \"createdby\": \"admin\",\r
+
+    \  \"updatedby\": \"admin\",\r
+
+    \  \"createdbydate\": \"2025-10-21\",\r
+
+    \  \"updatedbydate\": \"2025-10-25\"\r
+
+    }\r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{crm tanmay}}"
+order: 3000

@@ -1,0 +1,11 @@
+$kind: http-request
+url: "{{Base url}}/cart/bulk-delete"
+method: DELETE
+body:
+  type: json
+  content: "[4, 5]"
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+order: 3000

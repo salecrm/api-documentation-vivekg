@@ -1,0 +1,146 @@
+$kind: http-request
+name: Create Purchase
+url: http://192.168.1.226:8081/api/v1/purchase/create
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"grndate\": \"2025-12-15\",\r
+
+    \  \"recievedby\": \"John Doe\",\r
+
+    \  \"deliverynote\": \"Delivered on time\",\r
+
+    \  \"remark\": \"Urgent order\",\r
+
+    \  \"subtotal\": 5000.75,\r
+
+    \  \"shippingcharge\": 150.50,\r
+
+    \  \"discountcharge\": 50.00,\r
+
+    \  \"grosstotal\": 5101.25,\r
+
+    \  \"vat\": \"15%\",\r
+
+    \  \"vatamount\": 765.19,\r
+
+    \  \"amounttotal\": 5866.44,\r
+
+    \  \"roundofvalue\": 0.56,\r
+
+    \  \"purchasedate\": \"2025-12-10\",\r
+
+    \  \"supplierinvoiceno\": \"INV-2025-123\",\r
+
+    \  \"shippingaddress\": \"123 Warehouse St, Cityville\",\r
+
+    \  \"billingaddress\": \"456 Billing Ave, Cityville\",\r
+
+    \  \"warehouse\": {\r
+
+    \    \"id\": 1\r
+
+    \  },\r
+
+    \  \"suppliercompanyname\": {\r
+
+    \    \"id\": 4\r
+
+    \  },\r
+
+    \  \"suppliername\": \"ABC Suppliers\",\r
+
+    \  \"purchaseItems\": [\r
+
+    \    {\r
+
+    \      \"description\": \"High-end Laptop\",\r
+
+    \      \"partcode\": \"LAP-1001\",\r
+
+    \      \"qty\": 10,\r
+
+    \      \"price\": 500.00,\r
+
+    \      \"rate\": 500.00,\r
+
+    \      \"discount\": 50.00,\r
+
+    \      \"total\": 4950.00,\r
+
+    \      \"uom\": \"pcs\",\r
+
+    \      \"po_no\": 25,\r
+
+    \      \"purchaseOrder\": {\r
+
+    \        \"id\": 25\r
+
+    \      },\r
+
+    \      \"product\": {\r
+
+    \        \"id\": 6\r
+
+    \      }\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"description\": \"Wireless Mouse\",\r
+
+    \      \"partcode\": \"MOU-2002\",\r
+
+    \      \"qty\": 20,\r
+
+    \      \"price\": 25.50,\r
+
+    \      \"rate\": 25.50,\r
+
+    \      \"discount\": 5.00,\r
+
+    \      \"total\": 490.00,\r
+
+    \      \"uom\": \"pcs\",\r
+
+    \      \"po_no\": 41,\r
+
+    \      \"purchaseOrder\": {\r
+
+    \        \"id\": 41\r
+
+    \      },\r
+
+    \      \"product\": {\r
+
+    \        \"id\": 11\r
+
+    \      }\r
+
+    \    }\r
+
+    \  ],\r
+
+    \  \"staff\": {\r
+
+    \    \"id\": 1\r
+
+    \  },\r
+
+    \  \"suppliervatno\": \"VAT-12345\",\r
+
+    \  \"subcontactname\": \"Mike Johnson\",\r
+
+    \  \"couponname\": \"PO2025\",\r
+
+    \  \"cname\": \"Customer Company\"\r
+
+    }\r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+order: 4000

@@ -1,0 +1,103 @@
+$kind: http-request
+url: "{{Base url}}/purchaserequisition/create"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"reuisitionno\": \"PR-2026-00045\",\r
+
+    \  \"requireddate\": \"2026-03-10\",\r
+
+    \  \"requisitiondate\": \"2026-02-16\",\r
+
+    \  \"supplierpreference\": \"High Priority - Preferred Vendor\",\r
+
+    \  \"remark\": \"Urgent procurement for Q1 manufacturing peak\",\r
+
+    \  \"subtotal\": 40000000.0,\r
+
+    \  \"createdby\": \"Systems_Admin\",\r
+
+    \  \"createdbydate\": \"2026-02-16\",\r
+
+    \  \"couponname\": \"BULK2026\",\r
+
+    \  \"cname\": \"Standard_Requisition\",\r
+
+    \  \"staff\": {\r
+
+    \    \"id\": 1\r
+
+    \  },\r
+
+    \  \"suppliercompanyname\": {\r
+
+    \    \"id\": 1\r
+
+    \  },\r
+
+    \  \"purchaseRequisitionItems\": [\r
+
+    \    {\r
+
+    \      \"description\": \"Pagani Sports Car\",\r
+
+    \      \"partcode\": \"ST-990-XP\",\r
+
+    \      \"qty\": 1.0,\r
+
+    \      \"price\": 40000000.0,\r
+
+    \      \"rate\": 30000000.0,\r
+
+    \      \"discount\": 25.0,\r
+
+    \      \"total\": 42000000.0,\r
+
+    \      \"uom\": \"Unit\",\r
+
+    \      \"product\": {\r
+
+    \        \"id\": 1\r
+
+    \      }\r
+
+    \    }\r
+
+    \    // ,\r
+
+    \    // {\r
+
+    \    //   \"description\": \"Hydraulic Assembly Units\",\r
+
+    \    //   \"partcode\": \"HYD-77-B\",\r
+
+    \    //   \"qty\": 500.0,\r
+
+    \    //   \"price\": 40000.0,\r
+
+    \    //   \"rate\": 40000.0,\r
+
+    \    //   \"discount\": 0.0,\r
+
+    \    //   \"total\": 20000000.0,\r
+
+    \    //   \"uom\": \"Set\",\r
+
+    \    //   \"product\": {\r
+
+    \    //     \"id\": 502\r
+
+    \    //   }\r
+
+    \    // }\r
+
+    \  ]\r
+
+    }\r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+order: 1000

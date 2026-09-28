@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{Super Admin Base Url}}/packages/index?search=&countryId=&moduleType="
+method: GET
+queryParams:
+  search: ""
+  countryId: ""
+  moduleType: ""
+auth:
+  type: bearer
+  credentials:
+    token: "{{Super Admin Bearer Token}}"
+order: 6000

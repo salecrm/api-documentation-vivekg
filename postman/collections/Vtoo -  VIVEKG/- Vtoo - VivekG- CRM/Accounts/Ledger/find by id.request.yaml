@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{Base url}}/ledger/findById/21"
+method: GET
+body:
+  type: text
+  content: "\r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+settings: {}
+order: 2000

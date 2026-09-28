@@ -1,0 +1,12 @@
+$kind: http-request
+url: http://192.168.1.21:8081/api/tax/findById/1
+method: GET
+body:
+  type: text
+  content: ""
+auth:
+  type: bearer
+  credentials:
+    token: "{{crm tanmay}}"
+settings: {}
+order: 2000

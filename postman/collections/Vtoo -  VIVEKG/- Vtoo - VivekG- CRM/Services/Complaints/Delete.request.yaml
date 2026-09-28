@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{Base url}}/complaint/delete/5"
+method: DELETE
+order: 6000

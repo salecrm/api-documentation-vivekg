@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{Base url}}/stock-report?warehouseId=10&startDate=1999-01-01&endDate=2027-12-31"
+method: GET
+queryParams:
+  - key: warehouseId
+    value: "10"
+  - key: startDate
+    value: 1999-01-01
+  - key: endDate
+    value: 2027-12-31
+  - key: dateRange
+    value: ""
+    disabled: true
+order: 1000

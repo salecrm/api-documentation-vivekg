@@ -1,0 +1,21 @@
+$kind: collection
+description: |-
+  StartFragment
+
+  | **Create RFQ** → **POST**  
+  `/api/v1/rfq/create`
+
+  | **Find RFQ by ID** → **GET**  
+  `/api/v1/rfq/findById/{id}`
+
+  | **Update RFQ** → **PUT**  
+  `/api/v1/rfq/update/{id}`
+
+  | **Delete RFQ** → **DELETE**  
+  `/api/v1/rfq/delete/{id}`
+
+  | **Pagination & Search** → **GET**  
+  `/api/v1/rfq/page?pageNumber=&pageSize=&field=id&direction=desc&search=abc`
+
+  EndFragment
+order: 2000

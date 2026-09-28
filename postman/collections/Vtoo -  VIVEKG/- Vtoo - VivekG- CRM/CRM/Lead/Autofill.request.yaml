@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{Base url}}/lead/companies/6"
+method: GET
+body:
+  type: json
+  content: ""
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+settings: {}
+order: 7000

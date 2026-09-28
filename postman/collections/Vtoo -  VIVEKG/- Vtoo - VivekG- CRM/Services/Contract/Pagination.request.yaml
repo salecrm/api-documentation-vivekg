@@ -1,0 +1,18 @@
+$kind: http-request
+url: "{{Base url}}/contract/page?pageNumber=&pageSize=&field=id&direction=desc&search="
+method: GET
+queryParams:
+  - key: pageNumber
+    value: ""
+  - key: pageSize
+    value: ""
+  - key: field
+    value: id
+  - key: direction
+    value: desc
+  - key: search
+    value: ""
+  - key: isWorking
+    value: "true"
+    disabled: true
+order: 5000

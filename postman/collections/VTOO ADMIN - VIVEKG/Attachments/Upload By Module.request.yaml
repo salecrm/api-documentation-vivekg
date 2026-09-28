@@ -1,0 +1,18 @@
+$kind: http-request
+url: "{{Super Admin Base Url}}/attachments/upload?module=flag&id=1"
+method: POST
+queryParams:
+  module: flag
+  id: "1"
+body:
+  type: formdata
+  content:
+    - type: file
+      key: file
+      src:
+        - /C:/Users/LNV104/Pictures/wallpapers/wally.png
+auth:
+  type: bearer
+  credentials:
+    token: "{{Super Admin Bearer Token}}"
+order: 1000

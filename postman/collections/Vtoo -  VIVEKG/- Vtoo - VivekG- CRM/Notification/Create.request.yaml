@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{Base Url}}/notification/create"
+method: POST
+order: 1000

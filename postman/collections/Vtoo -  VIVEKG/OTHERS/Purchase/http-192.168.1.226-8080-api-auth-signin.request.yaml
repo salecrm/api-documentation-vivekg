@@ -1,0 +1,20 @@
+$kind: http-request
+name: http://192.168.1.226:8080/api/auth/signin
+url: http://192.168.1.226:8080/api/product/page/search?CONICAL \\ BELLY \\ FLAT SAUCE POT
+method: POST
+queryParams:
+  CONICAL \\ BELLY \\ FLAT SAUCE POT: null
+body:
+  type: json
+  content: "{\r
+
+    \    \"email\": \"admin@admin.com\",\r
+
+    \    \"password\": \"password\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbkBhZG1pbi5jb20iLCJpYXQiOjE3NjU4ODExNDgsImV4cCI6MTc2NTk2NzU0OH0.NaD4AFi9eS1KGRUqhzaKpBBYd_DPaS5ct7HmYH2J87YbzLhtPvS1bWYVkj2_VZFrYIGRBq7Wj9tsYBwuHAm4cQ
+order: 2000

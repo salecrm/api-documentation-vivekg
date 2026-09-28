@@ -1,0 +1,21 @@
+$kind: http-request
+url: "{{Super Admin Base Url}}/currencies/update/7"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \t\"currencyCode\": \"USD\",\r
+
+    \t\"currencyName\": \"DULLAR\",\r
+
+    \t\"currencyValue\": 97.0,\r
+
+    \t\"currencySymbol\": \"$\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{Super Admin Bearer Token}}"
+order: 4000

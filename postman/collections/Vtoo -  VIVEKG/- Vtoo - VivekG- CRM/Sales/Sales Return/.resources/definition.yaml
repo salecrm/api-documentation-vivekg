@@ -1,0 +1,21 @@
+$kind: collection
+description: |-
+  StartFragment
+
+  | **Create Sales Return** → **POST**  
+  `/api/v1/sr/create`
+
+  | **Find Sales Return by ID** → **GET**  
+  `/api/v1/sr/findById/{id}`
+
+  | **Update Sales Return** → **PUT**  
+  `/api/v1/sr/update/{id}`
+
+  | **Delete Sales Return** → **DELETE**  
+  `/api/v1/sr/delete/{id}`
+
+  | **Pagination & Search** → **GET**  
+  `/api/v1/sr/page?pageNumber=&pageSize=&field=id&direction=desc&search=abc`
+
+  EndFragment
+order: 4000

@@ -1,0 +1,16 @@
+$kind: http-request
+url: "{{Base url}}/rv/page?pageNumber=&pageSize=200&field=&direction=desc"
+method: GET
+queryParams:
+  - key: pageNumber
+    value: ""
+  - key: pageSize
+    value: "200"
+  - key: field
+    value: ""
+  - key: direction
+    value: desc
+  - key: search
+    value: State
+    disabled: true
+order: 6000

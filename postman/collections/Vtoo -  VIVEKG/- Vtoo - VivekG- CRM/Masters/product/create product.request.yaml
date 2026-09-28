@@ -1,0 +1,57 @@
+$kind: http-request
+url: "{{Base Url}}/product/create"
+method: POST
+body:
+  type: json
+  content: "  {\r
+
+    \    \"producttype\": \"MYSTIC\",\r
+
+    \    \"eancode\": 777777777777,\r
+
+    \    \"glp\": 3000.0,\r
+
+    \    \"brand\": { \"id\": 1 },\r
+
+    \    \"uom\": null,\r
+
+    \    \"preferredvendors\": null,\r
+
+    \    \"purchasecost\": 2200.0,\r
+
+    \    \"goods\": \"yes\",\r
+
+    \    \"service\": \"no\",\r
+
+    \    \"tax\": 18.0,\r
+
+    \    \"rate\": 18.0,\r
+
+    \    \"goodsname\": \"KARDISHNON\",\r
+
+    \    // \"servicecharge\": \"VET\",\r
+
+    \    \"partCode\": \"MYSTIC-777\"\r
+
+    \  }\r
+
+    // {\r
+
+    //     \"goods\": \"no\",\r
+
+    //     \"service\": \"yes\",\r
+
+    //     \"servicecharge\": \"I Phone Replaced by handsum hitesh \",\r
+
+    //     \"tax\": 0,\r
+
+    //     \"rate\": 123,\r
+
+    //     \"brand\": {\r
+
+    //         \"id\": 2\r
+
+    //     }\r
+
+    // }"
+order: 1000

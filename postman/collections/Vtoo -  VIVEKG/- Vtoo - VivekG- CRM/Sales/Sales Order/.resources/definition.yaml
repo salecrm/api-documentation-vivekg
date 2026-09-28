@@ -1,0 +1,27 @@
+$kind: collection
+description: |-
+  StartFragment
+
+  | **Create Sales Order** → **POST**  
+  `/api/v1/so/create`
+
+  | **Find Sales Order by ID** → **GET**  
+  `/api/v1/so/findById/{id}`
+
+  | **Get Pending Sales Orders** → **GET**  
+  `/api/v1/so/pending?customerId=&productId=`
+
+  | **Update Sales Order** → **PUT**  
+  `/api/v1/so/update/{id}`
+
+  | **Delete Sales Order** → **DELETE**  
+  `/api/v1/so/delete/{id}`
+
+  | **Pagination & Search** → **GET**  
+  `/api/v1/so/page?pageNumber=&pageSize=&field=id&direction=desc&search=abc`
+
+  | **Cancel Sales Order** → **PUT**  
+  `/api/v1/so/cancel/{id}`
+
+  EndFragment
+order: 1000

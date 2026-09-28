@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{Base url}}/rv/delete/5"
+method: DELETE
+order: 4000

@@ -1,0 +1,19 @@
+$kind: http-request
+url: "{{Base Url}}/expense-type/page?pageNumber=&pageSize=&field=&direction=desc"
+method: GET
+queryParams:
+  - key: pageNumber
+    value: ""
+  - key: pageSize
+    value: ""
+  - key: field
+    value: ""
+  - key: direction
+    value: desc
+  - key: status
+    value: active
+    disabled: true
+  - key: search
+    value: food
+    disabled: true
+order: 5000

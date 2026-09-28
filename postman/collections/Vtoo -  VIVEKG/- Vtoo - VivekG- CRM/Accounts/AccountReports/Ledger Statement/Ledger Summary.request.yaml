@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{Base Url}}/ls/ledger-summary/51"
+method: GET
+order: 2000

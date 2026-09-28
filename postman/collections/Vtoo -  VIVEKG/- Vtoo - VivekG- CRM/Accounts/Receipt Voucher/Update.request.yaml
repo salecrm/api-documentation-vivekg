@@ -1,0 +1,157 @@
+$kind: http-request
+url: "{{Base url}}/rv/update/5"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"id\": 5,\r
+
+    \    \"voucherDate\": \"2026-02-27\",\r
+
+    \    \"receiptAmount\": 0.0,\r
+
+    \    \"receiptMode\": \"CASH\",\r
+
+    \    \"chequeNo\": null,\r
+
+    \    \"checqueDate\": null,\r
+
+    \    \"couponname\": \"RCT-2\",\r
+
+    \    \"bank\": {\r
+
+    \        \"id\": 5,\r
+
+    \        \"ledgerTitle\": \"Cash-in-Hand\",\r
+
+    \        \"ledgergroup\": {\r
+
+    \            \"id\": 10,\r
+
+    \            \"title\": \"Cash-in-Hand\",\r
+
+    \            \"nature\": \"Assets\",\r
+
+    \            \"isSystemGenerated\": true,\r
+
+    \            \"createdby\": \"SYSTEM\",\r
+
+    \            \"updatedby\": null,\r
+
+    \            \"createdbydate\": \"2026-01-03\",\r
+
+    \            \"updatedbydate\": null\r
+
+    \        },\r
+
+    \        \"openingBalance\": 0.0,\r
+
+    \        \"openingBalanceType\": \"CREDIT\",\r
+
+    \        \"openingBalanceDate\": null,\r
+
+    \        \"isDefault\": true,\r
+
+    \        \"createdby\": \"SYSTEM\",\r
+
+    \        \"updatedby\": null,\r
+
+    \        \"createdbydate\": \"2026-01-07\",\r
+
+    \        \"updatedbydate\": null\r
+
+    \    },\r
+
+    \    \"creditTransaction\": [\r
+
+    \        {\r
+
+    \            \"id\": 5,\r
+
+    \            \"particular\": {\r
+
+    \                \"id\": 21,\r
+
+    \                \"ledgerTitle\": \"HDFC Bank Ambernath\",\r
+
+    \                \"ledgergroup\": {\r
+
+    \                    \"id\": 18,\r
+
+    \                    \"title\": \"Bank & Account\",\r
+
+    \                    \"nature\": \"Assets\",\r
+
+    \                    \"isSystemGenerated\": true,\r
+
+    \                    \"createdby\": \"SYSTEM\",\r
+
+    \                    \"updatedby\": null,\r
+
+    \                    \"createdbydate\": \"2026-01-05\",\r
+
+    \                    \"updatedbydate\": null\r
+
+    \                },\r
+
+    \                \"openingBalance\": 100000.0,\r
+
+    \                \"openingBalanceType\": \"DEBIT\",\r
+
+    \                \"openingBalanceDate\": null,\r
+
+    \                \"isDefault\": false,\r
+
+    \                \"createdby\": \"admin@vtoo\",\r
+
+    \                \"updatedby\": null,\r
+
+    \                \"createdbydate\": \"2026-02-25\",\r
+
+    \                \"updatedbydate\": null\r
+
+    \            },\r
+
+    \            \"remark\": null,\r
+
+    \            \"type\": \"Ledger\",\r
+
+    \            \"entryType\": \"CREDIT\",\r
+
+    \            \"ledgerFolio\": null,\r
+
+    \            \"invoice\": null,\r
+
+    \            \"invCoupon\": null,\r
+
+    \            \"refrence\": null,\r
+
+    \            \"amount\": 0.0,\r
+
+    \            \"status\": \"OPEN\",\r
+
+    \            \"adjustedAmount\": null\r
+
+    \        }\r
+
+    \    ],\r
+
+    \    \"ledgerFolio\": null,\r
+
+    \    \"createdby\": \"admin@vtoo\",\r
+
+    \    \"updatedby\": null,\r
+
+    \    \"createdbydate\": \"2026-02-27\",\r
+
+    \    \"updatedbydate\": null,\r
+
+    \    \"bankFolio\": null\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+order: 3000

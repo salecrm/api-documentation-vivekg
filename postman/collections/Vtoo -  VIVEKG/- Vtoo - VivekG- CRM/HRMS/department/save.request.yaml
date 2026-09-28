@@ -1,0 +1,25 @@
+$kind: http-request
+url: "{{Base Url}}/department/save"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"departmentname\": \"test\",\r
+
+    \    \"departmentcode\": \"123\",\r
+
+    \    \"halfday\": \"1\",\r
+
+    \    \"lateloginmin\": \"2\",\r
+
+    \    \"lateloginmax\": \"3\",\r
+
+    \    \"latelogoutmax\": \"4\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{Password}}"
+order: 1000

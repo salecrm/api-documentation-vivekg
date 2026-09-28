@@ -1,0 +1,26 @@
+$kind: http-request
+url: "{{Base url}}/couponmaster/page?field=id&search=&pageSize=16"
+method: GET
+queryParams:
+  field: id
+  search: ""
+  pageSize: "16"
+body:
+  type: text
+  content: "{\r
+
+    \  \"prefixname\": \"P2026\",\r
+
+    \  \"suffixname\": \"01\",\r
+
+    \  \"preview\": \"P2026-01\",\r
+
+    \  \"module\": \"Proposal\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+settings: {}
+order: 2000

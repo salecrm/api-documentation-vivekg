@@ -1,0 +1,55 @@
+$kind: http-request
+url: "{{Base url}}/contra/create"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"date\": \"2026-02-05\",\r
+
+    \  \"amount\": 15000.00,\r
+
+    \  \"debitLedger\": {\r
+
+    \    \"id\": 5\r
+
+    \  },\r
+
+    \  \"creditLedger\": {\r
+
+    \    \"id\": 15\r
+
+    \  },\r
+
+    \  \"paymentMode\": \"CHEQUE\",\r
+
+    \  \"chequeDate\": \"2026-02-05\",\r
+
+    \  \"chequeNo\": \"CHQ-458963\",\r
+
+    \  \"refrence\": \"Cash deposited to bank\",\r
+
+    \  \"denominations\": {\r
+
+    \    \"twoThousands\": 0,\r
+
+    \    \"fiveHundreds\": 0,\r
+
+    \    \"twoHundreds\": 0,\r
+
+    \    \"hundreds\": 0,\r
+
+    \    \"fifties\": 0,\r
+
+    \    \"twenties\": 0,\r
+
+    \    \"tens\": 0\r
+
+    \  }\r
+
+    }\r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+order: 1000

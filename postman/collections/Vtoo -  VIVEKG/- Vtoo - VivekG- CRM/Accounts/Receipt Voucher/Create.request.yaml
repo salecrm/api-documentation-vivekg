@@ -1,0 +1,63 @@
+$kind: http-request
+url: "{{Base url}}/rv/create"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"voucherDate\": \"2026-02-20\",\r
+
+    \  \"receiptAmount\": 726000.0,\r
+
+    \  \"receiptMode\":\r
+
+    //    \"CHEQUE\",\r
+
+    \   \"BANK\",\r
+
+    //   \"chequeNo\": \"RTGS-TATA-PUNCH-99\",\r
+
+    //   \"checqueDate\": \"2026-05-01\", \r
+
+    \  \"bank\": {\r
+
+    \    \"id\": 19\r
+
+    \  },\r
+
+    \  \"creditTransaction\": [\r
+
+    \    {\r
+
+    \      \"particular\": {\r
+
+    \        \"id\": 46\r
+
+    \      },\r
+
+    \      \"type\": \r
+
+    \    //   \"Advance\",\r
+
+    \       \"Against Reference\",\r
+
+    \      \"entryType\": \"CREDIT\",\r
+
+    \      \"invoice\": 163, \r
+
+    \    //   \"refrence\": \"REF-TATA-003\",\r
+
+    \      \"amount\": 726000.0,\r
+
+    \      \"remark\": \"Full payment received for Tata Punch Facelift in ADVANCE\"\r
+
+    \    }\r
+
+    \  ]\r
+
+    }\r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+order: 1000

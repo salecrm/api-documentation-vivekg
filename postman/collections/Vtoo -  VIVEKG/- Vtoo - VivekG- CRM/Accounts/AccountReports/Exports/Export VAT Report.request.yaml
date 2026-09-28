@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{Base url}}/accounts/vat-report-export?startDate=2026-06-01&endDate=2028-06-30"
+method: GET
+queryParams:
+  - key: startDate
+    value: 2026-06-01
+  - key: endDate
+    value: 2028-06-30
+  - key: dateRange
+    value: YEAR
+    disabled: true
+order: 3000

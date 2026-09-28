@@ -1,0 +1,27 @@
+$kind: http-request
+url: "{{Base Url}}/ls/ledger-statement?search=&ledger=51"
+method: GET
+queryParams:
+  - key: pageNumber
+    value: "1"
+    disabled: true
+  - key: pageSize
+    value: "140"
+    disabled: true
+  - key: search
+    value: ""
+  - key: startDate
+    value: 2026-06-16
+    disabled: true
+  - key: endDate
+    value: 2026-06-16
+    disabled: true
+  - key: dateRange
+    value: month
+    disabled: true
+  - key: direction
+    value: desc
+    disabled: true
+  - key: ledger
+    value: "51"
+order: 1000

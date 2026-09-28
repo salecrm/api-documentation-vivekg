@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{Base url}}/purchasereturn/findById/12"
+method: GET
+order: 3000

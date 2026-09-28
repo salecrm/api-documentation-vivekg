@@ -1,0 +1,16 @@
+$kind: http-request
+url: "{{Base Url}}/sse/stream/unreaded"
+method: GET
+headers:
+  - key: Accept
+    value: text/event-stream
+    disabled: true
+queryParams:
+  - key: token
+    value: "{{supabase_service_role_api_key_051f}}"
+    disabled: true
+auth:
+  type: noauth
+settings:
+  disabledSystemHeaders: []
+order: 7000

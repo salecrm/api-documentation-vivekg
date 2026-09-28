@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{Base url}}/jv/delete-entry/66"
+method: DELETE
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+order: 5000

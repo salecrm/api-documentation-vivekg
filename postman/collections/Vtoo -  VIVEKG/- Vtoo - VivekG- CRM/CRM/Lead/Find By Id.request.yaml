@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{Base url}}/lead/findById/5"
+method: GET
+body:
+  type: file
+  content: {}
+settings: {}
+order: 3000

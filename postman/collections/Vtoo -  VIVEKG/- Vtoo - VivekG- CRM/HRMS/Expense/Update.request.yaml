@@ -1,0 +1,393 @@
+$kind: http-request
+url: "{{Base Url}}/expense/update/18"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"id\": 18,\r
+
+    \    \"expenseDate\": \"2026-05-22\",\r
+
+    \    \"staff\": {\r
+
+    \        \"id\": 2,\r
+
+    \        \"staffId\": \"STF0034\",\r
+
+    \        \"firstName\": \"Cloud\",\r
+
+    \        \"lastName\": \"Team\",\r
+
+    \        \"userName\": \"admin@admin.com\",\r
+
+    \        \"password\": \"$2a$10$ssGCF9TGGiWpSq8YBC4KJOucrn.tNoJNeMB4XuARXHoO3lDZDNYuC\",\r
+
+    \        \"email\": \"lnv.salecrm@gmail.com\",\r
+
+    \        \"phoneNo\": \"9765735862\",\r
+
+    \        \"gender\": \"Male\",\r
+
+    \        \"address\": \"Dubai\",\r
+
+    \        \"dateofjoining\": \"2025-08-13\",\r
+
+    \        \"dateofbirth\": \"2000-04-04\",\r
+
+    \        \"salarytype\": \"monthly\",\r
+
+    \        \"stafftype\": \"Full Time\",\r
+
+    \        \"roles\": [\r
+
+    \            {\r
+
+    \                \"id\": 2,\r
+
+    \                \"roleName\": \"test1\",\r
+
+    \                \"description\": \"aa\",\r
+
+    \                \"permissions\": [\r
+
+    \                    {\r
+
+    \                        \"id\": 202,\r
+
+    \                        \"permissionName\": \"uom:create\",\r
+
+    \                        \"moduleName\": \"UOM\"\r
+
+    \                    },\r
+
+    \                    {\r
+
+    \                        \"id\": 199,\r
+
+    \                        \"permissionName\": \"brand:update\",\r
+
+    \                        \"moduleName\": \"Brand\"\r
+
+    \                    },\r
+
+    \                    {\r
+
+    \                        \"id\": 204,\r
+
+    \                        \"permissionName\": \"uom:update\",\r
+
+    \                        \"moduleName\": \"UOM\"\r
+
+    \                    },\r
+
+    \                    {\r
+
+    \                        \"id\": 198,\r
+
+    \                        \"permissionName\": \"brand:view\",\r
+
+    \                        \"moduleName\": \"Brand\"\r
+
+    \                    },\r
+
+    \                    {\r
+
+    \                        \"id\": 197,\r
+
+    \                        \"permissionName\": \"brand:create\",\r
+
+    \                        \"moduleName\": \"Brand\"\r
+
+    \                    },\r
+
+    \                    {\r
+
+    \                        \"id\": 212,\r
+
+    \                        \"permissionName\": \"product:create\",\r
+
+    \                        \"moduleName\": \"Product\"\r
+
+    \                    },\r
+
+    \                    {\r
+
+    \                        \"id\": 206,\r
+
+    \                        \"permissionName\": \"uom:pagination\",\r
+
+    \                        \"moduleName\": \"UOM\"\r
+
+    \                    },\r
+
+    \                    {\r
+
+    \                        \"id\": 203,\r
+
+    \                        \"permissionName\": \"uom:view\",\r
+
+    \                        \"moduleName\": \"UOM\"\r
+
+    \                    },\r
+
+    \                    {\r
+
+    \                        \"id\": 216,\r
+
+    \                        \"permissionName\": \"product:pagination\",\r
+
+    \                        \"moduleName\": \"Product\"\r
+
+    \                    },\r
+
+    \                    {\r
+
+    \                        \"id\": 213,\r
+
+    \                        \"permissionName\": \"product:view\",\r
+
+    \                        \"moduleName\": \"Product\"\r
+
+    \                    },\r
+
+    \                    {\r
+
+    \                        \"id\": 201,\r
+
+    \                        \"permissionName\": \"brand:pagination\",\r
+
+    \                        \"moduleName\": \"Brand\"\r
+
+    \                    },\r
+
+    \                    {\r
+
+    \                        \"id\": 214,\r
+
+    \                        \"permissionName\": \"product:update\",\r
+
+    \                        \"moduleName\": \"Product\"\r
+
+    \                    }\r
+
+    \                ]\r
+
+    \            }\r
+
+    \        ],\r
+
+    \        \"branch\": {\r
+
+    \            \"id\": 1,\r
+
+    \            \"branchname\": \"Ambernath\",\r
+
+    \            \"branchtype\": \"primary\",\r
+
+    \            \"organizationname\": \"Vtoo ERP Solutions\",\r
+
+    \            \"picname\": \"Sarah Khan\",\r
+
+    \            \"picemil\": \"s@gmail.com\",\r
+
+    \            \"picphoneno\": \"+298765432 287\",\r
+
+    \            \"street1\": \"Chandni nagar \",\r
+
+    \            \"street2\": \"\",\r
+
+    \            \"zipcode\": \"432878\",\r
+
+    \            \"createdby\": \"admin@vtoo\",\r
+
+    \            \"updatedby\": null,\r
+
+    \            \"createdbydate\": \"2026-05-18T15:14:34.033651\",\r
+
+    \            \"updatedbydate\": null,\r
+
+    \            \"states\": {\r
+
+    \                \"id\": 340,\r
+
+    \                \"stateName\": \"Barisal\",\r
+
+    \                \"countryId\": 18\r
+
+    \            },\r
+
+    \            \"countries\": {\r
+
+    \                \"id\": 18,\r
+
+    \                \"countryName\": \"Bangladesh\"\r
+
+    \            },\r
+
+    \            \"cities\": \"Pune\",\r
+
+    \            \"isPrimary\": false\r
+
+    \        },\r
+
+    \        \"department\": {\r
+
+    \            \"id\": 2,\r
+
+    \            \"departmentname\": \"ERP PC1\",\r
+
+    \            \"departmentcode\": 123,\r
+
+    \            \"halfday\": 12,\r
+
+    \            \"lateloginmax\": 12,\r
+
+    \            \"lateloginmin\": 12,\r
+
+    \            \"latelogoutmax\": 22,\r
+
+    \            \"createdby\": \"admin@vtoo\",\r
+
+    \            \"updatedby\": \"admin@vtoo\",\r
+
+    \            \"createdbydate\": \"2026-05-18T16:20:41.863751\",\r
+
+    \            \"updatedbydate\": \"2026-05-18T16:20:45.171317\"\r
+
+    \        },\r
+
+    \        \"designation\": {\r
+
+    \            \"id\": 1,\r
+
+    \            \"name\": \"Manager\",\r
+
+    \            \"lateloginandearlylogoutallow\": 4,\r
+
+    \            \"createdby\": \"admin@vtoo\",\r
+
+    \            \"updatedby\": \"admin@vtoo\",\r
+
+    \            \"createdbydate\": \"2026-05-18T16:20:54.408771\",\r
+
+    \            \"updatedbydate\": \"2026-05-18T16:20:57.59808\"\r
+
+    \        },\r
+
+    \        \"createdby\": \"admin@vtoo\",\r
+
+    \        \"updatedby\": \"admin@vtoo\",\r
+
+    \        \"createdbydate\": \"2026-05-18T16:22:11.9626\",\r
+
+    \        \"updatedbydate\": \"2026-05-21T15:37:45.327953\"\r
+
+    \    },\r
+
+    \    \"items\": [\r
+
+    \        {\r
+
+    \            \"date\": \"2026-05-22\",\r
+
+    \            \"type\": {\r
+
+    \                \"id\": 2,\r
+
+    \                \"type\": \"Travelling Expense\",\r
+
+    \                \"isActive\": true,\r
+
+    \                \"createdby\": \"admin@vtoo\",\r
+
+    \                \"updatedby\": null,\r
+
+    \                \"createdbydate\": \"2026-05-20T15:10:52.617302\",\r
+
+    \                \"updatedbydate\": null\r
+
+    \            },\r
+
+    \            \"title\": \"qwq\",\r
+
+    \            \"from\": \"bdl\",\r
+
+    \            \"to\": \"ulhas\",\r
+
+    \            \"expenseAmount\": 1200.0,\r
+
+    \            \"remark\": \"qwq\",\r
+
+    \            \"status\": \"APPROVED\",\r
+
+    \            \"approvedAmount\": 1000.0,\r
+
+    \            \"reason\": \"\",\r
+
+    \            \"tempKey\": \"item_1\",\r
+
+    \            \"filePath\": null\r
+
+    \        },\r
+
+    \                {\r
+
+    \            \"id\": 48,\r
+
+    \            \"date\": \"2026-05-22\",\r
+
+    \            \"type\": {\r
+
+    \                \"id\": 2,\r
+
+    \                \"type\": \"Travelling Expense\",\r
+
+    \                \"isActive\": true,\r
+
+    \                \"createdby\": \"admin@vtoo\",\r
+
+    \                \"updatedby\": null,\r
+
+    \                \"createdbydate\": \"2026-05-20T15:10:52.617302\",\r
+
+    \                \"updatedbydate\": null\r
+
+    \            },\r
+
+    \            \"title\": \"qwq\",\r
+
+    \            \"from\": \"bdl\",\r
+
+    \            \"to\": \"ulhas\",\r
+
+    \            \"expenseAmount\": 1200.0,\r
+
+    \            \"remark\": \"qwq\",\r
+
+    \            \"status\": \"APPROVED\",\r
+
+    \            \"approvedAmount\": 1000.0,\r
+
+    \            \"reason\": \"\",\r
+
+    \            \"tempKey\": \"item_2\",\r
+
+    \            \"filePath\": null\r
+
+    \        }\r
+
+    \    ],\r
+
+    \    \"couponname\": \"Ex-08\",\r
+
+    \    \"createdby\": \"admin@vtoo\",\r
+
+    \    \"updatedby\": null,\r
+
+    \    \"createdbydate\": \"2026-05-22T16:16:55.641513\",\r
+
+    \    \"updatedbydate\": null\r
+
+    }"
+order: 3000

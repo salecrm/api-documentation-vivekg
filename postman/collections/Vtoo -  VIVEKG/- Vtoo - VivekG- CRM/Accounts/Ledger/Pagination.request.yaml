@@ -1,0 +1,33 @@
+$kind: http-request
+url: "{{Base url}}/ledger/page"
+method: GET
+queryParams:
+  - key: direction
+    value: desc
+    disabled: true
+  - key: search
+    value: Loan from Bank
+    disabled: true
+  - key: field
+    value: id
+    disabled: true
+  - key: pageSize
+    value: "200"
+    disabled: true
+  - key: filter
+    value: Bank %26 Account
+    disabled: true
+  - key: filter2
+    value: Cash-in-Hand
+    disabled: true
+  - key: except1
+    value: Duties and Taxes
+    disabled: true
+  - key: except2
+    value: Sundry Creditors
+    disabled: true
+auth:
+  type: bearer
+  credentials:
+    token: "{{Password}}"
+order: 5000

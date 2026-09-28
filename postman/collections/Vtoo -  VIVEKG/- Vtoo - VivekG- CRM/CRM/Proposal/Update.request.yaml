@@ -1,0 +1,333 @@
+$kind: http-request
+url: "{{Base url}}/proposal/update/3"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"id\": 3,\r
+
+    \    \"company_name\": \"FutureCore Industries\",\r
+
+    \    \"customer\": {\r
+
+    \        \"id\": 9,\r
+
+    \        \"customername\": \"Dvid Auto Components Pvt. Ltd.\",\r
+
+    \        \"zipcode\": \"600058\",\r
+
+    \        \"phoneno\": \"9876523410\",\r
+
+    \        \"email\": \"contact@skylineauto.com\",\r
+
+    \        \"vatno\": \"VAT-TN-472910\",\r
+
+    \        \"address\": \"No. 45, SIDCO Industrial Estate, Ambattur, Chennai, Tamil Nadu, India\",\r
+
+    \        \"openingbalance\": 38500.0,\r
+
+    \        \"openingbalancetype\": \"Credit\",\r
+
+    \        \"openingbalancedate\": \"2025-10-24\",\r
+
+    \        \"staff\": {\r
+
+    \            \"id\": 2,\r
+
+    \            \"staffId\": \"STF004\",\r
+
+    \            \"firstName\": \"Amit\",\r
+
+    \            \"lastName\": \"Sharma\",\r
+
+    \            \"userName\": \"amit.sharma\",\r
+
+    \            \"password\": \"$2a$10$ZGfDDOg4AfG/ZL/Gn.177OOEB9jugCU7Bt8spLR.q.R/PJwzzhG7.\",\r
+
+    \            \"email\": \"amit.sharma@example.com\",\r
+
+    \            \"phoneNo\": \"9876543210\",\r
+
+    \            \"gender\": \"Male\",\r
+
+    \            \"roles\": [\r
+
+    \                {\r
+
+    \                    \"id\": 1,\r
+
+    \                    \"roleName\": \"ADMIN\"\r
+
+    \                }\r
+
+    \            ]\r
+
+    \        },\r
+
+    \        \"countries\": {\r
+
+    \            \"id\": 2,\r
+
+    \            \"countryName\": \"Albania\"\r
+
+    \        },\r
+
+    \        \"states\": {\r
+
+    \            \"id\": 31,\r
+
+    \            \"stateName\": \"Pondicherry\",\r
+
+    \            \"countryId\": 101\r
+
+    \        },\r
+
+    \        \"cities\": {\r
+
+    \            \"id\": 25,\r
+
+    \            \"cityName\": \"Badvel\",\r
+
+    \            \"stateId\": 2\r
+
+    \        },\r
+
+    \        \"company\": null,\r
+
+    \        \"createdby\": \"amit.sharma\",\r
+
+    \        \"updatedby\": null,\r
+
+    \        \"createdbydate\": \"2025-10-27\",\r
+
+    \        \"updatedbydate\": null\r
+
+    \    },\r
+
+    \    \"contact_name\": \"David Lee\",\r
+
+    \    \"client_name\": \"Skyline Traders LLC\",\r
+
+    \    \"mobile_no\": \"+971504567890\",\r
+
+    \    \"email\": \"david@skyline.com\",\r
+
+    \    \"address\": \"Business Bay, Dubai, UAE\",\r
+
+    \    \"countries\": {\r
+
+    \        \"id\": 2,\r
+
+    \        \"countryName\": \"Albania\"\r
+
+    \    },\r
+
+    \    \"states\": {\r
+
+    \        \"id\": 31,\r
+
+    \        \"stateName\": \"Pondicherry\",\r
+
+    \        \"countryId\": 101\r
+
+    \    },\r
+
+    \    \"cities\": {\r
+
+    \        \"id\": 25,\r
+
+    \        \"cityName\": \"Badvel\",\r
+
+    \        \"stateId\": 2\r
+
+    \    },\r
+
+    \    \"postal_code\": \"67890\",\r
+
+    \    \"delivery_address\": \"Warehouse 9, Al Quoz Industrial Area, Dubai\",\r
+
+    \    \"items\": [\r
+
+    \        {\r
+
+    \            \"id\": 5,\r
+
+    \            \"product\": {\r
+
+    \                \"id\": 12,\r
+
+    \                \"productname\": \"FINISHED PRODUCT 1\",\r
+
+    \                \"partno\": \"963\",\r
+
+    \                \"producttype\": \"Finished\",\r
+
+    \                \"eancode\": 0.0,\r
+
+    \                \"glp\": 1000.0,\r
+
+    \                \"basecost\": 1000.0,\r
+
+    \                \"importcost\": 98.0,\r
+
+    \                \"total\": 0.0,\r
+
+    \                \"brand\": {\r
+
+    \                    \"id\": 5,\r
+
+    \                    \"name\": \"Prada\",\r
+
+    \                    \"createdby\": null,\r
+
+    \                    \"updatedby\": null,\r
+
+    \                    \"createdbydate\": null,\r
+
+    \                    \"updatedbydate\": null\r
+
+    \                },\r
+
+    \                \"createdby\": \"amit.sharma\",\r
+
+    \                \"updatedby\": null,\r
+
+    \                \"createdbydate\": \"2025-10-27\",\r
+
+    \                \"updatedbydate\": null\r
+
+    \            },\r
+
+    \            \"description\": \"Industrial Gear Set\",\r
+
+    \            \"partcode\": \"IGS-100\",\r
+
+    \            \"qty\": 30.0,\r
+
+    \            \"price\": 500.0,\r
+
+    \            \"rate\": 500.0,\r
+
+    \            \"discount\": 5.0,\r
+
+    \            \"total\": 14250.0,\r
+
+    \            \"createdby\": \"admin\",\r
+
+    \            \"updatedby\": \"admin\",\r
+
+    \            \"createdbydate\": \"2025-11-04\",\r
+
+    \            \"updatedbydate\": \"2025-11-04\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"id\": 6,\r
+
+    \            \"product\": {\r
+
+    \                \"id\": 14,\r
+
+    \                \"productname\": \"fgg\",\r
+
+    \                \"partno\": \"333\",\r
+
+    \                \"producttype\": \"Raw Material\",\r
+
+    \                \"eancode\": 0.0,\r
+
+    \                \"glp\": 111.0,\r
+
+    \                \"basecost\": 111.0,\r
+
+    \                \"importcost\": 111.0,\r
+
+    \                \"total\": 0.0,\r
+
+    \                \"brand\": {\r
+
+    \                    \"id\": 5,\r
+
+    \                    \"name\": \"Prada\",\r
+
+    \                    \"createdby\": null,\r
+
+    \                    \"updatedby\": null,\r
+
+    \                    \"createdbydate\": null,\r
+
+    \                    \"updatedbydate\": null\r
+
+    \                },\r
+
+    \                \"createdby\": \"amit.sharma\",\r
+
+    \                \"updatedby\": null,\r
+
+    \                \"createdbydate\": \"2025-10-27\",\r
+
+    \                \"updatedbydate\": null\r
+
+    \            },\r
+
+    \            \"description\": \"Steel Rod 10mm x 6m\",\r
+
+    \            \"partcode\": \"SR-10X6\",\r
+
+    \            \"qty\": 150.0,\r
+
+    \            \"price\": 80.0,\r
+
+    \            \"rate\": 80.0,\r
+
+    \            \"discount\": 10.0,\r
+
+    \            \"total\": 10800.0,\r
+
+    \            \"createdby\": null,\r
+
+    \            \"updatedby\": null,\r
+
+    \            \"createdbydate\": null,\r
+
+    \            \"updatedbydate\": null\r
+
+    \        }\r
+
+    \    ],\r
+
+    \    \"sales_person\": \"Mona Patil\",\r
+
+    \    \"vat_no\": \"AE-VAT-445566\",\r
+
+    \    \"payment_terms\": \"30% advance, balance on delivery\",\r
+
+    \    \"attachment_file\": \"proposal_futurecore_045.pdf\",\r
+
+    \    \"order_date\": \"2025-11-04\",\r
+
+    \    \"delivery_date\": \"2025-11-20\",\r
+
+    \    \"remarks\": \"Ensure quality inspection report included.\",\r
+
+    \    \"billing_address\": \"Office 305, Business Bay Tower, Dubai\",\r
+
+    \    \"shipping_address\": \"Warehouse 9, Al Quoz Industrial Area, Dubai\",\r
+
+    \    \"createdby\": \"amit.sharma\",\r
+
+    \    \"updatedby\": \"amit.sharma\",\r
+
+    \    \"createdbydate\": \"2025-11-04\",\r
+
+    \    \"updatedbydate\": \"2025-11-04\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+order: 4000

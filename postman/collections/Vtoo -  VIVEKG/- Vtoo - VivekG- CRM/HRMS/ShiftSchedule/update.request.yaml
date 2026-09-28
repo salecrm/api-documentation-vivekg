@@ -1,0 +1,31 @@
+$kind: http-request
+url: 192.168.1.221:8080/api/v1/shiftSchedule/1
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"fromtime\":\"11:00:00\",\r
+
+    \    \"totime\":\"19:00:00\",\r
+
+    \    \"days\":\"Monday\",\r
+
+    \    \r
+
+    \     \"shift\":{\r
+
+    \        \"id\":1,\r
+
+    \        \"name\":\"MorningShift\",\r
+
+    \        \"status\":\"qrt\"\r
+
+    \    }\r
+
+    \    }"
+auth:
+  type: bearer
+  credentials:
+    token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbjEyMyIsImlhdCI6MTc2NTE3NjIyOSwiZXhwIjoxNzY1MjYyNjI5fQ.DKP2BBvqTNYaxTfriSbcvkRSbj27eXuEUiZI-SPVN4w
+order: 5000

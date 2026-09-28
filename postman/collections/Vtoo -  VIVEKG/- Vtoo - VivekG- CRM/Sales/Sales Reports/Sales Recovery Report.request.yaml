@@ -1,0 +1,16 @@
+$kind: http-request
+url: "{{Base Url}}/si/sales-recovery-report?pageNumber=&pageSize=&field=&direction=&daysToDue=&salesPersonId=&startDate=&endDate=&dateRange=&search=&customerId"
+method: GET
+queryParams:
+  pageNumber: ""
+  pageSize: ""
+  field: ""
+  direction: ""
+  daysToDue: ""
+  salesPersonId: ""
+  startDate: ""
+  endDate: ""
+  dateRange: ""
+  search: ""
+  customerId: null
+order: 11000

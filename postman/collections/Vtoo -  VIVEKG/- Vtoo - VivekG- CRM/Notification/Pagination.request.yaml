@@ -1,0 +1,10 @@
+$kind: http-request
+url: "{{Base url}}/notification/page?search="
+method: GET
+queryParams:
+  search: ""
+auth:
+  type: bearer
+  credentials:
+    token: "{{Password}}"
+order: 3000

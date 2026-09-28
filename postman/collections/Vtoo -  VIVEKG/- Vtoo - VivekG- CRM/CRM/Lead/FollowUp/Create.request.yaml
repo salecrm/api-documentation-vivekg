@@ -1,0 +1,21 @@
+$kind: http-request
+url: "{{Base url}}/lead/follow-up/create"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    //   \"date\": \"2025-11-08\",\r
+
+    //   \"time\": \"14:30:00\",\r
+
+    \  \"name\": \"John Doe\",\r
+
+    //   \"message\": \"Followed up regarding the pending quotation.\",\r
+
+    \  \"message\": \"latest mess.\",\r
+
+    \  \"lead\": 17\r
+
+    }\r\n"
+order: 1000

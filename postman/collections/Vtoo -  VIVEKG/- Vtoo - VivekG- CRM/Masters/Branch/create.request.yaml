@@ -1,0 +1,47 @@
+$kind: http-request
+url: "{{Base url}}/branch/create"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"branchname\": \"Andheri head office\",\r
+
+    \  \"organizationname\": \"ECCS Pvt Ltd\",\r
+
+    \  \"picname\": \"kunal kamra\",\r
+
+    \  \"picemil\": \"kunal.kamra@eccs.com\",\r
+
+    \  \"picphoneno\": \"9876543210\",\r
+
+    \  \"street1\": \"2nd Floor, Business Park\",\r
+
+    \  \"street2\": \"Andheri East\",\r
+
+    \  \"zipcode\": \"400069\"\r
+
+    //   ,\r
+
+    \r
+
+    //   \"states\": {\r
+
+    //     \"id\": 22\r
+
+    //   },\r
+
+    //   \"countries\": {\r
+
+    //     \"id\": 101\r
+
+    //   },\r
+
+    //   \"cities\": {\r
+
+    //     \"id\": 2707\r
+
+    //   }\r
+
+    }\r\n"
+order: 1000

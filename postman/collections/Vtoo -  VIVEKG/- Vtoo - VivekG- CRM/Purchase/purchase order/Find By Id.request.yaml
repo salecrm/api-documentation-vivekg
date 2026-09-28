@@ -1,0 +1,142 @@
+$kind: http-request
+url: "{{Base url}}/purchaseorder/findById/47"
+method: GET
+body:
+  type: text
+  content: "{\r
+
+    \  \"grndate\": \"2026-02-16\",\r
+
+    \  \"grnno\": \"GRN-2026-0001\",\r
+
+    \  \"recievedby\": \"Warehouse_Manager\",\r
+
+    \  \"deliverynote\": \"DN-PAGANI-99\",\r
+
+    \  \"remark\": \"Received Pagani Sports Car in perfect condition. Converted from PO-2026-001-PAGANI.\",\r
+
+    \  \"status\": \"RECEIVED\",\r
+
+    \  \"subtotal\": 40000000.0,\r
+
+    \  \"shippingcharge\": 0.0,\r
+
+    \  \"discountcharge\": 0.0,\r
+
+    \  \"grosstotal\": 40000000.0,\r
+
+    \  \"vat\": \"40%\",\r
+
+    \  \"vatamount\": 16000000.0,\r
+
+    \  \"amounttotal\": 56000000.0,\r
+
+    \  \"roundofvalue\": 0.0,\r
+
+    \  \"purchasedate\": \"2026-02-16\",\r
+
+    \  \"supplierinvoiceno\": \"INV-PAG-001\",\r
+
+    \  \"shippingaddress\": \"Main Showroom, Sector 5\",\r
+
+    \  \"billingaddress\": \"Corporate HQ, Finance Dept\",\r
+
+    \  \"createdby\": \"amit.sharma\",\r
+
+    \  \"createdbydate\": \"2026-02-16\",\r
+
+    \  \"warehouse\": {\r
+
+    \    \"id\": 1\r
+
+    \  },\r
+
+    \  \"suppliercompanyname\": {\r
+
+    \    \"id\": 1\r
+
+    \  },\r
+
+    \  \"suppliername\": \"Supplier ID 1\",\r
+
+    \  \"purchaseOrderId\": 45,\r
+
+    \  \"suppliervatno\": \"VAT-PENDING\",\r
+
+    \  \"subcontactname\": \"Amit Sharma\",\r
+
+    \  \"couponname\": \"PO-1\",\r
+
+    \  \"subject\": \"Procurement of Pagani Sports Car\",\r
+
+    \  \"paymentterms\": \"Due on Receipt\",\r
+
+    \  \"duedate\": \"2026-03-10\",\r
+
+    \  \"paid\": 0.0,\r
+
+    \  \"staff\": {\r
+
+    \    \"id\": 1\r
+
+    \  },\r
+
+    \  \"purchaseItems\": [\r
+
+    \    {\r
+
+    \      \"description\": \"Pagani Sports Car\",\r
+
+    \      \"partcode\": \"ST-990-XP\",\r
+
+    \      \"qty\": 1.0,\r
+
+    \      \"price\": 40000000.0,\r
+
+    \      \"rate\": 40000000.0,\r
+
+    \      \"discount\": 0.0,\r
+
+    \      \"total\": 40000000.0,\r
+
+    \      \"uom\": 55,\r
+
+    \      \"po_no\": \r
+
+    \    //   null \r
+
+    \      {\r
+
+    \        \"id\": 45\r
+
+    \      }\r
+
+    \      ,\r
+
+    \      \"product\": {\r
+
+    \        \"id\": 1\r
+
+    \      }\r
+
+    \    }\r
+
+    \  ],\r
+
+    \  \"againstRequisition\": [\r
+
+    \    // {\r
+
+    \    //   \"id\": 1\r
+
+    \    // }\r
+
+    \  ]\r
+
+    }\r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+settings: {}
+order: 6000

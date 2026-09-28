@@ -1,0 +1,19 @@
+$kind: http-request
+url: "{{Super Admin Base Url}}/modules/create"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \t\"moduleName\": \"E-Invoicing\",\r
+
+    \t\"type\": \"Feature\",\r
+
+    \    \"countries\": [2]\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{Super Admin Bearer Token}}"
+order: 1000

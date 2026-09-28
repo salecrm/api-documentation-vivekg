@@ -1,0 +1,11 @@
+$kind: http-request
+url: "{{Super Admin Base Url}}/subscription/pack/delete"
+method: DELETE
+body:
+  type: json
+  content: "[2,3]"
+auth:
+  type: bearer
+  credentials:
+    token: "{{Super Admin Bearer Token}}"
+order: 2000

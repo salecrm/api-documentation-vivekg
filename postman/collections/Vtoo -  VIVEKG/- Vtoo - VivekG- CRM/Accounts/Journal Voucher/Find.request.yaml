@@ -1,0 +1,58 @@
+$kind: http-request
+url: "{{Base url}}/jv/findById/17"
+method: GET
+body:
+  type: text
+  content: "{\r
+
+    \  \"transactionalDate\": \"2026-01-14\",\r
+
+    \  \"transactionalAmount\": 50.0,\r
+
+    \  \"entries\": [\r
+
+    \    {\r
+
+    \      \"particular\": 13,\r
+
+    \      \"adjustmentType\": \"Adjustment\",\r
+
+    \      \"refrence\": \"REF123\",\r
+
+    \      \"externalInvoice\": 44,\r
+
+    \    //   \"internalInvoice\": 201,\r
+
+    \      \"amount\": 50.0,\r
+
+    \      \"entryType\": \"DEBIT\"\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"particular\": 26,\r
+
+    \      \"adjustmentType\": \"Adjustment B\",\r
+
+    \      \"refrence\": \"REF124\",\r
+
+    \    //   \"externalInvoice\": 44,\r
+
+    \      \"internalInvoice\": 14,\r
+
+    \      \"amount\": 50.0,\r
+
+    \      \"entryType\": \"CREDIT\"\r
+
+    \    }\r
+
+    \  ]\r
+
+    }\r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+settings: {}
+order: 2000

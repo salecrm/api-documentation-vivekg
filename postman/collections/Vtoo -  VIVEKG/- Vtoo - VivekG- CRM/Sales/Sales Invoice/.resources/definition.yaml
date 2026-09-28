@@ -1,0 +1,26 @@
+$kind: collection
+description: |-
+  StartFragment
+
+  ---
+
+  | **Create Sales Invoice** → **POST**  
+  `/api/v1/si/create`
+
+  | **Find Sales Invoice by ID** → **GET**  
+  `/api/v1/si/findById/{id}`
+
+  | **Update Sales Invoice** → **PUT**  
+  `/api/v1/si/update/{id}`
+
+  | **Delete Sales Invoice** → **DELETE**  
+  `/api/v1/si/delete/{id}`
+
+  | **Pagination & Search** → **GET**  
+  `/api/v1/si/page?pageNumber=&pageSize=&field=id&direction=desc&search=abc`
+
+  | **Get Pending Sales Orders** → **GET**  
+  `/api/v1/si/pending-orders?customerId=&productId=`
+
+  EndFragment
+order: 3000

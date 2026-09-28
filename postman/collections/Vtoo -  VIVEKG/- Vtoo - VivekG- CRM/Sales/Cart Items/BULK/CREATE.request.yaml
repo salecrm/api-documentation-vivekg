@@ -1,0 +1,33 @@
+$kind: http-request
+url: "{{Base url}}/cart/bulk-create"
+method: POST
+body:
+  type: json
+  content: "[\r
+
+    \  {\r
+
+    \    \"user\": 1,\r
+
+    \    \"product\": { \"id\": 1 },\r
+
+    \    \"quantity\": 2.0\r
+
+    \  },\r
+
+    \  {\r
+
+    \    \"user\": 1,\r
+
+    \    \"product\": { \"id\": 2 },\r
+
+    \    \"quantity\": 5.0\r
+
+    \  }\r
+
+    ]"
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+order: 1000

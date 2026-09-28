@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{Base Url}}/customer/delete/11"
+method: DELETE
+order: 4000

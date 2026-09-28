@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{Base url}}/supplier/delete/44"
+method: DELETE
+auth:
+  type: bearer
+  credentials:
+    token: "{{crm tanmay}}"
+order: 3000

@@ -1,0 +1,33 @@
+$kind: http-request
+url: "{{Base Url}}/price-list/update/3"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"id\": 2,\r
+
+    \    \"name\": \"Discounted Wholesale Price List\",\r
+
+    \    \"description\": \"Default price list for wholesale transactions for 2026\",\r
+
+    \    \"transaction_type\": \"SALE\",\r
+
+    \    \"listType\": \"ALL ITEMS\",\r
+
+    \    \"priceRatingType\": \"MARK DOWN\",\r
+
+    \    \"priceRating\": 10.0,\r
+
+    \    \"individualPriceList\": [],\r
+
+    \    \"createdby\": \"admin@vtoo\",\r
+
+    \    \"updatedby\": null,\r
+
+    \    \"createdbydate\": \"2026-07-22T17:15:11.602091\",\r
+
+    \    \"updatedbydate\": null\r
+
+    }"
+order: 3000

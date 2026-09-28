@@ -1,0 +1,39 @@
+$kind: http-request
+url: "{{Base url}}/contract/create"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"customer\": { \"id\": 1 },\r
+
+    \  \"sla\": { \"id\": 1 },\r
+
+    \  \"contractType\": { \"id\": 1 }, \r
+
+    \  \"contactPerson\": \"John Doe\",\r
+
+    \  \"contractTitle\": { \"id\": 28 },\r
+
+    //   \"status\": \"OPEN\",\r
+
+    \  \"contractValue\": 15000.0,\r
+
+    \  \"billingType\": \"MONTH\",\r
+
+    \  \"billingValue\": 1250.0,\r
+
+    \  \"startDate\": \"2026-02-10\",\r
+
+    \  \"endDate\": \"2026-05-10\",\r
+
+    \  \"visitType\": \"MONTHLY\",\r
+
+    \  \"autoRenewal\": false,\r
+
+    \  \"autoBilling\": true,\r
+
+    \  \"description\": \"Standard service contract\"\r
+
+    }\r\n"
+order: 1000

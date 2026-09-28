@@ -1,0 +1,11 @@
+$kind: http-request
+url: "{{Super Admin Base Url}}/license/index?search=&direction=desc"
+method: GET
+queryParams:
+  search: ""
+  direction: desc
+auth:
+  type: bearer
+  credentials:
+    token: "{{Super Admin Bearer Token}}"
+order: 7000

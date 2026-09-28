@@ -1,0 +1,12 @@
+$kind: http-request
+url: http://192.168.1.226:8081/api/si/pending-items?customerId=7&productId=3&so_id=5
+method: GET
+queryParams:
+  customerId: "7"
+  productId: "3"
+  so_id: "5"
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+order: 8000

@@ -1,0 +1,37 @@
+$kind: http-request
+url: "{{Base url}}/cart/bulk-update"
+method: PUT
+body:
+  type: json
+  content: "[\r
+
+    \  {\r
+
+    \    \"id\": 4,\r
+
+    \    \"user\": 1,\r
+
+    \    \"product\": { \"id\": 1 },\r
+
+    \    \"quantity\": 2.0\r
+
+    \  },\r
+
+    \  {\r
+
+    \    \"id\": 5,\r
+
+    \    \"user\": 1,\r
+
+    \    \"product\": { \"id\": 2 },\r
+
+    \    \"quantity\": 4.0\r
+
+    \  }\r
+
+    ]"
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+order: 2000

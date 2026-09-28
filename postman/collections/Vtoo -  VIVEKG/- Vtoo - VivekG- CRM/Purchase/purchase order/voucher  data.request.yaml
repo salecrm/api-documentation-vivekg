@@ -1,0 +1,115 @@
+$kind: http-request
+url: http://192.168.1.227:8081/api/v1/purchaseorder/create
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"purchaseorderdate\": \"2025-12-01\",\r
+
+    \  \"subcontactname\": \"Shree Electronics - Subcontact\",\r
+
+    \  \"paymentterms\": \"Net 45\",\r
+
+    \  \"deliverylocation\": \"Pune Warehouse\",\r
+
+    \  \"deliverydate\": \"2025-12-10\",\r
+
+    \  \"shippingmethod\": \"Air Freight\",\r
+
+    \  \"subtotal\": 25000,\r
+
+    \  \"shippingcharge\": 1000,\r
+
+    \  \"discountcharge\": 500,\r
+
+    \  \"grosstotal\": 25500,\r
+
+    \  \"vat\": \"12\",\r
+
+    \  \"vatamount\": 3060,\r
+
+    \  \"amounttotal\": 28560,\r
+
+    \  \"shippingaddress\": \"Hadapsar Pune Highway Road 12\",\r
+
+    \  \"billingaddress\": \"Bhosari MIDC Area 20\",\r
+
+    \  \"roundofvalue\": 0,\r
+
+    \  \"remark\": \"Handle with care\",\r
+
+    \  \"suppliervatno\": \"GSTIN-27ABCDE9876F1Z2\",\r
+
+    \  \"cname\": \"PO-2026\",\r
+
+    \  \"suppliernme\":\"\",\r
+
+    \  \"suppliercompanyname\": {\r
+
+    \    \"id\": 2\r
+
+    \  },\r
+
+    \  \"purchaseOrderItems\": [\r
+
+    \    {\r
+
+    \      \"description\": \"Servo Motor\",\r
+
+    \      \"partcode\": \"MTR-005\",\r
+
+    \      \"qty\": 8,\r
+
+    \      \"price\": 1500,\r
+
+    \      \"rate\": 1500,\r
+
+    \      \"discount\": 10,\r
+
+    \      \"total\": 13500,\r
+
+    \      \"uom\": \"PCS\",\r
+
+    \      \"product\": {\r
+
+    \        \"id\": 4\r
+
+    \      }\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"description\": \"Conveyor Belt\",\r
+
+    \      \"partcode\": \"BLT-025\",\r
+
+    \      \"qty\": 12,\r
+
+    \      \"price\": 700,\r
+
+    \      \"rate\": 700,\r
+
+    \      \"discount\": 0,\r
+
+    \      \"total\": 8400,\r
+
+    \      \"uom\": \"PCS\",\r
+
+    \      \"product\": {\r
+
+    \        \"id\": 6\r
+
+    \      }\r
+
+    \    }\r
+
+    \  ]\r
+
+    }\r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{crm tanmay}}"
+order: 1000

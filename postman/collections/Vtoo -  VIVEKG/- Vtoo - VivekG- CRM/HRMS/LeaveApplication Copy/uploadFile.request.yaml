@@ -1,0 +1,10 @@
+$kind: http-request
+url: "{{Base Url}}/leaveApplication/uploadimage/5"
+method: POST
+body:
+  type: formdata
+  content:
+    - type: file
+      key: files
+      src: /C:/Users/LNV104/Pictures/original-notification centerwebp.webp
+order: 7000

@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{Base url}}/cart/staff/4/items?pageNumber=&pageSize=&field=&direction=&search="
+method: GET
+queryParams:
+  pageNumber: ""
+  pageSize: ""
+  field: ""
+  direction: ""
+  search: ""
+auth:
+  type: bearer
+  credentials:
+    token: "{{Password}}"
+order: 6000

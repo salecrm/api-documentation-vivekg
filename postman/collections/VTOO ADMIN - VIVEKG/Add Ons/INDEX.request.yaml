@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{Super Admin Base Url}}/add-ons/index"
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: "{{Super Admin Bearer Token}}"
+order: 6000

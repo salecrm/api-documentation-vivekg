@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{Base url}}/brs/update/14?date=2026-04-30&isPass=true&isBounce=false"
+method: PUT
+queryParams:
+  date: 2026-04-30
+  isPass: "true"
+  isBounce: "false"
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+order: 2000

@@ -1,0 +1,35 @@
+$kind: http-request
+url: "{{Base url}}/product/delete/6"
+method: DELETE
+body:
+  type: text
+  content: "{\r
+
+    \  \"productname\": \"Tractor Model 123\",\r
+
+    \  \"partno\": 987651111,\r
+
+    \  \"producttype\": \"Agricultural Machinery\",\r
+
+    \  \"hsncode\": 8701,\r
+
+    \  \"enacode\": 12345,\r
+
+    \  \"glp\": \"GLP987\",\r
+
+    \  \"basecost\": 150000.00,\r
+
+    \  \"importcost\": 15500.50,\r
+
+    \  \"brand\": {\r
+
+    \    \"id\": 6\r
+
+    \  }\r
+
+    }\r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+order: 4000

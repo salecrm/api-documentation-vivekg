@@ -1,0 +1,10 @@
+$kind: http-request
+url: "{{Base Url}}/price-list/page?pageNumber=&pageSize=&field=&direction=desc&search=Discounted"
+method: GET
+queryParams:
+  pageNumber: ""
+  pageSize: ""
+  field: ""
+  direction: desc
+  search: Discounted
+order: 5000

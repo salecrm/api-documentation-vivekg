@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{Base Url}}/document/view/12"
+method: GET
+order: 9000

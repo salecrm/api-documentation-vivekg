@@ -1,0 +1,147 @@
+$kind: http-request
+url: "{{Base url}}/customer/create"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"companyname\": \"TATA Consultancy Services\",\r
+
+    \  \"phoneno\": \"02267789999\",\r
+
+    \  \"email\": \"corporate.office@tcs.com\",\r
+
+    \  \"designation\": \"Director\",\r
+
+    \  \"vatno\": \"27AAACT2854L1Z2\",\r
+
+    \r
+
+    //   \"openingbalance\": 50000,\r
+
+    //   \"openingbalancetype\": \"DEBIT\",\r
+
+    \  \"openingbalancedate\": \"2025-02-01\",\r
+
+    //   \"status\": \"ACTIVE\",\r
+
+    \r
+
+    \  \"salutation\": \"Mr\",\r
+
+    \  \"firstname\": \"K\",\r
+
+    \  \"lastname\": \"Krithivasan\",\r
+
+    \  \"displayname\": \"Mr K Krithivasan\",\r
+
+    \  \"customercategory\": \"Enterprise\",\r
+
+    \r
+
+    \  \"taxtreatment\": \"GST Registered\",\r
+
+    \  \"taxregistrationnumber\": \"27AAACT2854L1Z2\",\r
+
+    \  \"currency\": \"INR\",\r
+
+    \r
+
+    \  \"placeofsupplycountries\": {\r
+
+    \    \"id\": 101\r
+
+    \  },\r
+
+    \r
+
+    \  \"paymentTerms\": null,\r
+
+    \r
+
+    \  \"billingaddressattention\": \"Finance Head\",\r
+
+    \  \"billingaddressstreet1\": \"TCS House\",\r
+
+    \  \"billingaddressstreet2\": \"Raveline Street, Fort\",\r
+
+    \  \"billingcity\": \"Mumbai\",\r
+
+    \  \"billingstates\": {\r
+
+    \    \"id\": 22\r
+
+    \  },\r
+
+    \  \"billingcountries\": {\r
+
+    \    \"id\": 101\r
+
+    \  },\r
+
+    \  \"billingzipcode\": \"400001\",\r
+
+    \  \"billingphone\": \"02267789366\",\r
+
+    \r
+
+    \  \"shippingaddressattention\": \"IT Procurement\",\r
+
+    \  \"shippingaddressstreet1\": \"Olympia, Hiranandani Business Park\",\r
+
+    \  \"shippingaddressstreet2\": \"Powai\",\r
+
+    \  \"shippingcity\": \"Mumbai\",\r
+
+    \  \"shippingstates\": {\r
+
+    \    \"id\": 22\r
+
+    \  },\r
+
+    \  \"shippingcountries\": {\r
+
+    \    \"id\": 101\r
+
+    \  },\r
+
+    \  \"shippingzipcode\": \"400076\",\r
+
+    \  \"shippingphone\": \"02267789595\",\r
+
+    \r
+
+    \  \"workphone\": \"02267789191\",\r
+
+    \r
+
+    \  \"customerSubContacts\": [\r
+
+    \    {\r
+
+    \      \"customername\": \"Samir Seksaria\",\r
+
+    \      \"email\": \"samir.seksaria@tcs.com\",\r
+
+    \      \"phoneno\": \"9988776655\",\r
+
+    \      \"designation\": \"CFO\"\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"customername\": \"Milind Lakkad\",\r
+
+    \      \"email\": \"m.lakkad@tcs.com\",\r
+
+    \      \"phoneno\": \"9988774433\",\r
+
+    \      \"designation\": \"CHRO\"\r
+
+    \    }\r
+
+    \  ]\r
+
+    }"
+order: 1000

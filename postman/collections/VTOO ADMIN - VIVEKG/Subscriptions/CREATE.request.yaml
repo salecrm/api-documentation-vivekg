@@ -1,0 +1,27 @@
+$kind: http-request
+url: "{{Super Admin Base Url}}/subscription/create"
+method: POST
+body:
+  type: json
+  content: "{\t\r
+
+    \    \"companyId\": 3,\r
+
+    \t\"subscriptionKey\": \"SUB-2026-8942\",\r
+
+    \t\"subscriptionType\": \"PAID\",\r
+
+    \t\"validity\": \"monthly\",\r
+
+    \t\"amount\": 1200,\r
+
+    \t\"renewalDate\": \"2026-08-31T15:56:39.162417\",\r
+
+    \t\"status\": \"ACTIVE\"\r
+
+    } "
+auth:
+  type: bearer
+  credentials:
+    token: "{{Super Admin Bearer Token}}"
+order: 2000

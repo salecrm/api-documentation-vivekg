@@ -1,0 +1,40 @@
+$kind: http-request
+url: "{{Base url}}/contra/findById/1"
+method: GET
+body:
+  type: text
+  content: "{\r
+
+    \  \"date\": \"2026-02-05\",\r
+
+    \  \"amount\": 15000.00,\r
+
+    \  \"debitLedger\": {\r
+
+    \    \"id\": 5\r
+
+    \  },\r
+
+    \  \"creditLedger\": {\r
+
+    \    \"id\": 15\r
+
+    \  },\r
+
+    \  \"paymentMode\": \"CHEQUE\",\r
+
+    \  \"chequeDate\": \"2026-02-05\",\r
+
+    \  \"chequeNo\": \"CHQ-458963\",\r
+
+    \  \"refrence\": \"Cash deposited to bank\",\r
+
+    \  \"denominations\": null\r
+
+    }\r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+settings: {}
+order: 2000

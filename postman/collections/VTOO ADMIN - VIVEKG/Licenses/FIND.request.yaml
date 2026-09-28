@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{Super Admin Base Url}}/license/find/1"
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: "{{Super Admin Bearer Token}}"
+order: 3000

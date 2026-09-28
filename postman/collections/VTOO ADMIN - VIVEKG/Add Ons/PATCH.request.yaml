@@ -1,0 +1,37 @@
+$kind: http-request
+url: "{{Super Admin Base Url}}/add-ons/patch/1"
+method: PATCH
+body:
+  type: json
+  content: "{\r
+
+    \    \"name\": \"Storage 200MBs\",\r
+
+    \    \"description\": \"200 MBs added to the total storage available\",\r
+
+    \    \"cost\": 100.00,\r
+
+    \    \"packageWiseCostings\": [\r
+
+    \        {\r
+
+    \            \"packageCost\": 1,\r
+
+    \            \"maxLimit\": 10,\r
+
+    \            \"cost\": 100\r
+
+    \        }\r
+
+    \    ],\r
+
+    \    \"storageInMbs\": 200,\r
+
+    \    \"users\": 0\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{Super Admin Bearer Token}}"
+order: 3000

@@ -1,0 +1,27 @@
+$kind: http-request
+url: http://192.168.1.227:8081/api/ledger/create
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"title\": \"Axis Bank Account\",\r
+
+    \  \"openingbalance\": 125000.00,\r
+
+    \  \"openingbalancetype\": \"Debit\",\r
+
+    \  \"openingbalancedate\": \"2025-09-02\",\r
+
+    \  \"ledgergroup\": {\r
+
+    \    \"id\": 2\r
+
+    \  }\r
+
+    }\r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{crm tanmay}}"
+order: 1000

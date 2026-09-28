@@ -1,0 +1,8 @@
+$kind: http-request
+url: http://192.168.1.21:8081/api/customer/delete/1
+method: DELETE
+auth:
+  type: bearer
+  credentials:
+    token: "{{crm tanmay}}"
+order: 4000

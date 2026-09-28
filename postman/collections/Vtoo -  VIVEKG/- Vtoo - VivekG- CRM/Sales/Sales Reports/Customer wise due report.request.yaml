@@ -1,0 +1,45 @@
+$kind: http-request
+url: "{{Base url}}/si/due-report/74?pageSize=40"
+method: GET
+queryParams:
+  - key: pageNumber
+    value: "0"
+    disabled: true
+  - key: pageSize
+    value: "40"
+  - key: search
+    value: SI2025-002
+    disabled: true
+  - key: startDate
+    value: 2025-12-09
+    disabled: true
+  - key: endDate
+    value: 2026-01-14
+    disabled: true
+  - key: range
+    value: 31-45
+    disabled: true
+  - key: field
+    value: dueDate
+    disabled: true
+  - key: direction
+    value: |
+      desc
+    disabled: true
+body:
+  type: json
+  content: "// CURRENT\r
+
+    // 1-15\r
+
+    // 16-30\r
+
+    // 31-45\r
+
+    // 45_ABOVE"
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+settings: {}
+order: 10000

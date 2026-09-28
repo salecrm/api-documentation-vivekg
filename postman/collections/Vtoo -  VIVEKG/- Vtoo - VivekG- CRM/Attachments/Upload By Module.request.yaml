@@ -1,0 +1,15 @@
+$kind: http-request
+url: "{{Server}}/attachments/upload?module=pfp&id=1"
+method: POST
+queryParams:
+  module: pfp
+  id: "1"
+body:
+  type: formdata
+  content:
+    - type: file
+      key: file
+      src: /C:/Users/LNV104/Pictures/sample_pfp.jpg
+auth:
+  type: noauth
+order: 1000

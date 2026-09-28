@@ -1,0 +1,4 @@
+$kind: http-request
+url: http://192.168.1.226:8081/api/v1/sse/stream/unreaded
+method: GET
+order: 8000

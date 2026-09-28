@@ -1,0 +1,11 @@
+$kind: http-request
+url: "{{Base Url}}/expense-type/create"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"type\": \"Legal Expense\"\r
+
+    }"
+order: 1000

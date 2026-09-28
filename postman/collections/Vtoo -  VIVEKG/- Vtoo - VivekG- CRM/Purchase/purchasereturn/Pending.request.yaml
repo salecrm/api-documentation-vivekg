@@ -1,0 +1,15 @@
+$kind: http-request
+url: "{{Base url}}/purchasereturn/pending?purchase=74&product=1&pageNumber&pageSize&field&direction"
+method: GET
+queryParams:
+  purchase: "74"
+  product: "1"
+  pageNumber: null
+  pageSize: null
+  field: null
+  direction: null
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+order: 6000

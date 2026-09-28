@@ -1,0 +1,4 @@
+$kind: http-request
+url: 66.116.199.85:8080/hrms/api/v1/shifttouser/52
+method: DELETE
+order: 4000

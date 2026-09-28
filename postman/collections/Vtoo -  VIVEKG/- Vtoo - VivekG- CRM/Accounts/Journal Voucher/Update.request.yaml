@@ -1,0 +1,159 @@
+$kind: http-request
+url: "{{Base url}}/jv/update/17"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"id\": 17,\r
+
+    \    \"transactionalDate\": \"2026-01-25\",\r
+
+    \    \"transactionalAmount\": 700.0,\r
+
+    \    \"couponname\": \"JVC-008\",\r
+
+    \    \"entries\": [\r
+
+    \        {\r
+
+    \            // \"id\": 58,\r
+
+    \            \"particular\": {\r
+
+    \                \"id\": 46,\r
+
+    \                \"ledgerTitle\": null,\r
+
+    \                \"ledgergroup\": null,\r
+
+    \                \"openingBalance\": null,\r
+
+    \                \"openingBalanceType\": null,\r
+
+    \                \"openingBalanceDate\": null,\r
+
+    \                \"isDefault\": false,\r
+
+    \                \"createdby\": null,\r
+
+    \                \"updatedby\": null,\r
+
+    \                \"createdbydate\": null,\r
+
+    \                \"updatedbydate\": null\r
+
+    \            },\r
+
+    \            \"adjustmentType\": \"Adjustment\",\r
+
+    \            \"remark\": null,\r
+
+    \            \"refrence\": \"RCPT-002\",\r
+
+    \            \"externalInvoice\": null,\r
+
+    \            \"internalInvoice\": 147,\r
+
+    \            \"paymentId\": null,\r
+
+    \            \"receiptId\": 89,\r
+
+    \            \"voucherCoupon\": null,\r
+
+    \            \"invCoupon\": null,\r
+
+    \            \"amount\": 700.0,\r
+
+    \            \"entryType\": \"CREDIT\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"id\": 65,\r
+
+    \            \"particular\": {\r
+
+    \                \"id\": 21,\r
+
+    \                \"ledgerTitle\": \"Loan from Bank\",\r
+
+    \                \"ledgergroup\": {\r
+
+    \                    \"id\": 19,\r
+
+    \                    \"title\": \"Loans\",\r
+
+    \                    \"nature\": \"Liabilities\",\r
+
+    \                    \"isSystemGenerated\": false,\r
+
+    \                    \"createdby\": \"amit.sharma\",\r
+
+    \                    \"updatedby\": \"amit.sharma\",\r
+
+    \                    \"createdbydate\": \"2026-01-06\",\r
+
+    \                    \"updatedbydate\": \"2026-01-06\"\r
+
+    \                },\r
+
+    \                \"openingBalance\": 50000.0,\r
+
+    \                \"openingBalanceType\": \"DEBIT\",\r
+
+    \                \"openingBalanceDate\": \"2026-01-03\",\r
+
+    \                \"isDefault\": false,\r
+
+    \                \"createdby\": \"amit.sharma\",\r
+
+    \                \"updatedby\": null,\r
+
+    \                \"createdbydate\": \"2026-01-07\",\r
+
+    \                \"updatedbydate\": null\r
+
+    \            },\r
+
+    \            \"adjustmentType\": \"Ledger\",\r
+
+    \            \"remark\": null,\r
+
+    \            \"refrence\": null,\r
+
+    \            \"externalInvoice\": null,\r
+
+    \            \"internalInvoice\": null,\r
+
+    \            \"paymentId\": null,\r
+
+    \            \"receiptId\": null,\r
+
+    \            \"voucherCoupon\": null,\r
+
+    \            \"invCoupon\": null,\r
+
+    \            \"amount\": 700.0,\r
+
+    \            \"entryType\": \"DEBIT\"\r
+
+    \        }\r
+
+    \    ],\r
+
+    \    \"createdby\": \"amit.sharma\",\r
+
+    \    \"updatedby\": \"admin@vtoo\",\r
+
+    \    \"createdbydate\": \"2026-05-04\",\r
+
+    \    \"updatedbydate\": \"2026-05-04\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+order: 3000

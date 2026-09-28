@@ -1,0 +1,13 @@
+$kind: http-request
+url: 192.168.1.7:8080/api/v1/attendance/report/page?month=10&year=2025&field=employeeCode&direction=asc
+method: GET
+queryParams:
+  month: "10"
+  year: "2025"
+  field: employeeCode
+  direction: asc
+auth:
+  type: bearer
+  credentials:
+    token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbiIsImlhdCI6MTc2MTYzOTUxMiwiZXhwIjoxNzYxNzI1OTEyfQ.LPXbqBXqWKkvi3JA_c3ZgOKFObdifWo8RKrdVxSAUdc
+order: 6000

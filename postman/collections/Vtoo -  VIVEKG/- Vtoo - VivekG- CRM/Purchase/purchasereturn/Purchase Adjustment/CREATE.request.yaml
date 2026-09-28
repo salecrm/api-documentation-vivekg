@@ -1,0 +1,41 @@
+$kind: http-request
+url: "{{Base url}}/purchase-return-adjustment/create/30"
+method: POST
+body:
+  type: json
+  content: "[\r
+
+    \    {\r
+
+    \    \"adjustmentdate\": \"2026-05-06\",\r
+
+    \    \"invoiceId\": 82,\r
+
+    \    \"invoiceCoupon\": \"P-048\",\r
+
+    \    \"returnId\": 30,\r
+
+    \    \"adjustedAmount\": 1\r
+
+    \    },\r
+
+    \    {\r
+
+    \    \"adjustmentdate\": \"2026-05-06\",\r
+
+    \    \"invoiceId\": 81,\r
+
+    \    \"invoiceCoupon\": \"P-049\",\r
+
+    \    \"returnId\": 30,\r
+
+    \    \"adjustedAmount\": 1\r
+
+    \    }\r
+
+    ]"
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+order: 1000

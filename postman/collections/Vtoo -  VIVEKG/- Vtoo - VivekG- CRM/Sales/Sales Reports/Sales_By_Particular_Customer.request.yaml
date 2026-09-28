@@ -1,0 +1,33 @@
+$kind: http-request
+url: "{{Base url}}/si/sales-by-customer/2"
+method: GET
+queryParams:
+  - key: pageNumber
+    value: "0"
+    disabled: true
+  - key: pageSize
+    value: "10"
+    disabled: true
+  - key: field
+    value: invoice_date
+    disabled: true
+  - key: search
+    value: 2025-11-28
+    disabled: true
+  - key: startDate
+    value: 2025-12-08
+    disabled: true
+  - key: endDate
+    value: 2025-12-11
+    disabled: true
+  - key: dateRange
+    value: quarter
+    disabled: true
+  - key: direction
+    value: desc
+    disabled: true
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+order: 6000

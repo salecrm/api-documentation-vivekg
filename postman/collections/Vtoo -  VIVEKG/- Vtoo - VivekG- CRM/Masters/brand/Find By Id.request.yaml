@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{Server}}/brand/findById/15"
+method: GET
+body:
+  type: json
+  content: "{\r\n  \"name\":\"Jordan\"\r\n}\r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+settings: {}
+order: 2000

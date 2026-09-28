@@ -1,0 +1,11 @@
+$kind: http-request
+url: 192.168.1.6:8080/api/v1/attendance/page?field=id&direction=asc
+method: GET
+queryParams:
+  field: id
+  direction: asc
+auth:
+  type: bearer
+  credentials:
+    token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbjIiLCJpYXQiOjE3NjExMTUwNjEsImV4cCI6MTc2MTIwMTQ2MX0.kR_aYw0y8D8aEHArbzGOSKLYcFsWP0ivuomTKvE_dE8
+order: 3000

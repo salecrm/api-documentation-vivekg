@@ -1,0 +1,5 @@
+$kind: http-request
+name: New Request
+url: "{{Base Url}}/supplierquotation/delete/1"
+method: DELETE
+order: 2000

@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{Base Url}}/customer/check-exists?customerCompanyName=Apple&customerDisplayName=John_Doe"
+method: GET
+queryParams:
+  customerCompanyName: Apple
+  customerDisplayName: John_Doe
+order: 7000

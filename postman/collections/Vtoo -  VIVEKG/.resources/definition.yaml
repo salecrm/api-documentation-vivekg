@@ -1,0 +1,21 @@
+$kind: collection
+name: Vtoo |  VIVEKG
+description: Vtoo is a erp platform which has multiple features like hrms and commerce
+variables:
+  - key: Base url
+    value: ""
+    secret: false
+  - key: Password
+    value: ""
+    secret: false
+  - key: Server
+    value: ""
+    secret: false
+  - key: supabase_service_role_api_key_051f
+    secret: true
+auth:
+  - id: 74cd813e-1386-4935-ba3b-57ed0ec055c0
+    type: bearer
+    name: bearer auth
+    credentials:
+      token: "{{Password}}"

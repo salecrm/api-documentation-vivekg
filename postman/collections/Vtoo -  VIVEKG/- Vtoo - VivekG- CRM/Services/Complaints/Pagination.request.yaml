@@ -1,0 +1,38 @@
+$kind: http-request
+url: "{{Base url}}/complaint/page?pageNumber=0&pageSize=10&field=date&direction=desc&search=&isWorking=true&dateRange=year"
+method: GET
+queryParams:
+  - key: pageNumber
+    value: "0"
+  - key: pageSize
+    value: "10"
+  - key: field
+    value: date
+  - key: direction
+    value: desc
+  - key: search
+    value: ""
+  - key: isWorking
+    value: "true"
+  - key: status
+    value: in-progress
+    disabled: true
+  - key: startDate
+    value: 2026-02-01
+    disabled: true
+  - key: endDate
+    value: 2026-05-01
+    disabled: true
+  - key: contractId
+    value: "1"
+    disabled: true
+  - key: customerId
+    value: "2"
+    disabled: true
+  - key: dateRange
+    value: year
+auth:
+  type: bearer
+  credentials:
+    token: "{{Password}}"
+order: 3000

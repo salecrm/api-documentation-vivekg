@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{Base url}}/proposal/findById/27"
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+order: 3000

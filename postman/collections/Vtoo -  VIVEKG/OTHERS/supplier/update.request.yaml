@@ -1,0 +1,73 @@
+$kind: http-request
+url: http://192.168.1.21:8081/api/supplier/update/1
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \"suppliername\": \"Techno Distributors Pvt Ltd\",\r
+
+    \  \"zipcode\": \"360022\",\r
+
+    \  \"phoneno\": \"8876543210\",\r
+
+    \  \"email\": \"contact@technodistributors.com\",\r
+
+    \  \"address\": \"Plot No. 12, Industrial Layout, Bengaluru, India\",\r
+
+    \  \"eancode\": \"8901122337766\",\r
+
+    \  \"glp\": \"GLP-9087\",\r
+
+    \  \"vatno\": \"VAT-KA-778899\",\r
+
+    \  \"createdby\": \"admin_user\",\r
+
+    \  \"updatedby\": \"system_user\",\r
+
+    \  \"createdbydate\": \"2025-10-22\",\r
+
+    \  \"updatedbydate\": \"2025-10-22\",\r
+
+    \  \"company\": {\r
+
+    \    \"id\": 1\r
+
+    \  },\r
+
+    \  \"countries\": {\r
+
+    \    \"id\": 2\r
+
+    \  },\r
+
+    \  \"states\": {\r
+
+    \    \"id\": 5\r
+
+    \  },\r
+
+    \  \"cities\": {\r
+
+    \    \"id\": 8\r
+
+    \  },\r
+
+    \  \"product\": {\r
+
+    \    \"id\": 6\r
+
+    \  },\r
+
+    \  \"brand\": {\r
+
+    \    \"id\": 3\r
+
+    \  }\r
+
+    }\r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{crm tanmay}}"
+order: 4000

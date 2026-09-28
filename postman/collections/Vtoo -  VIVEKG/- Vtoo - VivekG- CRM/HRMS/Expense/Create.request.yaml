@@ -1,0 +1,109 @@
+$kind: http-request
+url: "{{Base Url}}/expense/create"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"expenseDate\": \"2026-05-20\",\r
+
+    \    \"staff\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"items\": [\r
+
+    \        {\r
+
+    \            \"date\": \"2026-05-19\",\r
+
+    \            \"type\": {\r
+
+    \                \"id\": 1\r
+
+    \            },\r
+
+    \            \"title\": \"Client Meeting Travel\",\r
+
+    \            \"from\": \"Mumbai\",\r
+
+    \            \"to\": \"Pune\",\r
+
+    \            \"expenseAmount\": 2500.00,\r
+
+    \            \"remark\": \"Travel expense for client meeting\",\r
+
+    \            \"status\": \"IN PROGRESS\",\r
+
+    \            \"approvedAmount\": 0.0,\r
+
+    \            \"reason\": \"\",\r
+
+    \            \"tempKey\": \"item_1\"\r
+
+    \        },\r
+
+    \                {\r
+
+    \            \"date\": \"2026-05-19\",\r
+
+    \            \"type\": {\r
+
+    \                \"id\": 2\r
+
+    \            },\r
+
+    \            \"title\": \"Client Meeting Travel\",\r
+
+    \            \"from\": \"Mumbai\",\r
+
+    \            \"to\": \"Pune\",\r
+
+    \            \"expenseAmount\": 2500.00,\r
+
+    \            \"remark\": \"Travel expense for client meeting\",\r
+
+    \            \"status\": \"IN PROGRESS\",\r
+
+    \            \"approvedAmount\": 0.0,\r
+
+    \            \"reason\": \"\"\r
+
+    \        },\r
+
+    \                {\r
+
+    \            \"date\": \"2026-05-19\",\r
+
+    \            \"type\": {\r
+
+    \                \"id\": 3\r
+
+    \            },\r
+
+    \            \"title\": \"Client Meeting Travel\",\r
+
+    \            \"from\": \"Mumbai\",\r
+
+    \            \"to\": \"Pune\",\r
+
+    \            \"expenseAmount\": 2500.00,\r
+
+    \            \"remark\": \"Travel expense for client meeting\",\r
+
+    \            \"status\": \"IN PROGRESS\",\r
+
+    \            \"approvedAmount\": 0.0,\r
+
+    \            \"reason\": \"\",\r
+
+    \            \"tempKey\": \"item_2\"\r
+
+    \        }\r
+
+    \    ]\r
+
+    }"
+order: 1000

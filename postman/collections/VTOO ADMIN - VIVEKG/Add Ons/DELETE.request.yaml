@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{Super Admin Base Url}}/add-ons/delete/1"
+method: DELETE
+order: 5000

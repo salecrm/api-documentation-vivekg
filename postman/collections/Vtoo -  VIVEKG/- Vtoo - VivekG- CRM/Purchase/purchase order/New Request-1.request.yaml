@@ -1,0 +1,9 @@
+$kind: http-request
+name: New Request
+url: "{{Base url}}/purchaseorder/findLast/PO-2026"
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: "{{token tanmay}}"
+order: 3000

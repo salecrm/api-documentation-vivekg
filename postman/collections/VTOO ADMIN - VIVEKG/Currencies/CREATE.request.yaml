@@ -1,0 +1,21 @@
+$kind: http-request
+url: "{{Super Admin Base Url}}/currencies/create"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \t\"currencyCode\": \"BANGAL\",\r
+
+    \t\"currencyName\": \"Bangla\",\r
+
+    \t\"currencyValue\": 33.67,\r
+
+    \t\"currencySymbol\": \"BGL\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{Super Admin Bearer Token}}"
+order: 1000

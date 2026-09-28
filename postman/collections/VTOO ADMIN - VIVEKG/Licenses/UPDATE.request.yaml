@@ -1,0 +1,17 @@
+$kind: http-request
+url: "{{Super Admin Base Url}}/license/update/1"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"licenseKey\": \"LIC-0001-2026-0109\",\r
+
+    \    \"source\": \"CHANNEL\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{Super Admin Bearer Token}}"
+order: 5000

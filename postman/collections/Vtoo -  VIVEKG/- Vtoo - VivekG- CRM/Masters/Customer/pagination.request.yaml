@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{Base url}}/customer/page?direction=desc&search=&field=id&pageNumber="
+method: GET
+queryParams:
+  direction: desc
+  search: ""
+  field: id
+  pageNumber: ""
+auth:
+  type: bearer
+  credentials:
+    token: "{{Password}}"
+order: 5000

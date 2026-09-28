@@ -1,0 +1,193 @@
+$kind: http-request
+url: "{{Base url}}/pv/update/3"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"id\": 3,\r
+
+    \    \"status\": \"PROCESSED\",\r
+
+    \    \"voucherDate\": \"2026-01-08\",\r
+
+    \    \"paymentAmount\": 15000.0,\r
+
+    \    \"paymentMode\": \"BANK\",\r
+
+    \    \"chequeNo\": null,\r
+
+    \    \"checqueDate\": null,\r
+
+    \    \"couponname\": \"PMT-003\",\r
+
+    \    \"bank\": null,\r
+
+    \    \"debitTransaction\": [\r
+
+    \        {\r
+
+    \            \"id\": 5,\r
+
+    \            \"particular\": {\r
+
+    \                \"id\": 13,\r
+
+    \                \"ledgerTitle\": \"ABC Suppliers Pvt Ltd\",\r
+
+    \                \"ledgergroup\": {\r
+
+    \                    \"id\": 5,\r
+
+    \                    \"title\": \"Sundry Creditors\",\r
+
+    \                    \"nature\": \"Liabilities\",\r
+
+    \                    \"isSystemGenerated\": true,\r
+
+    \                    \"createdby\": \"SYSTEM\",\r
+
+    \                    \"updatedby\": null,\r
+
+    \                    \"createdbydate\": \"2026-01-03\",\r
+
+    \                    \"updatedbydate\": null\r
+
+    \                },\r
+
+    \                \"openingBalance\": 25000.0,\r
+
+    \                \"openingBalanceType\": \"CREDIT\",\r
+
+    \                \"openingBalanceDate\": \"2025-02-01\",\r
+
+    \                \"isDefault\": false,\r
+
+    \                \"createdby\": \"amit.sharma\",\r
+
+    \                \"updatedby\": \"admin@vtoo\",\r
+
+    \                \"createdbydate\": \"2026-01-05\",\r
+
+    \                \"updatedbydate\": \"2026-01-30\"\r
+
+    \            },\r
+
+    \            \"type\": \"Advance\",\r
+
+    \            \"remark\": null,\r
+
+    \            \"entryType\": null,\r
+
+    \            \"ledgerFolio\": null,\r
+
+    \            \"invoice\": 11,\r
+
+    \            \"salesReturn\": null,\r
+
+    \            \"invCoupon\": null,\r
+
+    \            \"refrence\": \"INV-103\",\r
+
+    \            \"amount\": 10000.0,\r
+
+    \            \"status\": null,\r
+
+    \            \"adjustedAmount\": 0.0\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"id\": 6,\r
+
+    \            \"particular\": {\r
+
+    \                \"id\": 27,\r
+
+    \                \"ledgerTitle\": \"ABC Suppliers Pvt Ltd\",\r
+
+    \                \"ledgergroup\": {\r
+
+    \                    \"id\": 5,\r
+
+    \                    \"title\": \"Sundry Creditors\",\r
+
+    \                    \"nature\": \"Liabilities\",\r
+
+    \                    \"isSystemGenerated\": true,\r
+
+    \                    \"createdby\": \"SYSTEM\",\r
+
+    \                    \"updatedby\": null,\r
+
+    \                    \"createdbydate\": \"2026-01-03\",\r
+
+    \                    \"updatedbydate\": null\r
+
+    \                },\r
+
+    \                \"openingBalance\": 25000.0,\r
+
+    \                \"openingBalanceType\": \"CREDIT\",\r
+
+    \                \"openingBalanceDate\": \"2025-01-01\",\r
+
+    \                \"isDefault\": true,\r
+
+    \                \"createdby\": \"amit.sharma\",\r
+
+    \                \"updatedby\": null,\r
+
+    \                \"createdbydate\": \"2026-01-10\",\r
+
+    \                \"updatedbydate\": null\r
+
+    \            },\r
+
+    \            \"type\": \"DEBIT\",\r
+
+    \            \"remark\": null,\r
+
+    \            \"entryType\": null,\r
+
+    \            \"ledgerFolio\": null,\r
+
+    \            \"invoice\": 12,\r
+
+    \            \"salesReturn\": null,\r
+
+    \            \"invCoupon\": null,\r
+
+    \            \"refrence\": null,\r
+
+    \            \"amount\": 5000.0,\r
+
+    \            \"status\": null,\r
+
+    \            \"adjustedAmount\": 0.0\r
+
+    \        }\r
+
+    \    ],\r
+
+    \    \"createdby\": \"amit.sharma\",\r
+
+    \    \"updatedby\": null,\r
+
+    \    \"createdbydate\": \"2026-01-10\",\r
+
+    \    \"updatedbydate\": null,\r
+
+    \    \"isAdjusted\": false,\r
+
+    \    \"bankFolio\": null,\r
+
+    \    \"brsBounce\": false\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+order: 3000

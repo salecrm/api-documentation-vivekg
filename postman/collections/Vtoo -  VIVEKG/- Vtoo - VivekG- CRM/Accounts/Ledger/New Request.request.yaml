@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{Base url}}/ledger/balance/15"
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+order: 6000

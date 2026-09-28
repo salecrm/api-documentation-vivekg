@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{Base url}}/pv/approve/11"
+method: GET
+order: 5000

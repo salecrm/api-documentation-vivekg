@@ -1,0 +1,15 @@
+$kind: http-request
+url: "{{Base url}}/cart/create"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"user\": 1,\r
+
+    \  \"product\": {\"id\": 2},\r
+
+    \  \"quantity\": 3.0\r
+
+    }\r\n"
+order: 2000

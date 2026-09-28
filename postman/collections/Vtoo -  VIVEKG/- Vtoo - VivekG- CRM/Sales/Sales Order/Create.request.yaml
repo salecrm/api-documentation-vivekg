@@ -1,0 +1,107 @@
+$kind: http-request
+url: "{{Base url}}/so/create"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"po_no\": \"PO-12\",\r
+
+    //   \"so_no\": null,\r
+
+    \  \"customer\": {\r
+
+    \    \"id\": 3\r
+
+    \  },\r
+
+    \r
+
+    \  \"sales_person\": {\r
+
+    \    \"id\": 1\r
+
+    \    },\r
+
+    \  \"vat_no\": \"VAT123456\",\r
+
+    \  \"subject\": \"Making of Sales Order on po 12\",\r
+
+    \  \"termcondition\": \"Paisa Pheko tamasha Dekho\",\r
+
+    \  \"contactperson\": \"Rishi Limbachiya\",\r
+
+    \  \"payment_terms\": \"30 Days\",\r
+
+    \r
+
+    \  \"order_date\": \"2025-11-24\",\r
+
+    \  \"delivery_date\": \"2025-12-10\",\r
+
+    \  \"remarks\": \"Urgent order. Bulk handling required.\",\r
+
+    \  \"billing_address\": \"Customer HQ, Business District, City, Country\",\r
+
+    \  \"shipping_address\": \"Main Distribution Warehouse, Industrial Area, City, Country\",\r
+
+    \r
+
+    \  \"items\": [\r
+
+    \    {\r
+
+    \      \"product\": {\r
+
+    \        \"id\": 2\r
+
+    \      },\r
+
+    \      \"description\": \"High tensile bolts\",\r
+
+    \      \"uom\": \"PCS\",\r
+
+    \      \"qty\": 12200,\r
+
+    \      \"vatrate\": 0.00,\r
+
+    \      \"vatamount\": 0.00,\r
+
+    \      \"partcode\": \"HTB-002\",\r
+
+    \      \"price\": 12.5,\r
+
+    \      \"rate\": 12.5,\r
+
+    \      \"discount\": 0,\r
+
+    \      \"total\": 65000\r
+
+    \    }\r
+
+    \  ],\r
+
+    \r
+
+    \  \"subtotal\": 4977340,\r
+
+    \  \"shippingcharge\": 2500,\r
+
+    \  \"discountcharge\": 0,\r
+
+    \  \"grosstotal\": 4979840,\r
+
+    \  \"vat\": \"8.0\",\r
+
+    \  \"vatamount\": 398387.2,\r
+
+    \  \"amounttotal\": 5378227.2,\r
+
+    \  \"roundofvalue\": 0\r
+
+    }\r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+order: 1000

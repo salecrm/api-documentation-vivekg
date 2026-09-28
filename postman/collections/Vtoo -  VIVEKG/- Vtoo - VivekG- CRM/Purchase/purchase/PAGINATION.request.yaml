@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{Base url}}/purchase/page?pageNumber=0&pageSize=10&field=&direction=&search=&supplier=&product=&status="
+method: GET
+queryParams:
+  pageNumber: "0"
+  pageSize: "10"
+  field: ""
+  direction: ""
+  search: ""
+  supplier: ""
+  product: ""
+  status: ""
+order: 7000

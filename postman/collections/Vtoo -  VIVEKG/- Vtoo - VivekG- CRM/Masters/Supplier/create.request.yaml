@@ -1,0 +1,157 @@
+$kind: http-request
+url: "{{Base url}}/supplier/create"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"companyname\": \"Horacio Pagani\",\r
+
+    \  \"phoneno\": \"9876543210\",\r
+
+    \  \"designation\": \"OWNER\",\r
+
+    \  \"email\": \"contact@pagani.com\",\r
+
+    \  \"vatno\": \"VAT-IND-982345\",\r
+
+    \  \"createdby\": null,\r
+
+    \  \"updatedby\": null,\r
+
+    \  \"createdbydate\": null,\r
+
+    \  \"updatedbydate\": null,\r
+
+    \  \"status\": \"ACTIVE\",\r
+
+    \r
+
+    \  \"salutation\": \"Mr\",\r
+
+    \  \"firstname\": \"Horacio\",\r
+
+    \  \"lastname\": \"halwai\",\r
+
+    \  \"displayname\": \"Mr. Horacio Pagani\",\r
+
+    \  \"taxtreatment\": \"GST Registered\",\r
+
+    \  \"taxregistrationnumber\": \"27DCBAE1234F1Z5\",\r
+
+    \  \"currency\": \"INR\",\r
+
+    \r
+
+    \  \"placeofsupplycountries\": {\r
+
+    \    \"id\": 101\r
+
+    \  },\r
+
+    \r
+
+    \  \"paymentTerms\": {\r
+
+    \    \"id\": 12\r
+
+    \  },\r
+
+    \r
+
+    \  \"billingaddressattention\": \"Accounts Department\",\r
+
+    \  \"billingaddressstreet1\": \"12 Industrial Area\",\r
+
+    \  \"billingaddressstreet2\": \"Phase 2\",\r
+
+    \  \"billingcity\": \"Mumbai\",\r
+
+    \  \"billingstates\": {\r
+
+    \    \"id\": 42\r
+
+    \  },\r
+
+    \  \"billingcountries\": {\r
+
+    \    \"id\": 1\r
+
+    \  },\r
+
+    \  \"billingzipcode\": \"400069\",\r
+
+    \  \"billingphone\": \"02212345678\",\r
+
+    \r
+
+    \  \"shippingaddressattention\": \"Warehouse\",\r
+
+    \  \"shippingaddressstreet1\": \"Plot 21, MIDC\",\r
+
+    \  \"shippingaddressstreet2\": \"Andheri East\",\r
+
+    \  \"shippingcity\": \"Mumbai\",\r
+
+    \  \"shippingstates\": {\r
+
+    \    \"id\": 1278\r
+
+    \  },\r
+
+    \  \"shippingcountries\": {\r
+
+    \    \"id\": 75\r
+
+    \  },\r
+
+    \  \"shippingzipcode\": \"400093\",\r
+
+    \  \"shippingphone\": \"02287654321\",\r
+
+    \r
+
+    \  \"supplierContactPersons\": [\r
+
+    \    {\r
+
+    \      \"suppliername\": \"Amit Verma\",\r
+
+    \      \"email\": \"amit@pagani.com\",\r
+
+    \      \"phoneno\": \"9999999991\",\r
+
+    \      \"designation\": \"Purchase Manager\"\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"suppliername\": \"Neha Singh\",\r
+
+    \      \"email\": \"neha@pagani.com\",\r
+
+    \      \"phoneno\": \"9999999992\",\r
+
+    \      \"designation\": \"Accounts Head\"\r
+
+    \    }\r
+
+    \  ],\r
+
+    \r
+
+    \  \"openingbalance\": 25000,\r
+
+    \  \"openingbalancetype\": \"CREDIT\",\r
+
+    \  \"openingbalancedate\": \"2025-01-01\",\r
+
+    \  \"workphone\": \"02299887766\"\r
+
+    }\r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+order: 1000

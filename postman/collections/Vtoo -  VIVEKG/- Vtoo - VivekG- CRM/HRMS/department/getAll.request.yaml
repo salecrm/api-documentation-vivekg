@@ -1,0 +1,9 @@
+$kind: http-request
+url: 192.168.1.6:7070/api/v1/department/page?field=id&direction=asc
+method: GET
+queryParams:
+  field: id
+  direction: asc
+auth:
+  type: noauth
+order: 3000

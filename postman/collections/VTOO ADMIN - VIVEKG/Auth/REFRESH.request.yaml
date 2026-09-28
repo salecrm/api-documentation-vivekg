@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{Super Admin Base Url}}/auth/refresh?token=76e95d24-c03d-4e9d-b267-7d07d40890b8"
+method: GET
+queryParams:
+  token: 76e95d24-c03d-4e9d-b267-7d07d40890b8
+order: 4000

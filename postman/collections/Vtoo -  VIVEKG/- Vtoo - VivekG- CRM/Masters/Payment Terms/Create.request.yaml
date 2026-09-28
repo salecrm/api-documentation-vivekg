@@ -1,0 +1,25 @@
+$kind: http-request
+url: "{{Base url}}/paymentterms/create"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"termname\": \"Net 30\",\r
+
+    \  \"numberofdays\": \"30\",\r
+
+    \  \"createdby\": \"admin\",\r
+
+    \  \"createdbydate\": \"2026-02-16\",\r
+
+    \  \"updatedby\": \"admin\",\r
+
+    \  \"updatedbydate\": \"2026-02-16\"\r
+
+    }\r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+order: 1000

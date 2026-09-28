@@ -1,0 +1,16 @@
+$kind: http-request
+url: "{{Base Url}}/leaveApplication/page?field=id&direction=asc"
+method: GET
+queryParams:
+  - key: field
+    value: id
+  - key: direction
+    value: asc
+  - key: search
+    value: pqr
+    disabled: true
+body:
+  type: text
+  content: ""
+settings: {}
+order: 4000

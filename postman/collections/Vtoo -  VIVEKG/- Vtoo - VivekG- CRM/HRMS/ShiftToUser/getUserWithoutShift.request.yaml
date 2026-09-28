@@ -1,0 +1,12 @@
+$kind: http-request
+url: 192.168.1.221:8080/api/v1/shifttouser/getUser
+method: GET
+body:
+  type: text
+  content: ""
+auth:
+  type: bearer
+  credentials:
+    token: "{{hrms vibha}}"
+settings: {}
+order: 5000

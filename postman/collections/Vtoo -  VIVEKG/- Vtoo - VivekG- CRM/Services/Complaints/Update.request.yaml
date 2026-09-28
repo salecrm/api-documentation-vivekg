@@ -1,0 +1,31 @@
+$kind: http-request
+url: "{{Base url}}/complaint/update/6"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"id\": 6,\r
+
+    \  \"type\": \"Complaint\",\r
+
+    \  \"contract\": 62,\r
+
+    \  \"customer\": null,\r
+
+    \  \"priority\": \"LOW\",\r
+
+    \  \"sla\": 1,\r
+
+    \  \"responseTime\": 4.5,\r
+
+    \  \"resolutionTime\": 24.0,\r
+
+    \  \"status\": \"OPEN\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+order: 5000

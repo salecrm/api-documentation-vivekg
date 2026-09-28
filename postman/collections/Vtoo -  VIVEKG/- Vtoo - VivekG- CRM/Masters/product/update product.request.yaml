@@ -1,0 +1,51 @@
+$kind: http-request
+url: "{{Base url}}/product/update/2"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \"producttype\": \"Automobile\",\r
+
+    \  \"eancode\": 140034668415,\r
+
+    \  \"glp\": 2500000.0,\r
+
+    \  \"brand\": {\r
+
+    \    \"id\": 2\r
+
+    \  },\r
+
+    \  \"uom\": {\r
+
+    \    \"id\": 55\r
+
+    \  },\r
+
+    \  \"preferredvendors\": {\r
+
+    \    \"id\": 1\r
+
+    \  },\r
+
+    \  \"purchasecost\": 1800000.0,\r
+
+    \  \"goods\": \"Car\",\r
+
+    \  \"service\": \"Extended Warranty\",\r
+
+    \  \"tax\": \"GST 30%\",\r
+
+    \  \"rate\": 30.0,\r
+
+    \  \"goodsname\": \"Tata Sierra EV\",\r
+
+    \  \"servicecharge\": \"500000\"\r
+
+    }\r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+order: 3000

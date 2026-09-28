@@ -1,0 +1,237 @@
+$kind: http-request
+url: http://192.168.1.225:8081/api/v1/couponmaster/update
+method: PUT
+body:
+  type: json
+  content: "[\r
+
+    \        {\r
+
+    \            \"module\": \"Lead\",\r
+
+    \            \"id\": 1,\r
+
+    \            \"preview\": \"L-001\",\r
+
+    \            \"prefixname\": \"L\",\r
+
+    \            \"suffixname\": \"001\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"RFQ\",\r
+
+    \            \"id\": 2,\r
+
+    \            \"preview\": \"L-001\",\r
+
+    \            \"prefixname\": \"R\",\r
+
+    \            \"suffixname\": \"001\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"Quotes\",\r
+
+    \            \"id\": 3,\r
+
+    \            \"preview\": \"Q-0001\",\r
+
+    \            \"prefixname\": \"Q\",\r
+
+    \            \"suffixname\": \"0001\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"Sales Order\",\r
+
+    \            \"id\": 4,\r
+
+    \            \"preview\": \"SO-01\",\r
+
+    \            \"prefixname\": \"SO\",\r
+
+    \            \"suffixname\": \"01\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"Delivery Challan\",\r
+
+    \            \"id\": 5,\r
+
+    \            \"preview\": \"DC-01\",\r
+
+    \            \"prefixname\": \"DC\",\r
+
+    \            \"suffixname\": \"01\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"Sales Invoice\",\r
+
+    \            \"id\": 6,\r
+
+    \            \"preview\": \"SI-001\",\r
+
+    \            \"prefixname\": \"SI\",\r
+
+    \            \"suffixname\": \"001\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"Credit Note\",\r
+
+    \            \"id\": 7,\r
+
+    \            \"preview\": \"SR-001\",\r
+
+    \            \"prefixname\": \"SR\",\r
+
+    \            \"suffixname\": \"001\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"Purchase Requisition\",\r
+
+    \            \"id\": 8,\r
+
+    \            \"preview\": \"PR-001\",\r
+
+    \            \"prefixname\": \"PR\",\r
+
+    \            \"suffixname\": \"001\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"Supplier Quotation\",\r
+
+    \            \"id\": 9,\r
+
+    \            \"preview\": \"SQ-001\",\r
+
+    \            \"prefixname\": \"SQ\",\r
+
+    \            \"suffixname\": \"001\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"Purchase Order\",\r
+
+    \            \"id\": 10,\r
+
+    \            \"preview\": \"PO-001\",\r
+
+    \            \"prefixname\": \"PO\",\r
+
+    \            \"suffixname\": \"001\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"Purchase\",\r
+
+    \            \"id\": 11,\r
+
+    \            \"preview\": \"P-001\",\r
+
+    \            \"prefixname\": \"P\",\r
+
+    \            \"suffixname\": \"001\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"Vendor Credit\",\r
+
+    \            \"id\": 12,\r
+
+    \            \"preview\": \"DN-001\",\r
+
+    \            \"prefixname\": \"DN\",\r
+
+    \            \"suffixname\": \"001\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"Payment\",\r
+
+    \            \"id\": 13,\r
+
+    \            \"preview\": \"PAY-001\",\r
+
+    \            \"prefixname\": \"PAY\",\r
+
+    \            \"suffixname\": \"001\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"Receipt\",\r
+
+    \            \"id\": 14,\r
+
+    \            \"preview\": \"REC-001\",\r
+
+    \            \"prefixname\": \"REC\",\r
+
+    \            \"suffixname\": \"001\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"Journal Voucher Contra\",\r
+
+    \            \"id\": 15,\r
+
+    \            \"preview\": \"JVC-001\",\r
+
+    \            \"prefixname\": \"JVC\",\r
+
+    \            \"suffixname\": \"001\"\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"module\": \"Contra Voucher\",\r
+
+    \            \"id\": 16,\r
+
+    \            \"preview\": \"CV-0001\",\r
+
+    \            \"prefixname\": \"CV\",\r
+
+    \            \"suffixname\": \"001\"\r
+
+    \        }\r
+
+    \    ]"
+auth:
+  type: bearer
+  credentials:
+    token: "{{crm tanmay}}"
+order: 2000

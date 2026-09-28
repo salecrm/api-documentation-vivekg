@@ -1,0 +1,27 @@
+$kind: http-request
+url: 192.168.1.221:8080/api/v1/attendance/34
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"fromtime\": \"22:00:00\",\r
+
+    \    \"totime\": \"06:00:00\",\r
+
+    \    \"date\": \"2025-10-15\",\r
+
+    \    \"remark\": \"test wala\",\r
+
+    \    \"user\": {\r
+
+    \        \"id\": 2\r
+
+    \    }\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{Token}}"
+order: 4000

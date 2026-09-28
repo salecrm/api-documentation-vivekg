@@ -1,0 +1,33 @@
+$kind: http-request
+url: "{{Base Url}}/emailsetting/create"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"emailType\": \"SMTP\",\r
+
+    \  \"emailEncryption\": \"TLS\",\r
+
+    \  \"smtpUserName\": \"erp.notifications@gmail.com\",\r
+
+    \  \"password\": \"dummyPassword123\",\r
+
+    \  \"smtpHost\": \"smtp.gmail.com\",\r
+
+    \  \"smtpPort\": \"587\",\r
+
+    \  \"emailCharCet\": \"UTF-8\",\r
+
+    \  \"senderName\": \"ERP Notification System\",\r
+
+    \  \"senderEmail\": \"erp.notifications@gmail.com\",\r
+
+    \  \"employees\": {\r
+
+    \    \"id\": 1\r
+
+    \  }\r
+
+    }"
+order: 2000

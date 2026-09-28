@@ -1,0 +1,25 @@
+$kind: http-request
+url: "{{Super Admin Base Url}}/companies/patch/3"
+method: PATCH
+body:
+  type: json
+  content: "{\r
+
+    \    \"companyName\": \"ABC Technologies\",\r
+
+    \    \"companyNo\": \"COM-0001\",\r
+
+    \    \"companyEmail\": \"abc@example.com\",\r
+
+    \    \"companyPhoneNumber\": \"9876543210\",\r
+
+    \    \"companyTrn\": \"TRN123456789\",\r
+
+    \    \"countryId\": 1\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{Super Admin Bearer Token}}"
+order: 4000

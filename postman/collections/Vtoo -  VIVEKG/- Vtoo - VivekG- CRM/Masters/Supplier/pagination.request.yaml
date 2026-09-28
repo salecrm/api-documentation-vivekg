@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{Base url}}/supplier/page?direction=desc&search=8&field=id"
+method: GET
+queryParams:
+  direction: desc
+  search: "8"
+  field: id
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+order: 5000

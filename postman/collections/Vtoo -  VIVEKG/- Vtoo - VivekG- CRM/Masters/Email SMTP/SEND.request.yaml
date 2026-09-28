@@ -1,0 +1,41 @@
+$kind: http-request
+url: "{{Base url}}/emailsetting/send-email/2"
+method: POST
+queryParams:
+  - key: to
+    value: "lnv.salecrm@gmail.com, "
+    disabled: true
+  - key: subject
+    value: "Test 1 EMAIL SMTP ::VivekG:"
+    disabled: true
+  - key: body
+    value: This is the first Test File I am Sending To Test If the Email SMTP is working via DB Dynamically
+    disabled: true
+body:
+  type: formdata
+  content:
+    - type: text
+      key: to
+      value: lnv.salecrm@gmail.com
+    - type: text
+      key: cc
+      value: projects@lnvsystems.com
+      disabled: true
+    - type: text
+      key: bcc
+      value: erp.lnv5@gmail.com
+      disabled: true
+    - type: file
+      key: files
+      src: /C:/Users/LNV104/Downloads/smtp_upload_12164911963162206810_DC-3.pdf
+    - type: text
+      key: subject
+      value: Test Multi sender
+    - type: text
+      key: body
+      value: "This is a testing of email smtp functionality by ::VivekG:"
+auth:
+  type: bearer
+  credentials:
+    token: "{{Password}}"
+order: 1000

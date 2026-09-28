@@ -1,0 +1,21 @@
+$kind: http-request
+url: "{{Base url}}/couponmaster/update/19"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \"prefixname\": \"Q2025\",\r
+
+    \  \"suffixname\": \"01\",\r
+
+    \  \"preview\": \"Q2025-01\",\r
+
+    \  \"module\": \"Quotes\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+order: 3000

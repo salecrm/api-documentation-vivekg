@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{Base url}}/stock-report/current?warehouseId=1&productId=3"
+method: GET
+queryParams:
+  warehouseId: "1"
+  productId: "3"
+order: 3000

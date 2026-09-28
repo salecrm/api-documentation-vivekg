@@ -1,0 +1,141 @@
+$kind: http-request
+url: "{{Base url}}/warehouse/create"
+method: POST
+body:
+  type: json
+  content: "// {\r
+
+    //   \"warehousename\": \"Central Warehouse\",\r
+
+    //   \"warehouselocation\": \"Industrial Area Phase 2\",\r
+
+    //   \"warehousetype\": \"MAIN\",\r
+
+    \r
+
+    //   \"branch\": {\r
+
+    //     \"id\": 9\r
+
+    //   },\r
+
+    \r
+
+    //   \"street2\": \"Near Logistics Park\",\r
+
+    //   \"zipcode\": \"400093\",\r
+
+    \r
+
+    //   \"countries\": {\r
+
+    //     \"id\": 1\r
+
+    //   },\r
+
+    //   \"states\": {\r
+
+    //     \"id\": 1\r
+
+    //   },\r
+
+    //   \"cities\": {\r
+
+    //     \"id\": 10\r
+
+    //   },\r
+
+    \r
+
+    //   \"contactnumber\": \"02245678900\",\r
+
+    //   \"storagetype\": \"Cold Storage\",\r
+
+    \r
+
+    //   \"staff\": {\r
+
+    //     \"id\": 6\r
+
+    //   }\r
+
+    // }\r
+
+    // {\r
+
+    // \"branch\": {\"id\": 4},\r
+
+    // \"cities\": {\"id\": 5914},\r
+
+    // \"contactnumber\": \"7412589630\",\r
+
+    // \"countries\": {\"id\": 1},\r
+
+    // \"staff\": {\"id\": 2},\r
+
+    // \"states\": {\"id\": 43},\r
+
+    // \"storagetype\": \"Raw Material\",\r
+
+    // \"street2\": \"Building A, Floor 3\",\r
+
+    // \"warehouselocation\": \"badlapur west\",\r
+
+    // \"warehousename\": \"secondary warehouse\",\r
+
+    // \"warehousetype\": \"Secondary\",\r
+
+    // \"picname\":\"xyz\",\r
+
+    // \"piccontactnumber\":\"998337\",\r
+
+    // \"zipcode\": \"987456\"\r
+
+    // }\r
+
+    {\r
+
+    \  \"warehousename\": \"Main Showroom - Mumbai\",\r
+
+    \  \"warehouselocation\": \"Industrial Area, Sector 5\",\r
+
+    \  \"warehousetype\": \"Distribution Center\",\r
+
+    \  \"branch\": {\r
+
+    \    \"id\": 1\r
+
+    \  },\r
+
+    \  \"street2\": \"Building 4, Plot 101\",\r
+
+    \  \"zipcode\": \"421501\",\r
+
+    \  \"states\": {\r
+
+    \    \"id\": 22\r
+
+    \  },\r
+
+    \  \"countries\": {\r
+
+    \    \"id\": 101\r
+
+    \  },\r
+
+    \  \"cities\": \"Mumbai\",\r
+
+    \  \"contactnumber\": \"+91-9876543210\",\r
+
+    \  \"storagetype\": \"Climate Controlled\",\r
+
+    \  \"staff\": {\r
+
+    \    \"id\": 1\r
+
+    \  }\r
+
+    }\r
+
+    \r\n"
+order: 1000

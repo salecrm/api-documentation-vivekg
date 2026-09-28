@@ -1,0 +1,30 @@
+$kind: http-request
+url: "{{Base url}}/si/page?pageNumber=&pageSize=&field=&direction=desc&search=&status="
+method: GET
+queryParams:
+  - key: pageNumber
+    value: ""
+  - key: pageSize
+    value: ""
+  - key: field
+    value: ""
+  - key: direction
+    value: desc
+  - key: search
+    value: ""
+  - key: status
+    value: ""
+  - key: customer
+    value: ""
+    disabled: true
+  - key: isntContract
+    value: "true"
+    disabled: true
+  - key: isPaid
+    value: "true"
+    disabled: true
+body:
+  type: json
+  content: ""
+settings: {}
+order: 6000

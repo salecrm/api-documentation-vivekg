@@ -1,0 +1,16 @@
+# Use this workspace to collaborate
+workspace:
+  id: ab3c26d6-1618-4b0d-83b8-2ec1973b361a
+
+# Each entry here maps a local resource to one or more corresponding objects in Postman Cloud
+
+cloudResources:
+  collections:
+    ../postman/collections/VTOO ADMIN - VIVEKG: 50928918-a1b94dab-8fa1-4fa6-88a0-575d7dc7ddba
+    ../postman/collections/Vtoo -  VIVEKG: 50928918-4451b14e-d7e4-4f5c-a82a-d4a6d4243990
+
+# All resources in the `postman/` folder are automatically registered in Local View.
+# Point to additional files outside the `postman/` folder to register them individually. Example:
+#localResources:
+#  collections:
+#    - ../tests/E2E Test Collection/

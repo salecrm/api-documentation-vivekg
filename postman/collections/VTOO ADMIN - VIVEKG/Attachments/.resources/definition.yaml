@@ -1,0 +1,17 @@
+$kind: collection
+description: |-
+  | Upload Attachment → POST  
+  /api/v1/so-attachments/upload/{so_id}
+
+  | Get Attachment by ID → GET  
+  /api/v1/so-attachments/find/{id}
+
+  | Update Attachment → PUT  
+  /api/v1/so-attachments/update/{id}
+
+  | Delete Attachment → DELETE  
+  /api/v1/so-attachments/delete/{id}
+
+  | Get Attachments by Sales Order ID → GET  
+  /api/v1/so-attachments/sales-order/{so_id}
+order: 3000

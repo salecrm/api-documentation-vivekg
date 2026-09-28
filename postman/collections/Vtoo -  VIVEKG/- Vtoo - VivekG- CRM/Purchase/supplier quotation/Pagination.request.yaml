@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{Base url}}/supplierquotation/page?pageNumber=0&pageSize=10&field=id&direction=desc&search="
+method: GET
+queryParams:
+  pageNumber: "0"
+  pageSize: "10"
+  field: id
+  direction: desc
+  search: ""
+auth:
+  type: bearer
+  credentials:
+    token: "{{Password}}"
+order: 5000

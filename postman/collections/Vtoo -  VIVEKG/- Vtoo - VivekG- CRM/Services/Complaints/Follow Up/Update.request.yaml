@@ -1,0 +1,26 @@
+$kind: http-request
+url: "{{Base url}}/complaint/follow-up/4/page?field=&direction=asc&search=&pageSize&pageNumber"
+method: GET
+queryParams:
+  field: ""
+  direction: asc
+  search: ""
+  pageSize: null
+  pageNumber: null
+body:
+  type: json
+  content: "{\r
+
+    \  \"name\": \"John Doe\",\r
+
+    \  \"message\": \"Customer called, issue is about to get reviewed\",\r
+
+    \  \"complaint\": 4\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+settings: {}
+order: 3000

@@ -1,0 +1,19 @@
+$kind: http-request
+url: "{{Super Admin Base Url}}/modules/update/1"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"moduleName\": \"Lead\",\r
+
+    \    \"type\": \"module\",\r
+
+    \    \"countries\": [1,2,3,4,5,6]\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{Super Admin Bearer Token}}"
+order: 4000

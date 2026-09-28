@@ -1,0 +1,15 @@
+$kind: http-request
+url: "{{Super Admin Base Url}}/attachments/delete/2"
+method: DELETE
+body:
+  type: formdata
+  content:
+    - type: file
+      key: file
+      src: postman-cloud:///1f0cb748-5ca7-4c10-b0f9-73461e3afbb9
+      description: Attach the files that are ment to be uploded
+auth:
+  type: bearer
+  credentials:
+    token: "{{Super Admin Bearer Token}}"
+order: 5000

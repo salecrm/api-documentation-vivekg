@@ -1,0 +1,45 @@
+$kind: http-request
+url: "{{Super Admin Base Url}}/countries/update/1"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"countryName\": \"United Arab Emirates\",\r
+
+    \t\"countryCode\": \"UAE\",\r
+
+    \t\"countryKey\": \"uae\",\r
+
+    \t\"isVatApplicable\": true,\r
+
+    \t\"isActive\": true,\r
+
+    \    \"flagMediaId\": 1,\r
+
+    \    \"currency\": [\r
+
+    \        {\r
+
+    \        \"currencyid\": 2,\r
+
+    \        \"isPrimary\": true\r
+
+    \    },\r
+
+    \    {\r
+
+    \        \"currencyid\": 1,\r
+
+    \        \"isPrimary\": false\r
+
+    \    }\r
+
+    \    ]\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{Super Admin Bearer Token}}"
+order: 4000

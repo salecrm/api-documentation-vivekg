@@ -1,0 +1,44 @@
+$kind: http-request
+url: "{{Super Admin Base Url}}/email-gateway/send-email/1?"
+method: POST
+queryParams:
+  - key: to
+    value: "vtoosales@gmail.com, "
+    disabled: true
+  - key: subject
+    value: "Test 1 EMAIL SMTP ::VivekG:"
+    disabled: true
+  - key: body
+    value: This is the first Test File I am Sending To Test If the Email SMTP is working via DB Dynamically
+    disabled: true
+  - key: ""
+    value: ""
+body:
+  type: formdata
+  content:
+    - type: text
+      key: to
+      value: vtoosales@gmail.com
+    - type: text
+      key: cc
+      value: projects@lnvsystems.com
+      disabled: true
+    - type: text
+      key: bcc
+      value: erp.lnv5@gmail.com
+      disabled: true
+    - type: file
+      key: files
+      src:
+        - /C:/Users/LNV104/Desktop/backend-roadmap.html
+    - type: text
+      key: subject
+      value: Test 1
+    - type: text
+      key: body
+      value: "This is a testing of email smtp functionality by ::VivekG:"
+auth:
+  type: bearer
+  credentials:
+    token: "{{Super Admin Bearer Token}}"
+order: 7000

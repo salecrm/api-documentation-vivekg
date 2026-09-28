@@ -1,0 +1,12 @@
+$kind: http-request
+url: 192.168.1.221:8080/api/v1/leaveApplication/1
+method: GET
+body:
+  type: text
+  content: ""
+auth:
+  type: bearer
+  credentials:
+    token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbjEyMyIsImlhdCI6MTc2NDkyNjMwNSwiZXhwIjoxNzY1MDEyNzA1fQ.pPX_g4aH1aKnGxF0j2lqH8tmSSXmq2ioWr4VwkN8PAQ
+settings: {}
+order: 3000

@@ -1,0 +1,33 @@
+$kind: http-request
+url: http://192.168.1.14:8081/api/openingstock/create
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"partno\": 30215,\r
+
+    \  \"quantity\": 75,\r
+
+    \  \"openingdate\": \"2025-10-26\",\r
+
+    \  \"openingstock\": 187500.00,\r
+
+    \  \"product\": {\r
+
+    \    \"id\": 3\r
+
+    \  },\r
+
+    \  \"warehouse\": {\r
+
+    \    \"id\": 1\r
+
+    \  }\r
+
+    }\r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{crm tanmay}}"
+order: 1000

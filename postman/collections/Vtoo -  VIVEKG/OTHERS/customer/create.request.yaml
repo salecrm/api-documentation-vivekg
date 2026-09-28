@@ -1,0 +1,87 @@
+$kind: http-request
+url: "{{Base url}}/customer/create"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"companyname\": null,\r
+
+    \  \"phoneno\": \"9876523410\",\r
+
+    \  \"designation\": \"Procurement Manager\",\r
+
+    \  \"email\": \"contact@skylineauto.com\",\r
+
+    \  \"vatno\": \"VAT-TN-472910\",\r
+
+    \  \"openingbalance\": 38500.0,\r
+
+    \  \"openingbalancetype\": \"Credit\",\r
+
+    \  \"openingbalancedate\": \"2025-10-24\",\r
+
+    \  \"status\": \"Active\",\r
+
+    \  \"salutation\": \"Mr.\",\r
+
+    \  \"firstname\": \"John\",\r
+
+    \  \"lastname\": \"Doe\",\r
+
+    \  \"customercategory\": \"Individual\",\r
+
+    \  \"displayname\": \"Skyline Auto (John Doe)\",\r
+
+    \  \"taxtreatment\": \"VAT Registered\",\r
+
+    \  \"taxregistrationnumber\": \"VAT-TN-472910\",\r
+
+    \  \"currency\": \"INR\",\r
+
+    \  \"workphone\": \"044-2345678\",\r
+
+    \  \"advance\": 0.0,\r
+
+    \  \"paymentTerms\": {\"id\": 5},\r
+
+    \  \"customerSubContacts\": null,\r
+
+    \  \"billingaddressattention\": \"Accounts Dept\",\r
+
+    \  \"billingaddressstreet1\": \"No. 45, SIDCO Industrial Estate\",\r
+
+    \  \"billingaddressstreet2\": \"Ambattur\",\r
+
+    \  \"billingcity\": \"Chennai\",\r
+
+    \  \"billingzipcode\": \"600058\",\r
+
+    \  \"billingphone\": \"9876523410\",\r
+
+    \  \"billingstates\": {\"id\": 31},\r
+
+    \  \"billingcountries\": {\"id\": 2},\r
+
+    \  \"shippingaddressattention\": \"Warehouse Manager\",\r
+
+    \  \"shippingaddressstreet1\": \"Plot 12, Phase 3\",\r
+
+    \  \"shippingaddressstreet2\": \"Industrial Area\",\r
+
+    \  \"shippingcity\": \"Chennai\",\r
+
+    \  \"shippingzipcode\": \"600058\",\r
+
+    \  \"shippingphone\": \"9876523411\",\r
+
+    \  \"shippingstates\": {\"id\": 31},\r
+
+    \  \"shippingcountries\": {\"id\": 2}\r
+
+    }\r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{Password}}"
+order: 1000

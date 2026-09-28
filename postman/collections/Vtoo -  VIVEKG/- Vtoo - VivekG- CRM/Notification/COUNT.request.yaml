@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{Base url}}/notification/unreaded"
+method: GET
+order: 6000

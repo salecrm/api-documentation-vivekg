@@ -1,0 +1,15 @@
+$kind: http-request
+url: "{{Base url}}/advance-settings/create"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    // \"isAutoRoundingEnabled\": false,\r
+
+    \    // \"isNegativeStockEnabled\":false,\r
+
+    \    // \"isNegativeBalanceEnabled\":false\r
+
+    }"
+order: 1000

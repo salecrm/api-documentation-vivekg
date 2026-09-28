@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{Base url}}/purchase/due-report-export"
+method: GET
+order: 1000

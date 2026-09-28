@@ -1,0 +1,33 @@
+$kind: http-request
+url: "{{Super Admin Base Url}}/email-gateway/create"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"description\": \"Office 365 Backup SMTP Gateway\",\r
+
+    \  \"emailType\": \"OUTGOING\",\r
+
+    \  \"emailEncryption\": \"TLS\",\r
+
+    \  \"smtpUserName\": \"support@vtooerp.com\",\r
+
+    \  \"password\": \"sampleAppPassword123!\",\r
+
+    \  \"smtpHost\": \"smtp.office365.com\",\r
+
+    \  \"smtpPort\": \"587\",\r
+
+    \  \"emailCharSet\": \"UTF-8\",\r
+
+    \  \"senderName\": \"VTOO Support Notification\",\r
+
+    \  \"senderEmail\": \"support@vtooerp.com\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{Super Admin Bearer Token}}"
+order: 1000

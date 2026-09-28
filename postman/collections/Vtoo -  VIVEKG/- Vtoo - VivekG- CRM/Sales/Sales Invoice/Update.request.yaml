@@ -1,0 +1,201 @@
+$kind: http-request
+url: "{{Base url}}/si/update/144"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"id\": 144,\r
+
+    \    \"customer\": {\r
+
+    \        \"id\": 65\r
+
+    \    },\r
+
+    \    \"warehouse\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"si_no\": null,\r
+
+    \    \"payment_mode\": \"BANK TRANSFER\",\r
+
+    \    \"invoice_date\": \"2026-02-20\",\r
+
+    \    \"vat_no\": \"27ABCDE1234F1Z5\",\r
+
+    \    \"contactperson\": \"Girish Wagh\",\r
+
+    \    \"sales_person\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"due_date\": \"2026-03-22\",\r
+
+    \    \"subject\": \"Sale of Tata Punch Facelift\",\r
+
+    \    \"termcondition\": \"Standard warranty applies; Delivery within 7 working days.\",\r
+
+    \    \"payment_terms\": \"Net 30\",\r
+
+    \    \"billing_address\": \"12 Business Park, Andheri East, Mumbai, 400069\",\r
+
+    \    \"shipping_address\": \"Plot 45, MIDC, Andheri East, Mumbai, 400093\",\r
+
+    \    \"remarks\": \"Special discount applied to match ex-showroom target of 5.59L.\",\r
+
+    \    \"email\": null,\r
+
+    \    \"phoneno\": null,\r
+
+    \    \"items\": [\r
+
+    \        {\r
+
+    \            \"id\": 155,\r
+
+    \            \"product\": {\r
+
+    \                \"id\": 2,\r
+
+    \                \"producttype\": null,\r
+
+    \                \"eancode\": 0.0,\r
+
+    \                \"glp\": 0.0,\r
+
+    \                \"brand\": null,\r
+
+    \                \"createdby\": null,\r
+
+    \                \"updatedby\": null,\r
+
+    \                \"createdbydate\": null,\r
+
+    \                \"updatedbydate\": null,\r
+
+    \                \"uom\": null,\r
+
+    \                \"purchasecost\": null,\r
+
+    \                \"preferredvendors\": null,\r
+
+    \                \"goods\": null,\r
+
+    \                \"service\": null,\r
+
+    \                \"tax\": null,\r
+
+    \                \"rate\": 0.0,\r
+
+    \                \"goodsname\": null,\r
+
+    \                \"servicecharge\": null,\r
+
+    \                \"partCode\": null\r
+
+    \            },\r
+
+    \            \"so_no\": null,\r
+
+    \            \"dc_no\": null,\r
+
+    \            \"description\": \"Tata Punch Facelift\",\r
+
+    \            \"uom\": \"Unit\",\r
+
+    \            \"partcode\": \"TATA-PUNCH-F\",\r
+
+    \            \"qty\": 6199.0,\r
+
+    \            \"returnQty\": null,\r
+
+    \            \"price\": 600000.0,\r
+
+    \            \"rate\": 600000.0,\r
+
+    \            \"discount\": 41000.0,\r
+
+    \            \"total\": 559000.0,\r
+
+    \            \"discountamount\": null,\r
+
+    \            \"vatrate\": null,\r
+
+    \            \"vatamount\": null,\r
+
+    \            \"createdby\": \"amit.sharma\",\r
+
+    \            \"updatedby\": \"amit.sharma\",\r
+
+    \            \"createdbydate\": \"2026-04-30\",\r
+
+    \            \"updatedbydate\": \"2026-04-30\"\r
+
+    \        }\r
+
+    \    ],\r
+
+    \    \"subtotal\": 559000.0,\r
+
+    \    \"shippingcharge\": 0.0,\r
+
+    \    \"discountcharge\": 0.0,\r
+
+    \    \"grosstotal\": 559000.0,\r
+
+    \    \"vat\": \"30.0\",\r
+
+    \    \"vatamount\": 167700.0,\r
+
+    \    \"amounttotal\": 726700.0,\r
+
+    \    \"roundofvalue\": 0.0,\r
+
+    \    \"createdby\": \"amit.sharma\",\r
+
+    \    \"updatedby\": \"amit.sharma\",\r
+
+    \    \"createdbydate\": \"2026-04-30\",\r
+
+    \    \"updatedbydate\": \"2026-04-30\",\r
+
+    \    \"couponname\": \"Inv-081\",\r
+
+    \    \"paid\": 0.0,\r
+
+    \    \"status\": \"DRAFT\",\r
+
+    \    \"deliveryChallanId\": 38,\r
+
+    \    \"deliveryNoteNumber\": null,\r
+
+    \    \"supplierReferenceNumber\": null,\r
+
+    \    \"otherReference\": null,\r
+
+    \    \"deliveryNoteDate\": null,\r
+
+    \    \"dispatchDocumentNumber\": null,\r
+
+    \    \"dispatchedThrough\": null,\r
+
+    \    \"destination\": null,\r
+
+    \    \"buyersOrderNumber\": null,\r
+
+    \    \"buyersOrderDate\": null,\r
+
+    \    \"deliveryTerms\": null\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+order: 4000

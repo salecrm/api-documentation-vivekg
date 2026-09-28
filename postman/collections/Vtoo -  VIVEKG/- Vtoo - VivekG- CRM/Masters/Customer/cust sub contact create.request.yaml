@@ -1,0 +1,27 @@
+$kind: http-request
+url: http://192.168.1.227:8081/api/v1/custsubcont/create
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"customername\": \"Rahul Sharma\",\r
+
+    \  \"email\": \"rahul.sharma@example.com\",\r
+
+    \  \"phoneno\": \"9876543210\",\r
+
+    \  \"designation\": \"Purchase Manager\",\r
+
+    \  \"customer\": {\r
+
+    \    \"id\": 1\r
+
+    \  }\r
+
+    }\r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{crm tanmay}}"
+order: 6000

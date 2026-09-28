@@ -1,0 +1,21 @@
+$kind: http-request
+url: "{{Base url}}/couponmaster/create"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"prefixname\": \"P2026\",\r
+
+    \  \"suffixname\": \"01\",\r
+
+    \  \"preview\": \"P2026-01\",\r
+
+    \  \"module\": \"Proposal\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+order: 1000

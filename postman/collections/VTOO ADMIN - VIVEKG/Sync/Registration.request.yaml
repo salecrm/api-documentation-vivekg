@@ -1,0 +1,79 @@
+$kind: http-request
+url: 192.168.1.72:3000/api/sync
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"userResponse\": {\r
+
+    \        \"id\": 13,\r
+
+    \        \"name\": \"ALBATROZ ADMIN\",\r
+
+    \        \"username\": \"admin@albatroz\",\r
+
+    \        \"email\": \"admin@albatroz.com\",\r
+
+    \        \"phoneNumber\": null,\r
+
+    \        \"roles\": [\"ADMIN\"]\r
+
+    \    },\r
+
+    \    \"companyResponse\": {\r
+
+    \        \"id\": 17,\r
+
+    \        \"companyName\": \"Albatroz Technologies\",\r
+
+    \        \"companyNo\": \"COM-0008\",\r
+
+    \        \"companyEmail\": \"albatroz@example.com\",\r
+
+    \        \"companyPhoneNumber\": \"8976543211\",\r
+
+    \        \"companyTrn\": \"TRN022456719\",\r
+
+    \        \"status\": null\r
+
+    \    },\r
+
+    \    \"subscriptionResponse\": {\r
+
+    \        \"id\": 14,\r
+
+    \        \"subscriptionKey\": \"8311a8563e\",\r
+
+    \        \"subscriptionType\": \"FREE\",\r
+
+    \        \"validity\": \"LIFETIME\",\r
+
+    \        \"amount\": 0.0,\r
+
+    \        \"renewalDate\": null,\r
+
+    \        \"status\": \"ACTIVE\"\r
+
+    \    },\r
+
+    \    \"licenseResponse\": {\r
+
+    \        \"id\": 5,\r
+
+    \        \"licenseKey\": \"LIC-0001-2026-0110\",\r
+
+    \        \"source\": \"WEBSITE\",\r
+
+    \        \"status\": null,\r
+
+    \        \"purchaseDate\": null,\r
+
+    \        \"activationDate\": null,\r
+
+    \        \"expiryDate\": null\r
+
+    \    }\r
+
+    }"
+order: 1000

@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{Base url}}/notification/update/1"
+method: PUT
+body:
+  type: json
+  content: ""
+order: 5000

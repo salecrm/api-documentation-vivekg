@@ -1,0 +1,97 @@
+$kind: http-request
+url: "{{Base url}}/purchasereturn/create"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"returnno\": \"PRRET-2026-001\",\r
+
+    \  \"returndate\": \"2026-02-16\",\r
+
+    \  \"remark\": \"Returning Pagani Sports Car due to specification mismatch.\",\r
+
+    \  \"linkedpurchaseno\": \"GRN-2026-0001\",\r
+
+    \  \"subtotal\": 40000000.0,\r
+
+    \  \"shippingcharge\": 0.0,\r
+
+    \  \"discountcharge\": 0.0,\r
+
+    \  \"grosstotal\": 40000000.0,\r
+
+    \  \"vat\": 40.0,\r
+
+    \  \"vatamount\": 16000000.0,\r
+
+    \  \"amounttotal\": 56000000.0,\r
+
+    \  \"roundofvalue\": 0.0,\r
+
+    \  \"suppliercompanyname\": {\r
+
+    \    \"id\": 1\r
+
+    \  },\r
+
+    \  \"suppliername\": \"Supplier ID 1\",\r
+
+    \  \"suppliervatno\": \"VAT-PENDING\",\r
+
+    \  \"subcontactname\": \"Amit Sharma\",\r
+
+    \  \"address\": \"Main Showroom, Sector 5\",\r
+
+    \  \"warehouse\": {\r
+
+    \    \"id\": 1\r
+
+    \  },\r
+
+    \  \"purchases\": [],\r
+
+    \  \"purchaseReturnItems\": [\r
+
+    \    {\r
+
+    \      \"description\": \"Pagani Sports Car\",\r
+
+    \      \"partcode\": \"ST-990-XP\",\r
+
+    \      \"qty\": 1.0,\r
+
+    \      \"price\": 40000000.0,\r
+
+    \      \"rate\": 40000000.0,\r
+
+    \      \"discount\": 0.0,\r
+
+    \      \"total\": 40000000.0,\r
+
+    \      \"uom\": \"Unit\",\r
+
+    \      \"product\": {\r
+
+    \        \"id\": 1\r
+
+    \      },\r
+
+    \      \"purchase\": {\r
+
+    \        \"id\": 1\r
+
+    \      }\r
+
+    \    }\r
+
+    \  ],\r
+
+    \  \"couponname\": \"PO-1\",\r
+
+    \  \"phoneno\": \"+91-9876543210\",\r
+
+    \  \"email\": \"amit.sharma@erp.com\"\r
+
+    }\r\n"
+order: 2000

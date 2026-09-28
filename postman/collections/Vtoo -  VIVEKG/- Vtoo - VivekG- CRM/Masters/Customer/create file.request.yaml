@@ -1,0 +1,17 @@
+$kind: http-request
+url: http://192.168.1.227:8081/api/v1/attachments/upload?module=cu&id=1
+method: POST
+queryParams:
+  module: cu
+  id: "1"
+body:
+  type: formdata
+  content:
+    - type: file
+      key: file
+      src: /C:/Users/lnv116/Downloads/1.jpg
+auth:
+  type: bearer
+  credentials:
+    token: "{{crm tanmay}}"
+order: 8000

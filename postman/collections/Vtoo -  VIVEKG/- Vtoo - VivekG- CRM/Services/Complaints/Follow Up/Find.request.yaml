@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{Base url}}/complaint/follow-up/1"
+method: GET
+order: 2000

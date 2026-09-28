@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{Server}}/product/findById/101"
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+order: 2000

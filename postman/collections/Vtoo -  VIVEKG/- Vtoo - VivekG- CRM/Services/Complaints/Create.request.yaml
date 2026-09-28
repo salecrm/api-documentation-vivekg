@@ -1,0 +1,25 @@
+$kind: http-request
+url: "{{Base url}}/complaint/create"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    //   \"type\": \"Complaint\",\r
+
+    \  \"contract\": {\"id\": 1},\r
+
+    \  \"customer\": 2,\r
+
+    \  \"priority\": \"HIGH\",\r
+
+    \  \"sla\": {\"id\": 1},\r
+
+    \  \"responseTime\": 4.5,\r
+
+    \  \"resolutionTime\": 24.0\r
+
+    //   \"status\": \"OPEN\"\r
+
+    }"
+order: 2000

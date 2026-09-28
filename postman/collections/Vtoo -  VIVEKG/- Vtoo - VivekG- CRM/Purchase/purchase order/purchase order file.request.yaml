@@ -1,0 +1,14 @@
+$kind: http-request
+url: http://192.168.1.227:8081/api/v1/attachments/upload?module=po&id=1
+method: GET
+queryParams:
+  module: po
+  id: "1"
+body:
+  type: formdata
+  content:
+    - type: file
+      key: file
+      src: /C:/Users/lnv116/Downloads/4.jpg
+settings: {}
+order: 7000

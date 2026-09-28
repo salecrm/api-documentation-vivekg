@@ -1,0 +1,13 @@
+$kind: http-request
+url: "{{Base url}}/accounts/vat-report?dateRange=YEAR"
+method: GET
+queryParams:
+  - key: startDate
+    value: 1999-01-01
+    disabled: true
+  - key: endDate
+    value: 2028-12-31
+    disabled: true
+  - key: dateRange
+    value: YEAR
+order: 5000

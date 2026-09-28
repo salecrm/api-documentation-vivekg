@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{Base url}}/contract/findById/4"
+method: GET
+order: 2000

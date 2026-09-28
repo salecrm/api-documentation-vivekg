@@ -1,0 +1,49 @@
+$kind: http-request
+url: http://192.168.1.227:8081/api/v1/branch/update/7
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \"branchname\": \"Andheri head office\",\r
+
+    \  \"organizationname\": \"BCC Pvt Ltd\",\r
+
+    \  \"picname\": \"kunal kamra\",\r
+
+    \  \"picemil\": \"kunal.kamra@eccs.com\",\r
+
+    \  \"picphoneno\": \"9876543210\",\r
+
+    \  \"street1\": \"2nd Floor, Business Park\",\r
+
+    \  \"street2\": \"Andheri East\",\r
+
+    \  \"zipcode\": \"400069\",\r
+
+    \r
+
+    \  \"states\": {\r
+
+    \    \"id\": 3\r
+
+    \  },\r
+
+    \  \"countries\": {\r
+
+    \    \"id\": 4\r
+
+    \  },\r
+
+    \  \"cities\": {\r
+
+    \    \"id\": 5\r
+
+    \  }\r
+
+    }\r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{crm tanmay}}"
+order: 3000

@@ -1,0 +1,33 @@
+$kind: http-request
+url: 192.168.1.221:8080/api/v1/leaveApplication/1
+method: PUT
+queryParams:
+  - key: search
+    value: qrt
+    disabled: true
+body:
+  type: json
+  content: "{\r
+
+    \    \"date\": \"2025-11-21\",\r
+
+    \    \"reason\": \"pqr\",\r
+
+    \    \"user\": {\r
+
+    \        \"id\": 1\r
+
+    \    },\r
+
+    \    \"leaveType\": {\r
+
+    \        \"id\": 1\r
+
+    \    }\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbjEyMyIsImlhdCI6MTc2NDkyNjMwNSwiZXhwIjoxNzY1MDEyNzA1fQ.pPX_g4aH1aKnGxF0j2lqH8tmSSXmq2ioWr4VwkN8PAQ
+order: 5000

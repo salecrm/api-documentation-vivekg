@@ -1,0 +1,10 @@
+$kind: http-request
+url: "{{Base Url}}/advance-settings/global-search?pageNumber=&pageSize=&field=&direction=desc&search=lead"
+method: GET
+queryParams:
+  pageNumber: ""
+  pageSize: ""
+  field: ""
+  direction: desc
+  search: lead
+order: 5000

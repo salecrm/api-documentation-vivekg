@@ -1,0 +1,31 @@
+$kind: http-request
+url: "{{Base url}}/accounts/trial-balance-report/ledger?ledger=9"
+method: GET
+queryParams:
+  - key: pageNumber
+    value: "0"
+    disabled: true
+  - key: pageSize
+    value: "10"
+    disabled: true
+  - key: search
+    value: GRN-2026-0001
+    disabled: true
+  - key: startDate
+    value: 1947-01-01
+    disabled: true
+  - key: endDate
+    value: 3001-12-31
+    disabled: true
+  - key: dateRange
+    value: month
+    disabled: true
+  - key: direction
+    value: asc
+    disabled: true
+  - key: field
+    value: debit
+    disabled: true
+  - key: ledger
+    value: "9"
+order: 4000

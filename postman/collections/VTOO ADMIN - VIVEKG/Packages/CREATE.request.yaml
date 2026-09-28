@@ -1,0 +1,39 @@
+$kind: http-request
+url: "{{Super Admin Base Url}}/packages/create"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"packageName\": \"Basic ERP Bundle\",\r
+
+    \  \"packageCode\": \"PKG_BSC_01\",\r
+
+    \  \"isActive\": true,\r
+
+    \  \"packageUsage\": 0,\r
+
+    \  \"packageType\": \"SUBSCRIPTION\",\r
+
+    \  \"packageCost\": 299.99,\r
+
+    \  \"description\": \"Comprehensive enterprise package including inventory and HR modules.\",\r
+
+    \  \"storageLimit\": 200.0,\r
+
+    \  \"attachmentSize\": 5.0,\r
+
+    \  \"maximumUsers\": 10,\r
+
+    \  \"maximumBranches\": 2,\r
+
+    \  \"maximumWarehouses\": 3,\r
+
+    \  \"modules\": [1,2,3,4]\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{Super Admin Bearer Token}}"
+order: 1000

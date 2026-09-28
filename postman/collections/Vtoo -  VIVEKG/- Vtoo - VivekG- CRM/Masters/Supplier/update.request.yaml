@@ -1,0 +1,143 @@
+$kind: http-request
+url: http://192.168.1.227:8081/api/v1/supplier/update/26
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \"companyname\": \"Fifty shades Of grey\",\r
+
+    \  \"designation\": \"Wholesale Supplier\",\r
+
+    \  \"zipcode\": \"400001\",\r
+
+    \  \"phoneno\": \"9876543210\",\r
+
+    \  \"email\": \"abc@traders.com\",\r
+
+    \  \"vatno\": \"GSTIN27ABCDE1234F1Z5\",\r
+
+    \  \"status\": \"ACTIVE\",\r
+
+    \r
+
+    \  \"countries\": {\r
+
+    \    \"id\": 1\r
+
+    \  },\r
+
+    \r
+
+    \  \"salutation\": \"Mr\",\r
+
+    \  \"firstname\": \"Rahul\",\r
+
+    \  \"lastname\": \"Sharma\",\r
+
+    \  \"displayname\": \"Rahul Sharma - ABC Traders\",\r
+
+    \r
+
+    \  \"taxtreatment\": \"GST Registered\",\r
+
+    \  \"taxregistrationnumber\": \"27ABCDE1234F1Z5\",\r
+
+    \  \"currency\": \"INR\",\r
+
+    \r
+
+    \  \"placeofsupplystates\": {\r
+
+    \    \"id\": 5\r
+
+    \  },\r
+
+    \r
+
+    \  \"paymentTerms\": {\r
+
+    \    \"id\": 5\r
+
+    \  },\r
+
+    \r
+
+    \  \"billingaddressattention\": \"Accounts Department\",\r
+
+    \  \"billingaddressstreet1\": \"12 Business Park\",\r
+
+    \  \"billingaddressstreet2\": \"Andheri East\",\r
+
+    \  \"billingcity\": \"Mumbai\",\r
+
+    \  \"billingstates\": {\r
+
+    \    \"id\": 5\r
+
+    \  },\r
+
+    \  \"billingzipcode\": \"400069\",\r
+
+    \  \"billingphone\": \"02212345678\",\r
+
+    \r
+
+    \  \"shippingaddressattention\": \"Warehouse\",\r
+
+    \  \"shippingaddressstreet1\": \"Plot 45, MIDC\",\r
+
+    \  \"shippingaddressstreet2\": \"Andheri East\",\r
+
+    \  \"shippingcity\": \"Mumbai\",\r
+
+    \  \"shippingstates\": {\r
+
+    \    \"id\": 5\r
+
+    \  },\r
+
+    \  \"shippingzipcode\": \"400093\",\r
+
+    \  \"shippingphone\": \"02287654321\",\r
+
+    \r
+
+    \  \"supplierContactPersons\": [\r
+
+    \    {\r
+
+    \        \"id\":25,\r
+
+    \      \"suppliername\": \"1212 Verma\",\r
+
+    \      \"email\": \"amit@abc.com\",\r
+
+    \      \"phoneno\": \"9999999991\",\r
+
+    \      \"designation\": \"Purchase Manager\"\r
+
+    \    },\r
+
+    \    {\r
+
+    \                \"id\":26,\r
+
+    \      \"suppliername\": \"33333 Singh\",\r
+
+    \      \"email\": \"neha@abc.com\",\r
+
+    \      \"phoneno\": \"9999999992\",\r
+
+    \      \"designation\": \"Accounts Head\"\r
+
+    \    }\r
+
+    \  ]\r
+
+    }\r\n"
+auth:
+  type: bearer
+  credentials:
+    token: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJhZG1pbkB2dG9vIiwicm9sZXMiOiJBRE1JTiIsImlhdCI6MTc2NTg3Mjc0NSwiZXhwIjoxNzY1OTA4NzQ1fQ.JXUSa3EbrteL7TuO2YNu6gKeu3FxWMu8RuTk3YXfTkk
+order: 4000

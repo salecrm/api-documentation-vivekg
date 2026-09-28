@@ -1,0 +1,23 @@
+$kind: http-request
+url: "{{Base url}}/ledgergroup/page?pageSize=180"
+method: GET
+queryParams:
+  - key: direction
+    value: desc
+    disabled: true
+  - key: search
+    value: ""
+    disabled: true
+  - key: field
+    value: id
+    disabled: true
+  - key: direction
+    value: asc
+    disabled: true
+  - key: pageSize
+    value: "180"
+auth:
+  type: bearer
+  credentials:
+    token: "{{Password}}"
+order: 5000

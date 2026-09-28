@@ -1,0 +1,19 @@
+$kind: http-request
+url: http://192.168.1.21:8081/api/warehouse/create
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"warehousename\": \"North Warehouse\",\r
+
+    \  \"warehouselocation\": \"Delhi\",\r
+
+    \  \"warehousetype\": \"Storage\"\r
+
+    }\r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{crm tanmay}}"
+order: 1000

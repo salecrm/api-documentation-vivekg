@@ -1,0 +1,41 @@
+$kind: http-request
+url: "{{Base url}}/sla/update/1"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"id\": 1,\r
+
+    \    \"name\": \"Gold Support SLA\",\r
+
+    \    \"working\": \"9AM-6PM\",\r
+
+    \    \"active\": \"Yes\",\r
+
+    \    \"responseTime\": 2.0,\r
+
+    \    \"responseType\": \"Hours\",\r
+
+    \    \"resolitionTime\": 24.0,\r
+
+    \    \"resolitionType\": \"Hours\",\r
+
+    \    \"priority\": \"High\",\r
+
+    \    \"couponname\": \"SA-1\",\r
+
+    \    \"createdby\": \"amit.sharma\",\r
+
+    \    \"updatedby\": null,\r
+
+    \    \"createdbydate\": \"2026-03-11\",\r
+
+    \    \"updatedbydate\": null\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+order: 3000

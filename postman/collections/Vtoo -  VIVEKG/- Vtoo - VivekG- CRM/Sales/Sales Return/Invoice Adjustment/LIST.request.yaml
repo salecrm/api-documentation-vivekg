@@ -1,0 +1,9 @@
+$kind: http-request
+url: "{{Base url}}/sales-return-adjustment/list/1?pageNumber=&pageSize=&field=&direction="
+method: GET
+queryParams:
+  pageNumber: ""
+  pageSize: ""
+  field: ""
+  direction: ""
+order: 2000

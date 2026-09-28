@@ -1,0 +1,33 @@
+$kind: http-request
+url: "{{Super Admin Base Url}}/email-gateway/update/1"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \"description\": \"Primary Gmail SMTP Gateway\",\r
+
+    \  \"emailType\": \"OUTGOING\",\r
+
+    \  \"emailEncryption\": \"TLS\",\r
+
+    \  \"smtpUserName\": \"lnv.salecrm@gmail.com\",\r
+
+    \  \"password\": \"icbzbjciaqfcjjrd\",\r
+
+    \  \"smtpHost\": \"smtp.gmail.com\",\r
+
+    \  \"smtpPort\": \"587\",\r
+
+    \  \"emailCharSet\": \"UTF-8\",\r
+
+    \  \"senderName\": \"ERP Test System\",\r
+
+    \  \"senderEmail\": \"lnv.salecrm@gmail.com\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{Super Admin Bearer Token}}"
+order: 4000

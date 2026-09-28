@@ -1,0 +1,24 @@
+$kind: http-request
+url: "{{Base Url}}/access-logs/page?pageNumber=0&pageSize=20&field=module_id&direction=desc&search="
+method: GET
+queryParams:
+  - key: pageNumber
+    value: "0"
+  - key: pageSize
+    value: "20"
+  - key: field
+    value: module_id
+  - key: direction
+    value: desc
+  - key: startDate
+    value: 2026-06-11
+    disabled: true
+  - key: endDate
+    value: 2027-03-10
+    disabled: true
+  - key: dateRange
+    value: YEAR
+    disabled: true
+  - key: search
+    value: ""
+order: 1000

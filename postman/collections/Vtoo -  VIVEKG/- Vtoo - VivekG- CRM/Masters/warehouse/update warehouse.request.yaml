@@ -1,0 +1,19 @@
+$kind: http-request
+url: http://192.168.1.21:8081/api/warehouse/update/1
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \"warehousename\": \"South Warehouse\",\r
+
+    \  \"warehouselocation\": \"Noida\",\r
+
+    \  \"warehousetype\": \"Storage\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{crm tanmay}}"
+order: 3000

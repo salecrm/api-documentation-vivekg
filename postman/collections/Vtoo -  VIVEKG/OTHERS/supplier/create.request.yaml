@@ -1,0 +1,65 @@
+$kind: http-request
+url: http://192.168.1.21:8081/api/supplier/create
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"suppliername\": \"XYZ Tech Distributors Pvt. Ltd.\",\r
+
+    \  \"zipcode\": \"400001\",\r
+
+    \  \"phoneno\": \"+91-9876543210\",\r
+
+    \  \"email\": \"contact@globaltech.com\",\r
+
+    \  \"address\": \"Plot No. 24, Andheri Industrial Estate, Mumbai, Maharashtra, India\",\r
+
+    \  \"eancode\": 8801234567890,\r
+
+    \  \"glp\": 150000.00,\r
+
+    \  \"vatno\": \"GSTIN27AAACG1234A1ZV\",\r
+
+    \  \"company\": {\r
+
+    \    \"id\": 1\r
+
+    \  },\r
+
+    \  \"countries\": {\r
+
+    \    \"id\": 1\r
+
+    \  },\r
+
+    \  \"states\": {\r
+
+    \    \"id\": 12\r
+
+    \  },\r
+
+    \  \"cities\": {\r
+
+    \    \"id\": 45\r
+
+    \  },\r
+
+    \  \"product\": {\r
+
+    \    \"id\": 7\r
+
+    \  },\r
+
+    \  \"brand\": {\r
+
+    \    \"id\": 2\r
+
+    \  }\r
+
+    }\r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{crm tanmay}}"
+order: 1000

@@ -1,0 +1,8 @@
+$kind: http-request
+url: "{{Base url}}/advance-settings/find"
+method: GET
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+order: 4000

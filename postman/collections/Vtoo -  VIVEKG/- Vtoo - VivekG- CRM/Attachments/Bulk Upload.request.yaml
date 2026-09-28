@@ -1,0 +1,18 @@
+$kind: http-request
+url: "{{Base url}}/attachments/bulk-upload?module=ex&id=18"
+method: POST
+queryParams:
+  module: ex
+  id: "18"
+body:
+  type: formdata
+  content:
+    - type: file
+      key: files
+      src:
+        - /C:/Users/LNV104/Downloads/sample-report.pdf
+        - /C:/Users/LNV104/Downloads/mysql-cheat-sheet-a4.pdf
+    - type: text
+      key: temp_keys
+      value: item_3, item_4
+order: 7000

@@ -1,0 +1,14 @@
+$kind: http-request
+url: "{{Base url}}/purchase-return-adjustment/list/30?pageNumber=&pageSize=&field=&direction=&search="
+method: GET
+queryParams:
+  pageNumber: ""
+  pageSize: ""
+  field: ""
+  direction: ""
+  search: ""
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+order: 2000

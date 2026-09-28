@@ -1,0 +1,81 @@
+$kind: http-request
+url: "{{Base Url}}/shift/save"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \        \"name\": \"ERP1\",\r
+
+    \        // \"status\": \"qrt2\",\r
+
+    \        \"shiftSchedule\": [\r
+
+    \            {\r
+
+    \                \"fromtime\": \"10:00:00\",\r
+
+    \                \"totime\": \"19:00:00\",\r
+
+    \                \"days\": \"Monday\"\r
+
+    \            },\r
+
+    \            {\r
+
+    \                \"fromtime\": \"10:00:00\",\r
+
+    \                \"totime\": \"19:00:00\",\r
+
+    \                \"days\": \"Tuesday\"\r
+
+    \            },\r
+
+    \            {\r
+
+    \                \"fromtime\": \"10:00:00\",\r
+
+    \                \"totime\": \"19:00:00\",\r
+
+    \                \"days\": \"Wednesday\"\r
+
+    \            },\r
+
+    \            {\r
+
+    \                \"fromtime\": \"10:00:00\",\r
+
+    \                \"totime\": \"19:00:00\",\r
+
+    \                \"days\": \"Thursday\"\r
+
+    \            },\r
+
+    \            {\r
+
+    \                \"fromtime\": \"10:00:00\",\r
+
+    \                \"totime\": \"19:00:00\",\r
+
+    \                \"days\": \"Friday\"\r
+
+    \            },\r
+
+    \            {\r
+
+    \                \"fromtime\": \"11:00:00\",\r
+
+    \                \"totime\": \"04:00:00\",\r
+
+    \                \"days\": \"Saturday\"\r
+
+    \            }\r
+
+    \        ]\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{Password}}"
+order: 1000

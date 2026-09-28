@@ -1,0 +1,20 @@
+$kind: http-request
+url: "{{Base url}}/dc/page?pageNumber=&pageSize=&field=id&direction=desc"
+method: GET
+queryParams:
+  - key: pageNumber
+    value: ""
+  - key: pageSize
+    value: ""
+  - key: field
+    value: id
+  - key: direction
+    value: desc
+  - key: search
+    value: DC-013
+    disabled: true
+auth:
+  type: bearer
+  credentials:
+    token: "{{Password}}"
+order: 5000

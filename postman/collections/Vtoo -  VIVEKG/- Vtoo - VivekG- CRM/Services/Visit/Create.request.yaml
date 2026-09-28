@@ -1,0 +1,95 @@
+$kind: http-request
+url: "{{Base url}}/visit/create"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    //   \"contract\": { \"id\": 1 },\r
+
+    \  \"customer\": { \"id\": 1 },\r
+
+    //   \"complaint\": { \"id\": 4 },\r
+
+    \  \"technicalStaff\": { \"id\": 1 },\r
+
+    \  \"remarks\": \"Extra Parts Used in the process\",\r
+
+    \  \"visitAddress\": \"31st Street Near Hanuman Mandir Badlapur 421302\",\r
+
+    \  \"taxType\": \"NON-TAXABLE\",\r
+
+    \  \"isBillable\": true,\r
+
+    \  \"visitType\": { \"id\": 1 },\r
+
+    \  \"status\": \"OPEN\",\r
+
+    \  \"inTime\": \"10:00:00\",\r
+
+    \  \"outTime\": \"12:30:00\",\r
+
+    \  \"visitDate\": \"2026-05-13\",\r
+
+    \  \"partsUsed\": [\r
+
+    \    {\r
+
+    \      \"product\": { \"id\": 1 },\r
+
+    \      \"description\": \"Oil Filter Replacement\",\r
+
+    \      \"uom\": \"PCS\",\r
+
+    \      \"partcode\": \"FLT-99\",\r
+
+    \      \"qty\": 1.0,\r
+
+    \      \"vatrate\": 0.0,\r
+
+    \      \"vatamount\": 0.0,\r
+
+    \      \"discountamount\": 0.0,\r
+
+    \      \"price\": 500.0,\r
+
+    \      \"rate\": 500.0,\r
+
+    \      \"discount\": 0.0,\r
+
+    \      \"total\": 500.0\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"product\": { \"id\": 2 },\r
+
+    \      \"description\": \"Gas Refill\",\r
+
+    \      \"uom\": \"LTR\",\r
+
+    \      \"partcode\": \"GAS-22\",\r
+
+    \      \"qty\": 2.0,\r
+
+    \      \"vatrate\": 0.0,\r
+
+    \      \"vatamount\": 0.0,\r
+
+    \      \"discountamount\": 0.0,\r
+
+    \      \"price\": 300.0,\r
+
+    \      \"rate\": 300.0,\r
+
+    \      \"discount\": 0.0,\r
+
+    \      \"total\": 600.0\r
+
+    \    }\r
+
+    \  ]\r
+
+    }"
+order: 1000

@@ -1,0 +1,11 @@
+$kind: http-request
+url: "{{Base url}}/product/page?direction=desc&search=&field=id&type=PRODUCT&supplier=&customer="
+method: GET
+queryParams:
+  direction: desc
+  search: ""
+  field: id
+  type: PRODUCT
+  supplier: ""
+  customer: ""
+order: 5000

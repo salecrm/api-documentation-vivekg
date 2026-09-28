@@ -1,0 +1,141 @@
+$kind: http-request
+url: "{{Base url}}purchase/update/19"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \"grndate\": \"2025-01-25\",\r
+
+    \  \"grnno\": \"GRN-2025-0003\",\r
+
+    \  \"recievedby\": \"Inventory Officer\",\r
+
+    \  \"deliverynote\": \"Material received in good condition\",\r
+
+    \  \"remark\": \"Checked and accepted\",\r
+
+    \  \"status\": \"RECEIVED\",\r
+
+    \  \"subtotal\": 3150.00,\r
+
+    \  \"shippingcharge\": 100.00,\r
+
+    \  \"discountcharge\": 150.00,\r
+
+    \  \"grosstotal\": 3100.00,\r
+
+    \  \"vat\": \"5%\",\r
+
+    \  \"vatamount\": 155.00,\r
+
+    \  \"amounttotal\": 3255.00,\r
+
+    \  \"roundofvalue\": 3255.00,\r
+
+    \  \"purchasedate\": \"2025-01-25\",\r
+
+    \  \"supplierinvoiceno\": \"SUP-INV-791\",\r
+
+    \  \"shippingaddress\": \"Warehouse No 2, Industrial Estate, Nashik\",\r
+
+    \  \"billingaddress\": \"Accounts Section, Head Office, Nashik\",\r
+
+    \  \"warehouse\": {\r
+
+    \    \"id\": 5\r
+
+    \  },\r
+
+    \  \"suppliercompanyname\": {\r
+
+    \    \"id\": 8\r
+
+    \  },\r
+
+    \  \"suppliername\": \"Bright Electricals\",\r
+
+    \  \"staff\": {\r
+
+    \    \"id\": 2\r
+
+    \  },\r
+
+    \  \"suppliervatno\": \"VAT-889900\",\r
+
+    \  \"subcontactname\": \"Rahul Sharma\",\r
+
+    \  \"couponname\": \"ELEC5\",\r
+
+    \  \"subject\": \"Lighting Items Purchase\",\r
+
+    \  \"paymentterms\": \"Deliver after 12 pm\",\r
+
+    \  \"duedate\": \"2025-02-01\",\r
+
+    \  \"purchaseItems\": [\r
+
+    \    {\r
+
+    \      \"description\": \"Tube Light 20W\",\r
+
+    \      \"partcode\": \"TL-20W\",\r
+
+    \      \"qty\": 40,\r
+
+    \      \"price\": 40,\r
+
+    \      \"rate\": 40,\r
+
+    \      \"discount\": 50,\r
+
+    \      \"total\": 1550,\r
+
+    \      \"uom\": \"PCS\",\r
+
+    \      \"po_no\": 1003,\r
+
+    \      \"product\": {\r
+
+    \        \"id\": 2\r
+
+    \      }\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"description\": \"Ceiling Fan Regulator\",\r
+
+    \      \"partcode\": \"REG-01\",\r
+
+    \      \"qty\": 10,\r
+
+    \      \"price\": 160,\r
+
+    \      \"rate\": 160,\r
+
+    \      \"discount\": 0,\r
+
+    \      \"total\": 1600,\r
+
+    \      \"uom\": \"PCS\",\r
+
+    \      \"po_no\": 1003,\r
+
+    \      \"product\": {\r
+
+    \        \"id\": 3\r
+
+    \      }\r
+
+    \    }\r
+
+    \  ]\r
+
+    }\r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+order: 5000

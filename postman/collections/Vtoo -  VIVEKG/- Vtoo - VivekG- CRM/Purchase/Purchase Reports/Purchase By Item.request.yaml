@@ -1,0 +1,26 @@
+$kind: http-request
+url: "{{Base url}}/purchase/purchase-by-item-export"
+method: GET
+queryParams:
+  - key: pageNumber
+    value: "0"
+    disabled: true
+  - key: pageSize
+    value: "10"
+    disabled: true
+  - key: direction
+    value: asc
+    disabled: true
+  - key: search
+    value: qqq
+    disabled: true
+  - key: startDate
+    value: 2025-12-20
+    disabled: true
+  - key: endDate
+    value: 2025-12-31
+    disabled: true
+  - key: dateRange
+    value: MONTH
+    disabled: true
+order: 3000

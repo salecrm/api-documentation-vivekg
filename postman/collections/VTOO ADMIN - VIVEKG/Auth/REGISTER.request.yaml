@@ -1,0 +1,39 @@
+$kind: http-request
+url: "{{Super Admin Base Url}}/auth/registration"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"accountDetails\": {\r
+
+    \        \"name\": \"BOT 3\",\r
+
+    \        \"username\": \"bot3@vtoo\",\r
+
+    \        \"email\": \"bot3@gmail.com\",\r
+
+    \        \"phoneNumber\": \"9111111133\",\r
+
+    \        \"password\": \"password3\"\r
+
+    \    },\r
+
+    \    \"companyDetails\": {\r
+
+    \        \"companyName\": \"BOT 3 SOFTWARES\",\r
+
+    \        \"companyNo\": \"COM-0033\",\r
+
+    \        \"companyEmail\": \"bot3@gmail.com\",\r
+
+    \        \"companyPhoneNumber\": \"9111111133\",\r
+
+    \        \"companyTrn\": \"TRN100000033\",\r
+
+    \        \"countryId\": null\r
+
+    \    }\r
+
+    }"
+order: 3000

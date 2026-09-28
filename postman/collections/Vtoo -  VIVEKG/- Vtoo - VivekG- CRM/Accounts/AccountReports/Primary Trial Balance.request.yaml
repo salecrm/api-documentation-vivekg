@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{Base url}}/accounts/trial-balance-report?startDate=2024-01-01&endDate=2025-12-31"
+method: GET
+queryParams:
+  - key: startDate
+    value: 2024-01-01
+  - key: endDate
+    value: 2025-12-31
+  - key: search
+    value: ""
+    disabled: true
+order: 3000

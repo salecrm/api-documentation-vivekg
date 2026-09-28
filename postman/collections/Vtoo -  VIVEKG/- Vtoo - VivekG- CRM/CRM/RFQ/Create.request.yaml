@@ -1,0 +1,93 @@
+$kind: http-request
+url: "{{Base url}}/rfq/create"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"company\": 5,\r
+
+    \  \"contactname\": \"Alice Johnson\",\r
+
+    \  \"mobileno\": 9876543210,\r
+
+    \  \"email\": \"alice.johnson@globaltech.com\",\r
+
+    \  \"designation\": \"Procurement Manager\",\r
+
+    \  \"date\": \"2025-11-17\",\r
+
+    \  \"enquirysource\": \"Website\",\r
+
+    \  \"status\": \"OPEN\",\r
+
+    \  \"incoterm\": \"FOB\",\r
+
+    \  \"salesPerson\": 1,\r
+
+    \  \"quotevalidity\": \"30 Days\",\r
+
+    \  \"condition\": \"Standard Terms Apply\",\r
+
+    \  \"remarks\": \"Please provide the quotation urgently\",\r
+
+    \  \"items\": [\r
+
+    \    {\r
+
+    \      \"product\": {\r
+
+    \        \"id\": 3\r
+
+    \      },\r
+
+    \      \"description\": \"High capacity industrial pump\",\r
+
+    \      \"uom\": \"Piece\",\r
+
+    \      \"partcode\": \"IP-1000-2025\",\r
+
+    \      \"qty\": 10,\r
+
+    \      \"price\": 500.0,\r
+
+    \      \"rate\": 5000.0,\r
+
+    \      \"discount\": 200.0,\r
+
+    \      \"total\": 4800.0\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"product\": {\r
+
+    \        \"id\": 2\r
+
+    \      },\r
+
+    \      \"description\": \"Set of valves for pumps\",\r
+
+    \      \"uom\": \"Set\",\r
+
+    \      \"partcode\": \"VK-200-2025\",\r
+
+    \      \"qty\": 5,\r
+
+    \      \"price\": 150.0,\r
+
+    \      \"rate\": 750.0,\r
+
+    \      \"discount\": 50.0,\r
+
+    \      \"total\": 700.0\r
+
+    \    }\r
+
+    \  ]\r
+
+    //   \"subtotal\": 5500.0\r
+
+    }\r\n"
+order: 2000

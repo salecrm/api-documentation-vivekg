@@ -1,0 +1,6 @@
+$kind: http-request
+url: "{{Base Url}}/brand/page?search="
+method: GET
+queryParams:
+  search: ""
+order: 5000

@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{Base url}}/contract/approve/5"
+method: GET
+order: 6000

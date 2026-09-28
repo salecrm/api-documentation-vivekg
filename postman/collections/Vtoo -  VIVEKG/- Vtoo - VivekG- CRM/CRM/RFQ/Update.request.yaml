@@ -1,0 +1,421 @@
+$kind: http-request
+url: "{{Base url}}/rfq/update/6"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"id\": 6,\r
+
+    \    \"company\": 5,\r
+
+    \    \"contactname\": \"Alice Johnson\",\r
+
+    \    \"status\": \"OPEN\",\r
+
+    \    \"mobileno\": \"9876543210\",\r
+
+    \    \"email\": \"alice.johnson@globaltech.com\",\r
+
+    \    \"designation\": \"Procurement Manager\",\r
+
+    \    \"date\": \"2025-11-17\",\r
+
+    \    \"enquirysource\": \"Website\",\r
+
+    \    \"enquirystatus\": null,\r
+
+    \    \"incoterm\": \"FOB\",\r
+
+    \    \"quotevalidity\": \"30 Days\",\r
+
+    \    \"condition\": \"Standard Terms Apply\",\r
+
+    \    \"salesPerson\": 1,\r
+
+    \    \"remarks\": \"Please provide the quotation urgently\",\r
+
+    \    \"items\": [\r
+
+    \        {\r
+
+    \            \"id\": 10,\r
+
+    \            \"product\": {\r
+
+    \                \"id\": 3,\r
+
+    \                \"producttype\": \"Semi-Finished\",\r
+
+    \                \"eancode\": 12.0,\r
+
+    \                \"glp\": 100.0,\r
+
+    \                \"brand\": {\r
+
+    \                    \"id\": 3,\r
+
+    \                    \"name\": \"2026-05-09\",\r
+
+    \                    \"createdby\": \"admin@vtoo\",\r
+
+    \                    \"updatedby\": \"admin@vtoo\",\r
+
+    \                    \"createdbydate\": \"2026-05-18T16:32:10.673834\",\r
+
+    \                    \"updatedbydate\": \"2026-05-18T16:53:40.941015\"\r
+
+    \                },\r
+
+    \                \"createdby\": \"admin@vtoo\",\r
+
+    \                \"updatedby\": null,\r
+
+    \                \"createdbydate\": \"2026-05-19T14:33:29.632165\",\r
+
+    \                \"updatedbydate\": null,\r
+
+    \                \"uom\": {\r
+
+    \                    \"id\": 2,\r
+
+    \                    \"name\": \"PCS\",\r
+
+    \                    \"shortform\": \"PCS\",\r
+
+    \                    \"createdby\": \"admin@vtoo\",\r
+
+    \                    \"updatedby\": null,\r
+
+    \                    \"createdbydate\": \"2026-05-18T15:07:55.209752\",\r
+
+    \                    \"updatedbydate\": null\r
+
+    \                },\r
+
+    \                \"purchasecost\": 12.0,\r
+
+    \                \"preferredvendors\": {\r
+
+    \                    \"id\": 1,\r
+
+    \                    \"companyname\": \"Bricks Cement pvt ltd\",\r
+
+    \                    \"designation\": \"Tester\",\r
+
+    \                    \"phoneno\": \"\",\r
+
+    \                    \"email\": \"E@mai.com\",\r
+
+    \                    \"vatno\": \"2DXHEEY87382UD\",\r
+
+    \                    \"createdby\": \"admin@vtoo\",\r
+
+    \                    \"updatedby\": \"admin@vtoo\",\r
+
+    \                    \"createdbydate\": \"2026-05-18T15:11:24.703745\",\r
+
+    \                    \"updatedbydate\": \"2026-05-18T15:12:18.819693\",\r
+
+    \                    \"status\": \"ACTIVE\",\r
+
+    \                    \"salutation\": \"Mr\",\r
+
+    \                    \"firstname\": \"Girish\",\r
+
+    \                    \"lastname\": \"Wagh\",\r
+
+    \                    \"displayname\": \"Mr Girish\",\r
+
+    \                    \"taxtreatment\": \"VAT Registered\",\r
+
+    \                    \"taxregistrationnumber\": null,\r
+
+    \                    \"currency\": \"AED\",\r
+
+    \                    \"placeofsupplycountries\": {\r
+
+    \                        \"id\": 1,\r
+
+    \                        \"countryName\": \"Afghanistan\"\r
+
+    \                    },\r
+
+    \                    \"paymentTerms\": {\r
+
+    \                        \"id\": 6,\r
+
+    \                        \"termname\": \"Net 11 Adv 50%\",\r
+
+    \                        \"numberofdays\": 11,\r
+
+    \                        \"createdby\": \"admin@vtoo\",\r
+
+    \                        \"updatedby\": null,\r
+
+    \                        \"createdbydate\": \"2026-05-18T15:08:44.570715\",\r
+
+    \                        \"updatedbydate\": null\r
+
+    \                    },\r
+
+    \                    \"billingaddressattention\": \"HITESH\",\r
+
+    \                    \"billingaddressstreet1\": \"HDFC OK OK DAVALAITY JDWONS \",\r
+
+    \                    \"billingaddressstreet2\": \"\",\r
+
+    \                    \"billingcity\": \"\",\r
+
+    \                    \"billingstates\": {\r
+
+    \                        \"id\": 458,\r
+
+    \                        \"stateName\": \"Saint George\",\r
+
+    \                        \"countryId\": 24\r
+
+    \                    },\r
+
+    \                    \"billingzipcode\": \"421501\",\r
+
+    \                    \"billingphone\": \"\",\r
+
+    \                    \"billingcountries\": {\r
+
+    \                        \"id\": 24,\r
+
+    \                        \"countryName\": \"Bermuda\"\r
+
+    \                    },\r
+
+    \                    \"shippingaddressattention\": \"\",\r
+
+    \                    \"shippingaddressstreet1\": \"\",\r
+
+    \                    \"shippingaddressstreet2\": \"\",\r
+
+    \                    \"shippingcity\": \"\",\r
+
+    \                    \"shippingstates\": null,\r
+
+    \                    \"shippingzipcode\": \"\",\r
+
+    \                    \"shippingphone\": \"\",\r
+
+    \                    \"shippingcountries\": null,\r
+
+    \                    \"supplierContactPersons\": [\r
+
+    \                        {\r
+
+    \                            \"id\": 1,\r
+
+    \                            \"suppliername\": \"Ashish\",\r
+
+    \                            \"email\": \"s@h.com\",\r
+
+    \                            \"phoneno\": \"019876543234567\",\r
+
+    \                            \"designation\": \"smsl2o1mk28du8dsvA\",\r
+
+    \                            \"createdby\": null,\r
+
+    \                            \"updatedby\": null,\r
+
+    \                            \"createdbydate\": null,\r
+
+    \                            \"updatedbydate\": null\r
+
+    \                        }\r
+
+    \                    ],\r
+
+    \                    \"openingbalance\": null,\r
+
+    \                    \"openingbalancetype\": \"Credit\",\r
+
+    \                    \"openingbalancedate\": \"2026-05-18\",\r
+
+    \                    \"workphone\": \"+222222 3838382\",\r
+
+    \                    \"ledger\": {\r
+
+    \                        \"id\": 44,\r
+
+    \                        \"ledgerTitle\": \"Bricks Cement pvt ltd\",\r
+
+    \                        \"ledgergroup\": {\r
+
+    \                            \"id\": 5,\r
+
+    \                            \"title\": \"Sundry Creditors\",\r
+
+    \                            \"nature\": \"Liabilities\",\r
+
+    \                            \"isSystemGenerated\": true,\r
+
+    \                            \"createdby\": \"SYSTEM\",\r
+
+    \                            \"updatedby\": null,\r
+
+    \                            \"createdbydate\": \"2025-01-01T00:00:00\",\r
+
+    \                            \"updatedbydate\": null\r
+
+    \                        },\r
+
+    \                        \"openingBalance\": null,\r
+
+    \                        \"openingBalanceType\": \"Credit\",\r
+
+    \                        \"openingBalanceDate\": \"2026-05-18\",\r
+
+    \                        \"isDefault\": false,\r
+
+    \                        \"createdby\": \"admin@vtoo\",\r
+
+    \                        \"updatedby\": \"admin@vtoo\",\r
+
+    \                        \"createdbydate\": \"2026-05-18T15:11:24.719614\",\r
+
+    \                        \"updatedbydate\": \"2026-05-18T15:12:18.827251\"\r
+
+    \                    },\r
+
+    \                    \"advance\": null\r
+
+    \                },\r
+
+    \                \"goods\": \"yes\",\r
+
+    \                \"service\": \"no\",\r
+
+    \                \"tax\": 5.0,\r
+
+    \                \"rate\": 0.0,\r
+
+    \                \"goodsname\": \"sss\",\r
+
+    \                \"servicecharge\": null,\r
+
+    \                \"partCode\": \"janhavi11\"\r
+
+    \            },\r
+
+    \            \"description\": \"High capacity industrial pump\",\r
+
+    \            \"uom\": \"Piece\",\r
+
+    \            \"partcode\": \"IP-1000-2025\",\r
+
+    \            \"qty\": 10.0,\r
+
+    \            \"price\": 500.0,\r
+
+    \            \"rate\": 5000.0,\r
+
+    \            \"discount\": 200.0,\r
+
+    \            \"total\": 4800.0\r
+
+    \        },\r
+
+    \        {\r
+
+    \            \"id\": 11,\r
+
+    \            \"product\": {\r
+
+    \                \"id\": 2,\r
+
+    \                \"producttype\": \"Finished\",\r
+
+    \                \"eancode\": null,\r
+
+    \                \"glp\": null,\r
+
+    \                \"brand\": {\r
+
+    \                    \"id\": 1,\r
+
+    \                    \"name\": \"test1\",\r
+
+    \                    \"createdby\": \"admin@vtoo\",\r
+
+    \                    \"updatedby\": null,\r
+
+    \                    \"createdbydate\": \"2026-05-18T15:03:06.808511\",\r
+
+    \                    \"updatedbydate\": null\r
+
+    \                },\r
+
+    \                \"createdby\": \"admin@vtoo\",\r
+
+    \                \"updatedby\": \"admin@vtoo\",\r
+
+    \                \"createdbydate\": \"2026-05-18T15:49:49.999332\",\r
+
+    \                \"updatedbydate\": \"2026-05-18T18:23:08.336254\",\r
+
+    \                \"uom\": null,\r
+
+    \                \"purchasecost\": null,\r
+
+    \                \"preferredvendors\": null,\r
+
+    \                \"goods\": \"no\",\r
+
+    \                \"service\": \"yes\",\r
+
+    \                \"tax\": 5.0,\r
+
+    \                \"rate\": 100.0,\r
+
+    \                \"goodsname\": null,\r
+
+    \                \"servicecharge\": \"I Phone Replaced by hitesh \",\r
+
+    \                \"partCode\": \"ok\"\r
+
+    \            },\r
+
+    \            \"description\": \"Set of valves for pumps\",\r
+
+    \            \"uom\": \"Set\",\r
+
+    \            \"partcode\": \"VK-200-2025\",\r
+
+    \            \"qty\": 5.0,\r
+
+    \            \"price\": 150.0,\r
+
+    \            \"rate\": 750.0,\r
+
+    \            \"discount\": 50.0,\r
+
+    \            \"total\": 700.0\r
+
+    \        }\r
+
+    \    ],\r
+
+    \    \"subtotal\": 0.0,\r
+
+    \    \"createdby\": \"admin@vtoo\",\r
+
+    \    \"updatedby\": null,\r
+
+    \    \"createdbydate\": \"2026-06-15T14:19:10.955291\",\r
+
+    \    \"updatedbydate\": null,\r
+
+    \    \"couponname\": \"R-4\",\r
+
+    \    \"companyName\": \"Skyline Auto (John Dis)\",\r
+
+    \    \"salesPersonName\": \"admin@vtoo\"\r
+
+    }"
+order: 4000

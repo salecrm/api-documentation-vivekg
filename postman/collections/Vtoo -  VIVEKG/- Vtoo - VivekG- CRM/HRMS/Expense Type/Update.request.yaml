@@ -1,0 +1,15 @@
+$kind: http-request
+url: "{{Base Url}}/expense-type/update/10"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"id\": 10,\r
+
+    \    \"type\": \"trip\",\r
+
+    \    \"isActive\": false\r
+
+    }"
+order: 3000

@@ -1,0 +1,25 @@
+$kind: http-request
+url: "{{Base url}}/cart/update-items/7"
+method: PUT
+body:
+  type: json
+  content: "// {\r
+
+    //     \"product\": {\"id\": 2},\r
+
+    //     \"quantity\": 4.0\r
+
+    // }\r
+
+    \r
+
+    {\r
+
+    \  \"user\": 0,\r
+
+    \  \"product\": {\"id\": 0},\r
+
+    \  \"quantity\": 3.0\r
+
+    }\r\n"
+order: 4000

@@ -1,0 +1,91 @@
+$kind: http-request
+url: "{{Base url}}/sr/create"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"customer\": {\r
+
+    \    \"id\": 1\r
+
+    \  },\r
+
+    \  \"warehouse\": {\r
+
+    \    \"id\": 1\r
+
+    \  },\r
+
+    \  \"contactperson\": \"Girish Wagh\",\r
+
+    \  \"sales_person\": 1,\r
+
+    \  \"payment_terms\": \"Immediate\",\r
+
+    \  \"termcondition\": \"Returned to warehouse in original condition; subject to inspection.\",\r
+
+    \  \"sr_no\": \"SR-TATA-2026-001\",\r
+
+    \  \"invoice_no\": 1,\r
+
+    \  \"credit_note_date\": \"2026-02-17\",\r
+
+    \  \"remarks\": \"Customer requested return of Tata Punch Facelift due to change in corporate requirements.\",\r
+
+    \  \"email\": \"info@tataautomobile.com\",\r
+
+    \  \"phoneno\": \"9876543210\",\r
+
+    \  \"items\": [\r
+
+    \    {\r
+
+    \      \"product\": {\r
+
+    \        \"id\": 1\r
+
+    \      },\r
+
+    \      \"description\": \"Tata Punch Facelift\",\r
+
+    \      \"uom\": \"UNT\",\r
+
+    \      \"partcode\": \"Tata Punch F01\",\r
+
+    \      \"qty\": 1.0,\r
+
+    \      \"price\": 600000.0,\r
+
+    \      \"rate\": 600000.0,\r
+
+    \      \"discount\": 41000.0,\r
+
+    \      \"total\": 559000.0\r
+
+    \    }\r
+
+    \  ],\r
+
+    \  \"subtotal\": 559000.0,\r
+
+    \  \"shippingcharge\": 0.0,\r
+
+    \  \"discountcharge\": 0.0,\r
+
+    \  \"grosstotal\": 559000.0,\r
+
+    \  \"vat\": 5,\r
+
+    \  \"vatamount\": 167700.0,\r
+
+    \  \"amounttotal\": 726700.0,\r
+
+    \  \"roundofvalue\": 0.0\r
+
+    }\r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{Password}}"
+order: 2000

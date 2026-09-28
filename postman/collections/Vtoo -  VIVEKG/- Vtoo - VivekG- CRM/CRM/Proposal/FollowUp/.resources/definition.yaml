@@ -1,0 +1,18 @@
+$kind: collection
+description: |-
+  **| Create a FollowUp** → `POST`
+
+  `/rfq/follow-up/create`
+
+  **| Find FollowUp by ID** → `GET`
+
+  `/rfq/follow-up/{id}`
+
+  **| Delete FollowUp** →`DELETE`
+
+  `/rfq/follow-up/{id}`
+
+  **| Pagination & Search by Lead ID** → `GET`
+
+  `/rfq/follow-up/{rfqId}/page?pageNumber=&pageSize=&field=id&direction=desc&search=14`
+order: 1000

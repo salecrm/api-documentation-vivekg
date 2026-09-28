@@ -1,0 +1,9 @@
+$kind: http-request
+url: "{{Base Url}}/product/check-exists?goodsName=iphone&eanCode=750356199956&partCode=2233&serviceCharge=DOG_HAIRCUT"
+method: GET
+queryParams:
+  goodsName: iphone
+  eanCode: "750356199956"
+  partCode: "2233"
+  serviceCharge: DOG_HAIRCUT
+order: 7000

@@ -1,0 +1,137 @@
+$kind: http-request
+url: "{{Base url}}/purchaseorder/update/40"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \"purchaseorderdate\": \"2025-01-10\",\r
+
+    \  \"purchaseorderno\": \"PO-2025-002\",\r
+
+    \  \"status\": \"ClOSED\",\r
+
+    \  \"subcontactname\": \"Ramesh Kumar\",\r
+
+    \  \"paymentterms\": \"No available\",\r
+
+    \  \"deliverylocation\": \"Mumbai Warehouse\",\r
+
+    \  \"deliverydate\": \"2025-01-25\",\r
+
+    \  \"shippingmethod\": \"Road Transport\",\r
+
+    \  \"subtotal\": 50000,\r
+
+    \  \"shippingcharge\": 3000,\r
+
+    \  \"discountcharge\": 8000,\r
+
+    \  \"grosstotal\": 49000,\r
+
+    \  \"vat\": \"GST 18%\",\r
+
+    \  \"vatamount\": 8820,\r
+
+    \  \"amounttotal\": 57820,\r
+
+    \  \"roundofvalue\": 0,\r
+
+    \r
+
+    \  \"remark\": \"Urgent delivery required\",\r
+
+    \  \"duedate\": \"2025-02-15\",\r
+
+    \  \"shippingaddress\": \"Plot 21, MIDC, Andheri East, Mumbai\",\r
+
+    \  \"billingaddress\": \"Head Office, Mumbai\",\r
+
+    \  \"suppliervatno\": \"27ABCDE1234F1Z5\",\r
+
+    \  \"suppliercompanyname\": {\r
+
+    \    \"id\": 3\r
+
+    \  },\r
+
+    \  \"suppliername\": \"XYZ Suppliers Pvt Ltd\",\r
+
+    \  \"couponname\": \"NEWYEAR25\",\r
+
+    \  \"subject\": \"Purchase of raw materials\",\r
+
+    \  \"isCancelled\": false,\r
+
+    \r
+
+    \  \"purchaseOrderItems\": [\r
+
+    \    {\r
+
+    \       \"description\": \"Steel Rod 10mm\",\r
+
+    \    \"partcode\": \"SR10\",\r
+
+    \    \"qty\": 100,\r
+
+    \    \"price\": 400,\r
+
+    \    \"rate\": 400,\r
+
+    \    \"discount\": 500,\r
+
+    \    \"total\": 39500,\r
+
+    \    \"uom\": \"PCS\",\r
+
+    \    \"supply\": 100,\r
+
+    \    \"status\": \"ACTIVE\",\r
+
+    \    \"product\": {\r
+
+    \      \"id\": 1\r
+
+    \    }\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"description\": \"Aluminium Sheet\",\r
+
+    \      \"partcode\": \"AL-SHT\",\r
+
+    \      \"qty\": 50,\r
+
+    \      \"price\": 200,\r
+
+    \      \"rate\": 200,\r
+
+    \      \"discount\": 0,\r
+
+    \      \"total\": 10000,\r
+
+    \      \"uom\": \"KG\",\r
+
+    \      \"supply\": 50,\r
+
+    \      \"status\": \"ACTIVE\",\r
+
+    \      \"product\": {\r
+
+    \        \"id\": 2\r
+
+    \      }\r
+
+    \    }\r
+
+    \  ]\r
+
+    }\r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{v2token}}"
+order: 2000

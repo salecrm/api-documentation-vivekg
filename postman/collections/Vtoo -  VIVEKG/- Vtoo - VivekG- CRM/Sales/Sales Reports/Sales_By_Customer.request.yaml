@@ -1,0 +1,29 @@
+$kind: http-request
+url: "{{Base url}}/si/sales-by-customer?pageSize=100"
+method: GET
+queryParams:
+  - key: pageNumber
+    value: "0"
+    disabled: true
+  - key: pageSize
+    value: "100"
+  - key: direction
+    value: asc
+    disabled: true
+  - key: search
+    value: Audi
+    disabled: true
+  - key: startDate
+    value: 2025-12-01
+    disabled: true
+  - key: endDate
+    value: 2025-12-31
+    disabled: true
+  - key: dateRange
+    value: year
+    disabled: true
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+order: 5000

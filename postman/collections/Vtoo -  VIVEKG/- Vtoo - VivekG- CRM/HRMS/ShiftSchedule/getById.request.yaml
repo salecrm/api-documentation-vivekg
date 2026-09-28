@@ -1,0 +1,4 @@
+$kind: http-request
+url: 192.168.1.6:7070/api/v1/shift/
+method: GET
+order: 2000

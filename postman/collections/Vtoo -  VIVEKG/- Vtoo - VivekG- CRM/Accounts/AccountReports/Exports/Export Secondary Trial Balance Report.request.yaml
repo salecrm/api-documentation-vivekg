@@ -1,0 +1,27 @@
+$kind: http-request
+url: "{{Base url}}/accounts/trial-balance-detailed-export/ledger?search=&startDate=&endDate=&dateRange=&ledger=5"
+method: GET
+queryParams:
+  - key: pageNumber
+    value: "0"
+    disabled: true
+  - key: pageSize
+    value: "10"
+    disabled: true
+  - key: search
+    value: ""
+  - key: startDate
+    value: ""
+  - key: endDate
+    value: ""
+  - key: dateRange
+    value: ""
+  - key: direction
+    value: asc
+    disabled: true
+  - key: field
+    value: debit
+    disabled: true
+  - key: ledger
+    value: "5"
+order: 1000

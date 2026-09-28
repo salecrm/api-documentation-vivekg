@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{Base url}}/bank/page?field=id&search=&direction=desc"
+method: GET
+queryParams:
+  field: id
+  search: ""
+  direction: desc
+auth:
+  type: bearer
+  credentials:
+    token: "{{Password}}"
+order: 6000

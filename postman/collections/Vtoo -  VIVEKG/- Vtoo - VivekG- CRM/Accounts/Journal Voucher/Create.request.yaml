@@ -1,0 +1,109 @@
+$kind: http-request
+url: "{{Base url}}/jv/create"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"transactionalDate\": \"2026-01-25\", // REQUIRED\r
+
+    \  \"transactionalAmount\": 700.0, // MUST BE Σ Dr. = Σ Cr.\r
+
+    \r
+
+    \  \"entries\": [\r
+
+    \    \r
+
+    \    // ENTRY 1 → ADJUSTMENT ENTRY\r
+
+    \    {\r
+
+    \      \"particular\": { \"id\": 46 }, \r
+
+    \      // Ledger: Customer / Receivable ledger \r
+
+    \      \"adjustmentType\": \"Adjustment\", \r
+
+    \      // REQUIRED → triggers adjustment logic\r
+
+    \      \"remark\": null, // optional\r
+
+    \      \"refrence\": \"RCPT-003\", \r
+
+    \      // REQUIRED for adjustment (receipt/invoice reference)\r
+
+    \      \"externalInvoice\": null, \r
+
+    \      // ❌ NOT USED (this is for supplier side)\r
+
+    \      \"internalInvoice\": 148, \r
+
+    \      // REQUIRED → customer invoice ID\r
+
+    \      \"paymentId\": null, \r
+
+    \      // ❌ NOT USED (supplier payment case)\r
+
+    \      \"receiptId\": 90, \r
+
+    \      // REQUIRED → customer receipt ID\r
+
+    \      \"amount\": 700.0, // REQUIRED\r
+
+    \      \"entryType\": \"CREDIT\" \r
+
+    \      // For customer adjustment → usually CREDIT\r
+
+    \    },\r
+
+    \r
+
+    \    // ENTRY 2 → COUNTER LEDGER ENTRY\r
+
+    \    {\r
+
+    \      \"id\": null,\r
+
+    \r
+
+    \      \"particular\": { \"id\": 21 }, \r
+
+    \      // Ledger: Bills Receivable / Bills Payable / Other Ledgers\r
+
+    \      // ! MUST be DIFFERENT from entry 1\r
+
+    \      \"adjustmentType\": \"Ledger\", \r
+
+    \      // Normal ledger entry (no adjustment logic)\r
+
+    \      \"remark\": null,\r
+
+    \      \"refrence\": null, \r
+
+    \      // Not required for simple ledger entry\r
+
+    \      \"externalInvoice\": null, // ❌ not used\r
+
+    \      \"internalInvoice\": null, // ❌ not used\r
+
+    \      \"paymentId\": null,       // ❌ not used\r
+
+    \      \"receiptId\": null,       // ❌ not used\r
+
+    \      \"amount\": 700.0,\r
+
+    \      \"entryType\": \"DEBIT\"\r
+
+    \      // Opposite of first entry → keeps books balanced\r
+
+    \    }\r
+
+    \  ]\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+order: 1000

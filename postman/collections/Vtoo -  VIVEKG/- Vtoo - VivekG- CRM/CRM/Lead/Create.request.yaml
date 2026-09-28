@@ -1,0 +1,33 @@
+$kind: http-request
+url: "{{Base Url}}/lead/create"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"company\": 5,\r
+
+    \  \"contactname\": \"John Doe\",\r
+
+    \  \"designation\": \"Manager\",\r
+
+    \  \"mobileno\": \"1234567890\",\r
+
+    \  \"email\": \"john.doe@example.com\",\r
+
+    \  \"date\": \"2025-11-18\",\r
+
+    \  \"title\": \"New Lead for Project X\",\r
+
+    \  \"value\": 15000.00,\r
+
+    \  \"source\": \"Website\",\r
+
+    \  \"leadFrom\": \"Trading\",\r
+
+    \  \"salesPerson\": 2,\r
+
+    \  \"description\": \"Potential client interested in our new software.\"\r
+
+    }\r\n"
+order: 2000

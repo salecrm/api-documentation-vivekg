@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{Base url}}/rv/findById/5"
+method: GET
+body:
+  type: text
+  content: ""
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+settings: {}
+order: 2000

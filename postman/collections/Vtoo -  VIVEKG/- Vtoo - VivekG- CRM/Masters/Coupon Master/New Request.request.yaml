@@ -1,0 +1,21 @@
+$kind: http-request
+url: http://192.168.1.227:8081/api/v1/couponmaster/create
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"prefixname\": \"P2025\",\r
+
+    \  \"suffixname\": \"01\",\r
+
+    \  \"preview\": \"P2025-01\",\r
+
+    \  \"module\": \"Purchase\"\r
+
+    }\r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{crm tanmay}}"
+order: 1000

@@ -1,0 +1,15 @@
+$kind: http-request
+url: "{{Super Admin Base Url}}/attachments/update/39"
+method: PUT
+body:
+  type: formdata
+  content:
+    - type: file
+      key: file
+      src: /C:/Users/LNV104/Pictures/excited druid.gif
+      description: Attach the files that are ment to be uploded
+auth:
+  type: bearer
+  credentials:
+    token: "{{Super Admin Bearer Token}}"
+order: 3000

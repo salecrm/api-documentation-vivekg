@@ -1,0 +1,297 @@
+$kind: http-request
+url: "{{Base url}}/contract/update/1"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"id\": 1,\r
+
+    \    \"customer\": {\r
+
+    \        \"id\": 83,\r
+
+    \        \"companyname\": \"TATA\",\r
+
+    \        \"phoneno\": \"9876543210\",\r
+
+    \        \"designation\": \"SEO\",\r
+
+    \        \"email\": \"info@tataautomobile.com\",\r
+
+    \        \"vatno\": \"27ABCDE1234F1Z5\",\r
+
+    \        \"openingbalance\": 30000.0,\r
+
+    \        \"openingbalancetype\": \"DEBIT\",\r
+
+    \        \"openingbalancedate\": \"2025-01-01\",\r
+
+    \        \"createdby\": \"amit.sharma\",\r
+
+    \        \"updatedby\": null,\r
+
+    \        \"createdbydate\": \"2026-02-20\",\r
+
+    \        \"updatedbydate\": null,\r
+
+    \        \"status\": \"ACTIVE\",\r
+
+    \        \"customerSubContacts\": [\r
+
+    \            {\r
+
+    \                \"id\": 67,\r
+
+    \                \"customername\": \"Girish Wagh\",\r
+
+    \                \"email\": \"wagh@tata.com\",\r
+
+    \                \"phoneno\": \"9999999991\",\r
+
+    \                \"designation\": \"CFO\"\r
+
+    \            },\r
+
+    \            {\r
+
+    \                \"id\": 68,\r
+
+    \                \"customername\": \"P.B. Balaji\",\r
+
+    \                \"email\": \"balaji@tata.com\",\r
+
+    \                \"phoneno\": \"9999999992\",\r
+
+    \                \"designation\": \"Managing Director\"\r
+
+    \            }\r
+
+    \        ],\r
+
+    \        \"salutation\": \"Mr\",\r
+
+    \        \"firstname\": \"Natarajan\",\r
+
+    \        \"lastname\": \"Chandrasekaran\",\r
+
+    \        \"customercategory\": \"Regular\",\r
+
+    \        \"displayname\": \"Mr Natarajan Chandrasekaran\",\r
+
+    \        \"taxtreatment\": \"GST Registered\",\r
+
+    \        \"taxregistrationnumber\": \"27ABCDE1234F1Z5\",\r
+
+    \        \"currency\": \"INR\",\r
+
+    \        \"placeofsupplycountries\": {\r
+
+    \            \"id\": 101,\r
+
+    \            \"countryName\": \"India\"\r
+
+    \        },\r
+
+    \        \"paymentTerms\": {\r
+
+    \            \"id\": 12,\r
+
+    \            \"termname\": \"Net 20\",\r
+
+    \            \"numberofdays\": 20,\r
+
+    \            \"createdby\": \"admin@vtoo\",\r
+
+    \            \"updatedby\": null,\r
+
+    \            \"createdbydate\": \"2025-12-17\",\r
+
+    \            \"updatedbydate\": null\r
+
+    \        },\r
+
+    \        \"billingaddressattention\": \"Accounts Dept\",\r
+
+    \        \"billingaddressstreet1\": \"12 Business Park\",\r
+
+    \        \"billingaddressstreet2\": \"Andheri East\",\r
+
+    \        \"billingstates\": {\r
+
+    \            \"id\": 22,\r
+
+    \            \"stateName\": \"Maharashtra\",\r
+
+    \            \"countryId\": 101\r
+
+    \        },\r
+
+    \        \"billingzipcode\": \"400069\",\r
+
+    \        \"billingphone\": \"02212345678\",\r
+
+    \        \"billingcountries\": {\r
+
+    \            \"id\": 101,\r
+
+    \            \"countryName\": \"India\"\r
+
+    \        },\r
+
+    \        \"billingcity\": \"Mumbai\",\r
+
+    \        \"shippingaddressattention\": \"Warehouse\",\r
+
+    \        \"shippingaddressstreet1\": \"Plot 45, MIDC\",\r
+
+    \        \"shippingaddressstreet2\": \"Andheri East\",\r
+
+    \        \"shippingstates\": {\r
+
+    \            \"id\": 22,\r
+
+    \            \"stateName\": \"Maharashtra\",\r
+
+    \            \"countryId\": 101\r
+
+    \        },\r
+
+    \        \"shippingzipcode\": \"400093\",\r
+
+    \        \"shippingphone\": \"02287654321\",\r
+
+    \        \"shippingcountries\": {\r
+
+    \            \"id\": 101,\r
+
+    \            \"countryName\": \"India\"\r
+
+    \        },\r
+
+    \        \"shippingcity\": \"Mumbai\",\r
+
+    \        \"workphone\": \"02299887766\",\r
+
+    \        \"ledger\": {\r
+
+    \            \"id\": 44,\r
+
+    \            \"ledgerTitle\": \"TATA\",\r
+
+    \            \"ledgergroup\": {\r
+
+    \                \"id\": 9,\r
+
+    \                \"title\": \"Sundry Debtors\",\r
+
+    \                \"nature\": \"Assets\",\r
+
+    \                \"isSystemGenerated\": true,\r
+
+    \                \"createdby\": \"SYSTEM\",\r
+
+    \                \"updatedby\": null,\r
+
+    \                \"createdbydate\": \"2026-01-03\",\r
+
+    \                \"updatedbydate\": null\r
+
+    \            },\r
+
+    \            \"openingBalance\": 30000.0,\r
+
+    \            \"openingBalanceType\": \"DEBIT\",\r
+
+    \            \"openingBalanceDate\": \"2025-01-01\",\r
+
+    \            \"isDefault\": false,\r
+
+    \            \"createdby\": \"amit.sharma\",\r
+
+    \            \"updatedby\": null,\r
+
+    \            \"createdbydate\": \"2026-02-20\",\r
+
+    \            \"updatedbydate\": null\r
+
+    \        },\r
+
+    \        \"advance\": null\r
+
+    \    },\r
+
+    \    \"contactPerson\": \"John Doe\",\r
+
+    \    \"contractTitle\": \"Annual Maintenance 2024\",\r
+
+    \    \"sla\": {\r
+
+    \        \"id\": 1,\r
+
+    \        \"name\": \"Gold Support SLA\",\r
+
+    \        \"working\": \"9AM-6PM\",\r
+
+    \        \"active\": \"Yes\",\r
+
+    \        \"responseTime\": 2.0,\r
+
+    \        \"responseType\": \"Hours\",\r
+
+    \        \"resolitionTime\": 24.0,\r
+
+    \        \"resolitionType\": \"Hours\",\r
+
+    \        \"priority\": \"High\",\r
+
+    \        \"couponname\": \"SA-1\",\r
+
+    \        \"createdby\": \"amit.sharma\",\r
+
+    \        \"updatedby\": \"amit.sharma\",\r
+
+    \        \"createdbydate\": \"2026-03-11\",\r
+
+    \        \"updatedbydate\": \"2026-03-11\"\r
+
+    \    },\r
+
+    \    \"contractType\": {\r
+
+    \        \"id\": 1,\r
+
+    \        \"type\": \"Annual Maintenance\"\r
+
+    \    },\r
+
+    \    \"status\": \"OPEN\",\r
+
+    \    \"contractValue\": 15000.5,\r
+
+    \    \"billingType\": \"Monthly\",\r
+
+    \    \"startDate\": \"2024-03-01\",\r
+
+    \    \"endDate\": \"2025-02-28\",\r
+
+    \    \"visitType\": \"MONTHLY\",\r
+
+    \    \"autoRenewal\": false,\r
+
+    \    \"couponname\": \"CO-1\",\r
+
+    \    \"createdby\": \"amit.sharma\",\r
+
+    \    \"updatedby\": null,\r
+
+    \    \"createdbydate\": \"2026-03-11\",\r
+
+    \    \"updatedbydate\": null\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+order: 3000

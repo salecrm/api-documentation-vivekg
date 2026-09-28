@@ -1,0 +1,11 @@
+$kind: http-request
+url: "{{Base url}}/auth/refreshToken"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \"refreshToken\":\"ac49d593-dfa3-423f-bb00-4dd4ab02c1fb\"\r
+
+    }"
+order: 2000

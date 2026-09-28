@@ -1,0 +1,17 @@
+$kind: http-request
+url: "{{Base url}}/accounts/profit-and-loss-report"
+method: GET
+queryParams:
+  - key: startDate
+    value: 2024-01-01
+    disabled: true
+  - key: endDate
+    value: 2026-12-31
+    disabled: true
+  - key: dateRange
+    value: MONTH
+    disabled: true
+  - key: year
+    value: "2025"
+    disabled: true
+order: 6000

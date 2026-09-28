@@ -1,0 +1,15 @@
+$kind: http-request
+url: "{{Base url}}/si/pending-orders?customerId=3&productId=2"
+method: GET
+queryParams:
+  customerId: "3"
+  productId: "2"
+body:
+  type: json
+  content: ""
+auth:
+  type: bearer
+  credentials:
+    token: "{{password}}"
+settings: {}
+order: 7000

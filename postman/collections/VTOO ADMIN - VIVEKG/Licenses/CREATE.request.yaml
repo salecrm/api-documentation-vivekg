@@ -1,0 +1,17 @@
+$kind: http-request
+url: "{{Super Admin Base Url}}/license/create"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"licenseKey\": \"LIC-0009-2026-0021\",\r
+
+    \  \"source\": \"WEBSITE\"\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{Super Admin Bearer Token}}"
+order: 1000

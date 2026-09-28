@@ -1,0 +1,12 @@
+$kind: http-request
+url: "{{Server}}/stocktrasfer/report?pageNumber=0&pageSize=10&search=&direction=asc&warehouseId=2&startDate=1999-01-01&endDate=2027-12-31"
+method: GET
+queryParams:
+  pageNumber: "0"
+  pageSize: "10"
+  search: ""
+  direction: asc
+  warehouseId: "2"
+  startDate: 1999-01-01
+  endDate: 2027-12-31
+order: 4000

@@ -1,0 +1,33 @@
+$kind: http-request
+url: http://192.168.1.14:8081/api/openingstock/update/3
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \"partno\":400577,\r
+
+    \  \"quantity\": 195.0,\r
+
+    \  \"openingdate\": \"2025-09-29\",\r
+
+    \  \"openingstock\": 80500.00,\r
+
+    \  \"product\": {\r
+
+    \    \"id\": 9\r
+
+    \  },\r
+
+    \  \"warehouse\": {\r
+
+    \    \"id\": 1\r
+
+    \  }\r
+
+    }\r\n"
+auth:
+  type: bearer
+  credentials:
+    token: "{{crm tanmay}}"
+order: 3000
