@@ -1,4 +1,4 @@
 $kind: http-request
-url: "{{Base url}}/warehouse/primary/1"
+url: "{{Base url}}/warehouse/primary/2"
 method: GET
 order: 6000

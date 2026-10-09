@@ -1,0 +1,25 @@
+$kind: http-request
+method: GET
+url: "{{Base url}}/bank/credit-card/page"
+queryParams:
+  - key: pageSize
+    value: ""
+    disabled: true
+    description: ""
+  - key: pageNumber
+    value: ""
+    disabled: true
+    description: ""
+  - key: direction
+    value: ""
+    disabled: true
+    description: ""
+  - key: field
+    value: ""
+    disabled: true
+    description: ""
+  - key: search
+    value: ""
+    disabled: true
+    description: ""
+order: 4346091571078313

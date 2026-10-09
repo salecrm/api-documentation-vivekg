@@ -1,0 +1,10 @@
+$kind: http-request
+url: "{{Base url}}/purchase-receives/page?pageSize=1"
+method: GET
+queryParams:
+  pageSize: "1"
+auth:
+  type: inherit
+  credentials:
+    id: 74cd813e-1386-4935-ba3b-57ed0ec055c0
+order: 3685405737719538

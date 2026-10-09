@@ -1,15 +1,23 @@
 $kind: http-request
-url: "{{Base url}}/pv/page?pageNumber=&pageSize=1000&field=&direction=desc"
+url: "{{Base Url}}/pv/page?pageNumber=&pageSize=1000&field=&direction=desc"
 method: GET
 queryParams:
   - key: pageNumber
     value: ""
+    disabled: false
+    description: ""
   - key: pageSize
     value: "1000"
+    disabled: false
+    description: ""
   - key: field
     value: ""
+    disabled: false
+    description: ""
   - key: direction
     value: desc
+    disabled: false
+    description: ""
   - key: search
     value: state
     disabled: true

@@ -1,0 +1,4 @@
+$kind: http-request
+method: DELETE
+url: "{{Base url}}/bank/credit-card/delete/1"
+order: 4343558302597332

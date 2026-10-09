@@ -5,24 +5,31 @@ queryParams:
   - key: pageNumber
     value: "0"
     disabled: true
+    description: ""
   - key: pageSize
     value: "20"
     disabled: true
+    description: ""
   - key: direction
     value: desc
     disabled: true
+    description: ""
   - key: search
     value: 2025-12-09
     disabled: true
+    description: ""
   - key: startDate
     value: 2025-12-18
     disabled: true
+    description: ""
   - key: endDate
     value: 2025-12-31
     disabled: true
+    description: ""
   - key: dateRange
     value: ""
     disabled: true
+    description: ""
 auth:
   type: bearer
   credentials:

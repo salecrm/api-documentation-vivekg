@@ -1,0 +1,18 @@
+$kind: http-request
+method: PUT
+url: "{{Base url}}/bank/credit-card/update/1"
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "cardName": "Corporate Visa Updated",
+      "cardNumber": "1234 1234 1234 1234",
+      "bankName": "HDFC Bank",
+      "currency": "INR",
+      "cardLimit": 600000.0,
+      "description": "Updated primary corporate expense card",
+      "status": "ACTIVE"
+    }
+order: 6000

@@ -1,0 +1,55 @@
+$kind: http-request
+url: "{{Base url}}/purchase-receives/create"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"supplierId\": 1,\r
+
+    \  \"purchaseOrderId\": 5,\r
+
+    \  \"receivedDate\": \"2026-10-07\",\r
+
+    \  \"trackingNumber\": \"TRK-987654321\",\r
+
+    \  \"description\": \"Received first shipment of raw materials for production.\",\r
+
+    \  \"items\": [\r
+
+    \    {\r
+
+    \      \"productId\": 3,\r
+
+    \      \"orderQty\": 100.0,\r
+
+    \      \"receiveQty\": 95.0,\r
+
+    \      \"inTransitQty\": 5.0,\r
+
+    \      \"quantity\": 95.0\r
+
+    \    },\r
+
+    \    {\r
+
+    \      \"productId\": 2,\r
+
+    \      \"orderQty\": 50.0,\r
+
+    \      \"receiveQty\": 50.0,\r
+
+    \      \"inTransitQty\": 0.0,\r
+
+    \      \"quantity\": 50.0\r
+
+    \    }\r
+
+    \  ]\r
+
+    }"
+auth:
+  type: inherit
+  credentials:
+    id: 74cd813e-1386-4935-ba3b-57ed0ec055c0
+order: 1791368285069

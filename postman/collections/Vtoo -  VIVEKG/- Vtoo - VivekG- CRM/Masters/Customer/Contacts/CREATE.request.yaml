@@ -1,0 +1,19 @@
+$kind: http-request
+url: "{{Base url}}/customer/contact/create"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \  \"contactName\": \"Abhijeet Kumar\",\r
+
+    \  \"email\": \"abhijeet.kumar@example.com\",\r
+
+    \  \"phoneNumber\": \"9876543211\",\r
+
+    \  \"designation\": \"Sales Executive\",\r
+
+    \  \"customerId\": 1\r
+
+    }\r\n"
+order: 1463050887916

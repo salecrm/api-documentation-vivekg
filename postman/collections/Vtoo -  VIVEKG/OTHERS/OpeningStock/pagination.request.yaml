@@ -1,5 +1,5 @@
 $kind: http-request
-url: http://192.168.1.14:8081/api/openingstock/page?direction=asc&search=3&field=id
+url: "{{Base Url}}/openingstock/page?direction=asc&search=3&field=id"
 method: GET
 queryParams:
   direction: asc
@@ -8,5 +8,5 @@ queryParams:
 auth:
   type: bearer
   credentials:
-    token: "{{crm tanmay}}"
+    token: "{{Password}}"
 order: 5000

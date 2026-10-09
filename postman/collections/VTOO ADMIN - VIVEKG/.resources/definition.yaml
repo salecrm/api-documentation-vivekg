@@ -1,3 +1,6 @@
 $kind: collection
 name: VTOO ADMIN | VIVEKG
 description: ""
+variables:
+  Super Admin Base Url: ""
+  Super Admin Bearer Token: ""

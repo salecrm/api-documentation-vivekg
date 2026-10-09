@@ -1,0 +1,13 @@
+$kind: http-request
+method: PATCH
+url: "{{Base url}}/bank/credit-card/patch/1"
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "cardLimit": 600000.0,
+      "status": "ACTIVE"
+    }
+order: 5000

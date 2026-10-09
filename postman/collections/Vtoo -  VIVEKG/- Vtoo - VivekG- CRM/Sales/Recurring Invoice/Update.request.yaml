@@ -1,0 +1,52 @@
+$kind: http-request
+url: '{{Base url}}/recurring-invoice/update/:id'
+method: PUT
+pathVariables:
+  - key: id
+    value: '1'
+body:
+  type: json
+  content: |-
+    {
+      "customerId": 1,
+      "salesPersonId": 2,
+      "warehouseId": 1,
+      "recurringInvoiceName": "Fully Updated Enterprise Subscription",
+      "startDate": "2026-10-01",
+      "endDate": "2027-10-01",
+      "repeatEvery": "1",
+      "frequency": 1,
+      "frequencyUnit": "MONTHS",
+      "referenceInvoice": "INV-REF-002",
+      "taxType": "With-Tax",
+      "paymentTerms": "Net 30",
+      "paymentMode": "Bank Transfer",
+      "description": "Fully updated recurring billing details.",
+      "billingAddress": "123 Business Rd, Suite 100",
+      "shippingAddress": "123 Business Rd, Suite 100",
+      "items": [
+        {
+          "productId": 101,
+          "description": "Enterprise Software License Updated",
+          "uom": "Units",
+          "partCode": "ESL-01",
+          "qty": 10.0,
+          "price": 100.0,
+          "rate": 100.0,
+          "discount": 0.0,
+          "total": 1000.0,
+          "discountAmount": 0.0,
+          "vatRate": 5.0,
+          "vatAmount": 50.0
+        }
+      ],
+      "subtotal": 1000.0,
+      "shippingcharge": 0.0,
+      "discountcharge": 0.0,
+      "grosstotal": 1000.0,
+      "vat": 5.0,
+      "vatamount": 50.0,
+      "amounttotal": 1050.0,
+      "roundofvalue": 0.0
+    }
+order: 4931

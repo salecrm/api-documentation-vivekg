@@ -1,18 +1,16 @@
 $kind: http-request
-url: "{{Super Admin Base Url}}/email-gateway/send-email/1?"
+url: '{{Super Admin Base Url}}/email-gateway/send-email/1'
 method: POST
 queryParams:
   - key: to
-    value: "vtoosales@gmail.com, "
+    value: 'vtoosales@gmail.com, '
     disabled: true
   - key: subject
-    value: "Test 1 EMAIL SMTP ::VivekG:"
+    value: 'Test 1 EMAIL SMTP ::VivekG:'
     disabled: true
   - key: body
     value: This is the first Test File I am Sending To Test If the Email SMTP is working via DB Dynamically
     disabled: true
-  - key: ""
-    value: ""
 body:
   type: formdata
   content:

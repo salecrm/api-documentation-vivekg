@@ -5,9 +5,9 @@ body:
   type: json
   content: "  {\r
 
-    \    \"producttype\": \"MYSTIC\",\r
+    \    \"producttype\": \"MYSTIC ITEM\",\r
 
-    \    \"eancode\": 777777777777,\r
+    \    \"eancode\": 820258400066,\r
 
     \    \"glp\": 3000.0,\r
 
@@ -27,11 +27,11 @@ body:
 
     \    \"rate\": 18.0,\r
 
-    \    \"goodsname\": \"KARDISHNON\",\r
+    \    \"goodsname\": \"MYSTIC WATER\",\r
 
     \    // \"servicecharge\": \"VET\",\r
 
-    \    \"partCode\": \"MYSTIC-777\"\r
+    \    \"partCode\": \"MYSTIC-W8R\"\r
 
     \  }\r
 

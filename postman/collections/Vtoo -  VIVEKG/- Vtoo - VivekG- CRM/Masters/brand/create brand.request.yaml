@@ -3,7 +3,7 @@ url: "{{Base url}}/brand/create"
 method: POST
 body:
   type: json
-  content: "{\r\n  \"name\":\"Tata\"\r\n}\r\n"
+  content: "{\r\n  \"name\":\"MYSTIC\"\r\n}\r\n"
 auth:
   type: bearer
   credentials:

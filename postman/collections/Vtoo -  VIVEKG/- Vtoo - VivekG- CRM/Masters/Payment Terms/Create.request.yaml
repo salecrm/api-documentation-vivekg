@@ -5,17 +5,9 @@ body:
   type: json
   content: "{\r
 
-    \  \"termname\": \"Net 30\",\r
+    \  \"termname\": \"COD\",\r
 
-    \  \"numberofdays\": \"30\",\r
-
-    \  \"createdby\": \"admin\",\r
-
-    \  \"createdbydate\": \"2026-02-16\",\r
-
-    \  \"updatedby\": \"admin\",\r
-
-    \  \"updatedbydate\": \"2026-02-16\"\r
+    \  \"numberofdays\": \"0\"\r
 
     }\r\n"
 auth:

@@ -1,0 +1,20 @@
+$kind: http-request
+url: '{{Base
+  url}}/recurring-invoice/page?pageSize=&pageNumber=&direction=&field=&search=&customer=&isExpired='
+method: GET
+queryParams:
+  - key: pageSize
+    value: ''
+  - key: pageNumber
+    value: ''
+  - key: direction
+    value: ''
+  - key: field
+    value: ''
+  - key: search
+    value: ''
+  - key: customer
+    value: ''
+  - key: isExpired
+    value: ''
+order: 2385694470179589

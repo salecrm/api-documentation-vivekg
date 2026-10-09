@@ -1,0 +1,25 @@
+$kind: http-request
+url: "{{Base url}}/customer/contact/page?pageSize=&pageNumber=&direction=&field=&search="
+method: GET
+queryParams:
+  - key: pageSize
+    value: ""
+    disabled: false
+    description: ""
+  - key: pageNumber
+    value: ""
+    disabled: false
+    description: ""
+  - key: direction
+    value: ""
+    disabled: false
+    description: ""
+  - key: field
+    value: ""
+    disabled: false
+    description: ""
+  - key: search
+    value: ""
+    disabled: false
+    description: ""
+order: 3272265894901688

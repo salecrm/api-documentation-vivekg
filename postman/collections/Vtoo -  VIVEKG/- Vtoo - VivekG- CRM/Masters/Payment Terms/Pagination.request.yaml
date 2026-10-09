@@ -1,5 +1,5 @@
 $kind: http-request
-url: "{{Base url}}/paymentterms/page?pageNumber=0&pageSize=10&field=id&direction=desc&search="
+url: "{{Base Url}}/paymentterms/page?pageNumber=0&pageSize=10&field=id&direction=desc&search="
 method: GET
 queryParams:
   pageNumber: "0"
@@ -10,5 +10,5 @@ queryParams:
 auth:
   type: bearer
   credentials:
-    token: "{{password}}"
+    token: "{{Password}}"
 order: 2000

@@ -1,11 +1,29 @@
 $kind: http-request
-url: "{{Base url}}/product/page?direction=desc&search=&field=id&type=PRODUCT&supplier=&customer="
+url: "{{Base url}}/product/page?search="
 method: GET
 queryParams:
-  direction: desc
-  search: ""
-  field: id
-  type: PRODUCT
-  supplier: ""
-  customer: ""
+  - key: direction
+    value: desc
+    disabled: true
+    description: ""
+  - key: search
+    value: ""
+    disabled: false
+    description: ""
+  - key: field
+    value: id
+    disabled: true
+    description: ""
+  - key: type
+    value: PRODUCT
+    disabled: true
+    description: ""
+  - key: supplier
+    value: ""
+    disabled: true
+    description: ""
+  - key: customer
+    value: ""
+    disabled: true
+    description: ""
 order: 5000

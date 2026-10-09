@@ -1,8 +1,8 @@
 $kind: http-request
-url: http://192.168.1.21:8081/api/uom/findAll
+url: "{{Base url}}/uom/findAll"
 method: GET
 auth:
   type: bearer
   credentials:
-    token: "{{crm tanmay}}"
+    token: "{{password}}"
 order: 5000

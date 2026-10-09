@@ -11,21 +11,7 @@ body:
 
     \        \"addOnId\": 1,\r
 
-    \        \"qty\": 2,\r
-
-    \        \"start_date\": \"2026-09-29T15:56:39.162417\",\r
-
-    \        \"end_date\": \"2026-10-29T15:56:39.162417\"\r
-
-    \    },\r
-
-    \    {\r
-
-    \        // \"id\": 1,\r
-
-    \        \"addOnId\": 1,\r
-
-    \        \"qty\": 1,\r
+    \        \"qty\": 3,\r
 
     \        \"start_date\": \"2026-09-29T15:56:39.162417\",\r
 
@@ -35,7 +21,5 @@ body:
 
     ]"
 auth:
-  type: bearer
-  credentials:
-    token: "{{Super Admin Bearer Token}}"
+  type: noauth
 order: 1000

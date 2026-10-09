@@ -1,11 +1,15 @@
 $kind: http-request
-url: "{{Base url}}/si/sales-by-sales-person-export?pageNumber=0&pageSize=10&search="
+url: "{{Base url}}/si/sales-by-sales-person?pageNumber=0&pageSize=10&search="
 method: GET
 queryParams:
   - key: pageNumber
     value: "0"
+    disabled: false
+    description: ""
   - key: pageSize
     value: "10"
+    disabled: false
+    description: ""
   - key: direction
     value: desc
     disabled: true
@@ -20,4 +24,6 @@ queryParams:
     disabled: true
   - key: search
     value: ""
+    disabled: false
+    description: ""
 order: 7000

@@ -13,6 +13,10 @@ variables:
     secret: false
   - key: supabase_service_role_api_key_051f
     secret: true
+  - key: Base Url
+    value: ""
+  - key: password
+    value: ""
 auth:
   - id: 74cd813e-1386-4935-ba3b-57ed0ec055c0
     type: bearer
