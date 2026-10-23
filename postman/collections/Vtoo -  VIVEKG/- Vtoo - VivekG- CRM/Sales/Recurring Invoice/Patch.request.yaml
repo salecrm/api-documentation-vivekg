@@ -1,5 +1,5 @@
 $kind: http-request
-url: "{{Base url}}/recurring-invoice/patch/4"
+url: "{{Base url}}/recurring-invoice/patch/53"
 method: PATCH
 body:
   type: json
@@ -7,5 +7,7 @@ body:
     {
       "recurringInvoiceName": "Updated Monthly Enterprise Subscription",
       "paymentTerms": "Net 15"
+      
+
     }
 order: 4000

@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{Base url}}/crm/activities/meeting/delete/4"
+method: DELETE
+order: 5000

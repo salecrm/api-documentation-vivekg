@@ -1,4 +1,4 @@
 $kind: http-request
-url: "{{Base url}}/recurring-invoice/findById/4"
+url: "{{Base url}}/recurring-invoice/findById/56"
 method: GET
 order: 2000

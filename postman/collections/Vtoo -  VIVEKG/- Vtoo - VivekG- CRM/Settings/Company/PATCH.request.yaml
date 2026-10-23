@@ -1,0 +1,69 @@
+$kind: http-request
+url: "{{Base url}}/setting/company/patch/2"
+method: PATCH
+body:
+  type: json
+  content: "{\r
+
+    \    \"organizationname\": \"Vtoo ERP Solutions\",\r
+
+    \    \"primarycontact\": \"Ganesh Nadar\",\r
+
+    \    \"industry\": \"Software Industry\",\r
+
+    \    \"street1\": \"Street 1\",\r
+
+    \    \"street2\": \"Street 2\",\r
+
+    \    \"city\": \"Jumeirah\",\r
+
+    \    \"pincode\": \"123456\",\r
+
+    \    \"countryId\": 229,\r
+
+    \    \"phoneno\": \"123456798\",\r
+
+    \    \"basecurrency\": \"AED\",\r
+
+    \    \"financialyear\": \"January - December\",\r
+
+    \    \"orgniztionlanguage\": \"English\",\r
+
+    \    \"timezone\": \"Gulf Standard Time(GST)\",\r
+
+    \    \"dateofincorporation\": \"2026-01-16\",\r
+
+    \    \"town\": \"La Mer\",\r
+
+    \    \"email\": \"contact@vtoo.com\",\r
+
+    \    \"statesId\": 3798,\r
+
+    \    \"taxCompliance\": {\r
+
+    \        \"vatin\": \"100234567890003\",\r
+
+    \        \"registrationtype\": \"Standard\",\r
+
+    \        \"businesslegalname\": \"Vtoo ERP Solutions FZ-LLC\",\r
+
+    \        \"businesstradename\": \"Vtoo ERP\",\r
+
+    \        \"vatregisteredon\": \"2026-01-16\",\r
+
+    \        \"reversecharge\": \"No\",\r
+
+    \        \"importexport\": \"Yes\",\r
+
+    \        \"digitalservices\": \"No\",\r
+
+    \        \"taxname\": \"VAT\",\r
+
+    \        \"rate\": 5.0,\r
+
+    \        \"isActive\": true\r
+
+    \    }\r
+
+    }"
+order: 2000

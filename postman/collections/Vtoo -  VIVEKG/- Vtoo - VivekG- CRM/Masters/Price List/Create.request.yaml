@@ -1,49 +1,43 @@
 $kind: http-request
-url: "{{Base Url}}/price-list/create"
+description: Creates a Price List. For listType Individual, provide individualPriceList entries.
 method: POST
+url: "{{Base url}}/price-list/create"
+headers:
+  Content-Type: application/json
 body:
   type: json
-  content: "{\r
-
-    \  \"name\": \"Standard Wholesale Price List\",\r
-
-    \  \"description\": \"Default price list for wholesale transactions for 2026\",\r
-
-    \  \"transaction_type\": \"SALE\",\r
-
-    \  \"listType\": \"INDIVIDUAL\",\r
-
-    \  \"priceRatingType\": \"MARK UP\",\r
-
-    \  \"priceRating\": 10\r
-
-    //   \"individualPriceList\": [\r
-
-    //     {\r
-
-    //       \"product\": {\r
-
-    //         \"id\": 1\r
-
-    //       },\r
-
-    //       \"customRate\": 120.50\r
-
-    //     },\r
-
-    //     {\r
-
-    //       \"product\": {\r
-
-    //         \"id\": 2\r
-
-    //       },\r
-
-    //       \"customRate\": 85.00\r
-
-    //     }\r
-
-    //   ]\r
-
-    }"
+  content: |-
+    {
+      "name": "Standard Retail Pricing",
+      "transactionType": "Sales",
+      "listType": "Individual",
+      "listCategory": "Standard",
+      "isActive": true,
+      "priceRatingType": "Fixed",
+      "priceRating": 0.0,
+      "individualPriceList": [
+        {
+          "product": {
+            "id": 2
+          },
+          "pricingMethod": "Fixed",
+          "customRate": 150.0
+        }
+      ],
+      "description": "Retail price list for standard customers"
+    }
+auth:
+  type: inherit
+  credentials:
+    id: 74cd813e-1386-4935-ba3b-57ed0ec055c0
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test("Successful status", function () {
+        pm.expect(pm.response.code).to.be.oneOf([200, 201]);
+      });
+      pm.test("Response is JSON", function () {
+        pm.response.to.be.json;
+      });
+    language: text/javascript
 order: 1000

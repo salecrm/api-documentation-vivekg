@@ -7,11 +7,11 @@ body:
 
     \    \"producttype\": \"MYSTIC ITEM\",\r
 
-    \    \"eancode\": 820258400066,\r
+    \    \"eancode\": 820258400067,\r
 
     \    \"glp\": 3000.0,\r
 
-    \    \"brand\": { \"id\": 1 },\r
+    \    \"brand\": { \"id\": 2 },\r
 
     \    \"uom\": null,\r
 
@@ -27,11 +27,11 @@ body:
 
     \    \"rate\": 18.0,\r
 
-    \    \"goodsname\": \"MYSTIC WATER\",\r
+    \    \"goodsname\": \"MYSTIC AIR\",\r
 
     \    // \"servicecharge\": \"VET\",\r
 
-    \    \"partCode\": \"MYSTIC-W8R\"\r
+    \    \"partCode\": \"MYSTIC-A1R\"\r
 
     \  }\r
 

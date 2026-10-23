@@ -1,0 +1,60 @@
+$kind: http-request
+name: CREATE
+url: "{{Base url}}/purchase/requisition/create"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"requisitionNumber\": \"PR-2026-001\",\r
+
+    \    \"requisitionDate\": \"2026-10-22\",\r
+
+    \    \"requiredDate\": \"2026-10-30\",\r
+
+    \    \"supplierPreference\": \"Horacio Pagani\",\r
+
+    \    \"remarks\": \"Urgent requirement for production batch.\",\r
+
+    \    \"isActive\": true,\r
+
+    \    \"subTotal\": 1500.00,\r
+
+    \    \"items\": [\r
+
+    \        {\r
+
+    \            \"productId\": 2,\r
+
+    \            \"description\": \"Finished product item requirement\",\r
+
+    \            \"partCode\": \"456451\",\r
+
+    \            \"qty\": 10.0,\r
+
+    \            \"price\": 150.35,\r
+
+    \            \"rate\": 150.35,\r
+
+    \            \"discount\": 5.00,\r
+
+    \            \"total\": 1453.50,\r
+
+    \            \"uom\": \"PCS\"\r
+
+    \        }\r
+
+    \    ],\r
+
+    \    \"staffId\": 1,\r
+
+    \    \"salesOrderId\": 3,\r
+
+    \    \"supplierId\": 1\r
+
+    }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{Password}}"
+order: 1000

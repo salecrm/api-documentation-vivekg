@@ -1,0 +1,7 @@
+$kind: http-request
+url: "{{Base url}}/purchaserequisition/patch/6"
+method: PATCH
+body:
+  type: json
+  content: "{\r\n    \"salesOrderId\": 3\r\n}"
+order: 1778

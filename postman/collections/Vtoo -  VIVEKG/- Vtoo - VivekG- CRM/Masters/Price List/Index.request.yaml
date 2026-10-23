@@ -1,10 +1,41 @@
 $kind: http-request
-url: "{{Base Url}}/price-list/page?pageNumber=&pageSize=&field=&direction=desc&search=Discounted"
+name: Page
+description: Lists Price Lists with pagination, sorting, and optional search.
 method: GET
+url: "{{Base url}}/price-list/page?pageSize=&pageNumber=&direction=&field=&search="
 queryParams:
-  pageNumber: ""
-  pageSize: ""
-  field: ""
-  direction: desc
-  search: Discounted
-order: 5000
+  - key: pageSize
+    value: ""
+    disabled: false
+    description: "Page size; backend default: 10."
+  - key: pageNumber
+    value: ""
+    disabled: false
+    description: "Zero-based page number; backend default: 0."
+  - key: direction
+    value: ""
+    disabled: false
+    description: "Sort direction; backend default: asc."
+  - key: field
+    value: ""
+    disabled: false
+    description: "Sort field; backend default: id."
+  - key: search
+    value: ""
+    disabled: false
+    description: Optional search text.
+auth:
+  type: inherit
+  credentials:
+    id: 74cd813e-1386-4935-ba3b-57ed0ec055c0
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test("Successful status", function () {
+        pm.response.to.have.status(200);
+      });
+      pm.test("Response is JSON", function () {
+        pm.response.to.be.json;
+      });
+    language: text/javascript
+order: 7000

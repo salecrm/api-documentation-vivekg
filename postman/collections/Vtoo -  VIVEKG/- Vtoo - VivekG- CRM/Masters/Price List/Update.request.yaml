@@ -1,33 +1,77 @@
 $kind: http-request
-url: "{{Base Url}}/price-list/update/3"
+description: Fully updates the Price List identified by priceListId.
 method: PUT
+url: "{{Base url}}/price-list/update/3"
+headers:
+  Content-Type: application/json
 body:
   type: json
-  content: "{\r
-
-    \    \"id\": 2,\r
-
-    \    \"name\": \"Discounted Wholesale Price List\",\r
-
-    \    \"description\": \"Default price list for wholesale transactions for 2026\",\r
-
-    \    \"transaction_type\": \"SALE\",\r
-
-    \    \"listType\": \"ALL ITEMS\",\r
-
-    \    \"priceRatingType\": \"MARK DOWN\",\r
-
-    \    \"priceRating\": 10.0,\r
-
-    \    \"individualPriceList\": [],\r
-
-    \    \"createdby\": \"admin@vtoo\",\r
-
-    \    \"updatedby\": null,\r
-
-    \    \"createdbydate\": \"2026-07-22T17:15:11.602091\",\r
-
-    \    \"updatedbydate\": null\r
-
-    }"
-order: 3000
+  content: |-
+    {
+        "id": 3,
+        "name": "Standard Retail Pricing",
+        "transactionType": "Sales",
+        "listType": "Individual",
+        "listCategory": "Standard",
+        "isActive": true,
+        "priceRatingType": "Fixed",
+        "priceRating": 0,
+        "individualPriceList": [
+            {
+                "id": 3,
+                "product": {
+                    "id": 2,
+                    "producttype": "MYSTIC ITEM",
+                    "isActive": null,
+                    "eancode": 820258400066,
+                    "itemCode": null,
+                    "skuCode": null,
+                    "glp": 3000,
+                    "brand": {
+                        "id": 1,
+                        "name": "MYSTIC",
+                        "createdby": "admin@vtoo",
+                        "updatedby": null,
+                        "createdbydate": "2026-10-01T17:25:17.608322",
+                        "updatedbydate": null
+                    },
+                    "createdby": "admin@vtoo",
+                    "updatedby": null,
+                    "createdbydate": "2026-10-01T17:25:21.459477",
+                    "updatedbydate": null,
+                    "uom": null,
+                    "purchasecost": 2200,
+                    "preferredvendors": null,
+                    "goods": "yes",
+                    "service": "no",
+                    "tax": 18,
+                    "rate": 18,
+                    "goodsname": "MYSTIC WATER",
+                    "servicecharge": null,
+                    "partCode": "MYSTIC-W8R"
+                },
+                "pricingMethod": "Fixed",
+                "customRate": 160
+            }
+        ],
+        "description": "Retail price list for standard customers",
+        "createdby": "admin@vtoo",
+        "updatedby": null,
+        "createdbydate": "2026-10-14T14:52:56.20246",
+        "updatedbydate": null
+    }
+auth:
+  type: inherit
+  credentials:
+    id: 74cd813e-1386-4935-ba3b-57ed0ec055c0
+scripts:
+  - type: afterResponse
+    code: |-
+      pm.test("Successful status", function () {
+        pm.response.to.have.status(200);
+      });
+      pm.test("Response is JSON", function () {
+        pm.response.to.be.json;
+      });
+    language: text/javascript
+order: 5000

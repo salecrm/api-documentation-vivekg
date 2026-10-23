@@ -1,4 +1,4 @@
 $kind: http-request
-url: "{{Base Url}}/purchaserequisition/delete/1"
+url: "{{Base url}}/purchase/requisition/delete/10"
 method: DELETE
-order: 3000
+order: 1879

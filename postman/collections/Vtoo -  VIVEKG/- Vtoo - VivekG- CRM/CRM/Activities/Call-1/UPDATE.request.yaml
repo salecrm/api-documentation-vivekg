@@ -1,0 +1,37 @@
+$kind: http-request
+url: "{{Base url}}/crm/activities/call/update/14"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \    \"callType\": \"Outbound\",\r
+
+    \    \"callFor\": \"Customer\",\r
+
+    \    \"contactId\": 7,\r
+
+    \    \"assignTo\": 1,\r
+
+    \    \"callDate\": \"2026-06-15\",\r
+
+    \    \"callTime\": \"10:30:00\",\r
+
+    \    \"callPurpose\": \"Follow Up\",\r
+
+    \    \"callStatus\": \"Scheduled\",\r
+
+    \    \"callOutcome\": \"Pending\",\r
+
+    \    \"reminder\": \"15 minutes before\",\r
+
+    \    \"subject\": \"Discussion on ERP Proposal\",\r
+
+    \    \"description\": \"Discuss the final pricing and modules.\",\r
+
+    \    \"relatedToId\": 3,\r
+
+    \    \"relatedTo\": \"Lead\"\r
+
+    }"
+order: 4000

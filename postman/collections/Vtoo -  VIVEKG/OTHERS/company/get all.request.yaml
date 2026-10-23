@@ -1,4 +1,4 @@
 $kind: http-request
-url: ""
+url: "{{Base url}}/settingallinone/company/findById/1"
 method: GET
 order: 3000

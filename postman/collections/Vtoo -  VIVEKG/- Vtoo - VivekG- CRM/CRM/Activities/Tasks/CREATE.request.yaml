@@ -1,0 +1,33 @@
+$kind: http-request
+url: "{{Base Url}}/crm/activities/task/create"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"taskOwnerId\": 1,\r
+
+    \    \"contactLeadId\": 7,\r
+
+    \    \"dueDate\": \"2026-07-15\",\r
+
+    \    \"relatedToId\": 3,\r
+
+    \    \"relatedTo\": \"Lead\",\r
+
+    \    \"status\": \"In Progress\",\r
+
+    \    \"priority\": \"High\",\r
+
+    \    \"reminder\": \"1 day before\",\r
+
+    \    \"repeat\": \"None\",\r
+
+    \    \"closedTime\": \"2026-07-15T18:00:00\",\r
+
+    \    \"subject\": \"Follow up on software quotation\",\r
+
+    \    \"description\": \"Call client to discuss licensing terms and discounts.\"\r
+
+    }"
+order: 1000

@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{Base url}}/recurring-invoice/approve/56"
+method: PATCH
+order: 2385694470180589

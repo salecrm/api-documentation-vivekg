@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{Base url}}/setting/company/find/1"
+method: GET
+order: 1000

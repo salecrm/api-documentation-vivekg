@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{Base url}}/crm/activities/call/find/9"
+method: GET
+order: 2000

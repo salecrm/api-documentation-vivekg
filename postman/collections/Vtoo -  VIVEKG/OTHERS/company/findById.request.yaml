@@ -1,8 +1,8 @@
 $kind: http-request
-url: http://192.168.1.21:8081/api/company/findById/2
+url: "{{Base url}}/settingallinone/company/findById/1"
 method: GET
 auth:
   type: bearer
   credentials:
-    token: "{{crm tanmay}}"
+    token: "{{Password}}"
 order: 2000

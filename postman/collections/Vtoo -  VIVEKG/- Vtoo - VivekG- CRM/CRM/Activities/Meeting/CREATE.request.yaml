@@ -1,0 +1,35 @@
+$kind: http-request
+url: "{{Base Url}}/crm/activities/meeting/create"
+method: POST
+body:
+  type: json
+  content: "{\r
+
+    \    \"hostId\": 1,\r
+
+    \    \"relatedToId\": 3,\r
+
+    \    \"relatedTo\": \"Lead\",\r
+
+    \    \"title\": \"Quarterly Strategy & Planning\",\r
+
+    \    \"venue\": \"Conference Room A / Online\",\r
+
+    \    \"repeat\": \"None\",\r
+
+    \    \"fromDate\": \"2026-07-01\",\r
+
+    \    \"fromTime\": \"14:00:00\",\r
+
+    \    \"toDate\": \"2026-07-01\",\r
+
+    \    \"toTime\": \"15:30:00\",\r
+
+    \    \"participantsId\": [2, 4],\r
+
+    \    \"reminder\": \"30 minutes before\",\r
+
+    \    \"description\": \"Review Q3 projections and product milestones.\"\r
+
+    }"
+order: 1000

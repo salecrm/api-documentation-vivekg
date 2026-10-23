@@ -1,0 +1,11 @@
+$kind: http-request
+url: "{{Base Url}}/crm/activities/call/patch/14"
+method: PATCH
+body:
+  type: json
+  content: "{\r
+
+    \    \"callOutcome\": \"In Progress\"\r
+
+    }"
+order: 3000

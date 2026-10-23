@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{Base url}}/remainderrule/findById/2"
+method: GET
+order: 2000

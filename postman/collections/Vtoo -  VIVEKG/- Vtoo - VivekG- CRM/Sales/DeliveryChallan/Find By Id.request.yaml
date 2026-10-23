@@ -1,5 +1,5 @@
 $kind: http-request
-url: "{{Base url}}/dc/findById/38"
+url: "{{Base url}}/dc/findById/5"
 method: GET
 auth:
   type: bearer

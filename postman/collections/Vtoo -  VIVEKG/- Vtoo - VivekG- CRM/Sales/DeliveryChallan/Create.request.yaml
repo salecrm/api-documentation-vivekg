@@ -19,7 +19,7 @@ body:
 
     \    \"warehouse\": {\r
 
-    \        \"id\": 1\r
+    \        \"id\": 2\r
 
     \    },\r
 
@@ -81,7 +81,7 @@ body:
 
     \        }\r
 
-    \    ]\r
+    \    ],\r
 
     \    \"subtotal\": 3738960,\r
 
@@ -99,7 +99,7 @@ body:
 
     \    \"roundofvalue\": 0,\r
 
-    \    \"salesOrderId\": 97\r
+    \    \"salesOrderId\": null\r
 
     }\r\n"
 order: 1000
