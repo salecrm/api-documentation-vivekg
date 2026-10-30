@@ -27,7 +27,7 @@ body:
 
     \  \"grosstotal\": 40000000.0,\r
 
-    \  \"vat\": \"40%\",\r
+    \  \"vat\": 40.00,\r
 
     \  \"vatamount\": 16000000.0,\r
 
@@ -35,7 +35,7 @@ body:
 
     \  \"roundofvalue\": 0.0,\r
 
-    \  \"supplierquotationId\":58,\r
+    \  \"supplierquotationId\":null,\r
 
     \  \"remark\": \"Converted from PR-2026-00045 for Pagani Sports Car\",\r
 
@@ -54,12 +54,6 @@ body:
     \  \"suppliername\": \"Supplier ID 1\",\r
 
     \  \"suppliervatno\": \"VAT-PENDING\",\r
-
-    \  \"createdby\": \"amit.sharma\",\r
-
-    \  \"createdbydate\": \"2026-02-16\",\r
-
-    \  \"couponname\": \"PR-01\",\r
 
     \  \"isCancelled\": false,\r
 
@@ -91,7 +85,7 @@ body:
 
     \      \"product\": {\r
 
-    \        \"id\": 1\r
+    \        \"id\": 3\r
 
     \      }\r
 
@@ -103,7 +97,7 @@ body:
 
     \    {\r
 
-    \      \"id\": 1\r
+    \      \"id\": 4\r
 
     \    }\r
 

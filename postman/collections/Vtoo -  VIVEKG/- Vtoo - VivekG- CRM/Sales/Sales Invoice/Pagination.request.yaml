@@ -1,5 +1,6 @@
 $kind: http-request
-url: "{{Base url}}/si/page?pageNumber=&pageSize=&field=&direction=desc&search=&status="
+url: "{{Base
+  url}}/si/page?pageNumber=&pageSize=&field=&direction=desc&search=&status="
 method: GET
 queryParams:
   - key: pageNumber

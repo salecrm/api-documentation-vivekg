@@ -2,5 +2,12 @@ $kind: collection
 name: VTOO ADMIN | VIVEKG
 description: ""
 variables:
-  Super Admin Base Url: ""
-  Super Admin Bearer Token: ""
+  - key: Super Admin Base Url
+    value: ""
+    disabled: false
+  - key: Super Admin Bearer Token
+    secret: true
+    disabled: false
+  - key: json_web_token_0934
+    secret: true
+    disabled: true

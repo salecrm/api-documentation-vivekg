@@ -1,4 +1,8 @@
 $kind: http-request
-url: "{{Base url}}/purchase/requisition/find/13"
+url: "{{Base url}}/purchase/requisition/find/7"
 method: GET
+auth:
+  type: bearer
+  credentials:
+    token: "{{Password}}"
 order: 1153

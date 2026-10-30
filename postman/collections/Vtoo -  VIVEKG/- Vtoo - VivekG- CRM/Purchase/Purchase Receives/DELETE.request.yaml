@@ -1,0 +1,4 @@
+$kind: http-request
+url: "{{Base url}}/purchase-receives/delete/8"
+method: DELETE
+order: 3685405737721538

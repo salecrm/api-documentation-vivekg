@@ -1,4 +1,4 @@
 $kind: http-request
-url: "{{Base url}}/purchase-receives/1"
+url: "{{Base url}}/purchase-receives/findById/9"
 method: GET
 order: 3635638806679816

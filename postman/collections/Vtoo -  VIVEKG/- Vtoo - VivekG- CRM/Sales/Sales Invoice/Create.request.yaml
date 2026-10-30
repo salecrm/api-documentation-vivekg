@@ -35,15 +35,19 @@ body:
 
     \    \"subject\": \"Sale of Tata Punch Facelift (ALAKAZAM)\",\r
 
-    \    \"termcondition\": \"Standard warranty applies; Delivery within 7 working days.\",\r
+    \    \"termcondition\": \"Standard warranty applies; Delivery within 7
+    working days.\",\r
 
     \    \"payment_terms\": \"Net 30\",\r
 
-    \    \"remarks\": \"Special discount applied to match ex-showroom target of 5.59L.\",\r
+    \    \"remarks\": \"Special discount applied to match ex-showroom target of
+    5.59L.\",\r
 
-    \    \"billing_address\": \"12 Business Park, Andheri East, Mumbai, 400069\",\r
+    \    \"billing_address\": \"12 Business Park, Andheri East, Mumbai,
+    400069\",\r
 
-    \    \"shipping_address\": \"Plot 45, MIDC, Andheri East, Mumbai, 400093\",\r
+    \    \"shipping_address\": \"Plot 45, MIDC, Andheri East, Mumbai,
+    400093\",\r
 
     \    \"items\": [\r
 

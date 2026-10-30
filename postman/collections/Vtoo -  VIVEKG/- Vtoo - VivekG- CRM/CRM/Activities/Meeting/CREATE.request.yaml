@@ -1,5 +1,5 @@
 $kind: http-request
-url: "{{Base Url}}/crm/activities/meeting/create"
+url: "{{Base url}}/crm/activities/meeting/create"
 method: POST
 body:
   type: json
@@ -32,4 +32,8 @@ body:
     \    \"description\": \"Review Q3 projections and product milestones.\"\r
 
     }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{Password}}"
 order: 1000

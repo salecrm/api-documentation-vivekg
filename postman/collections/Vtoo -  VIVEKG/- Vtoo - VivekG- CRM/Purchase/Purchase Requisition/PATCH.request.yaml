@@ -1,7 +1,11 @@
 $kind: http-request
-url: "{{Base url}}/purchaserequisition/patch/6"
+url: "{{Base url}}/purchase/requisition/patch/6"
 method: PATCH
 body:
   type: json
   content: "{\r\n    \"salesOrderId\": 3\r\n}"
+auth:
+  type: bearer
+  credentials:
+    token: "{{Password}}"
 order: 1778

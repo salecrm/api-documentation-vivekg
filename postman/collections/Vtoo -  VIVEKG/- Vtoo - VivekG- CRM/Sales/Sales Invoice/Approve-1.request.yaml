@@ -1,4 +1,5 @@
 $kind: http-request
+name: Approve
 url: "{{Base url}}/si/approve/28"
 method: GET
-order: 9000
+order: 9146

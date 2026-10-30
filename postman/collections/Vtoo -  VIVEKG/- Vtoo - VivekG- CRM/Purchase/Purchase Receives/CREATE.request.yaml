@@ -7,7 +7,7 @@ body:
 
     \  \"supplierId\": 1,\r
 
-    \  \"purchaseOrderId\": 5,\r
+    \  \"purchaseOrderId\": 7,\r
 
     \  \"receivedDate\": \"2026-10-07\",\r
 
@@ -28,20 +28,6 @@ body:
     \      \"inTransitQty\": 5.0,\r
 
     \      \"quantity\": 95.0\r
-
-    \    },\r
-
-    \    {\r
-
-    \      \"productId\": 2,\r
-
-    \      \"orderQty\": 50.0,\r
-
-    \      \"receiveQty\": 50.0,\r
-
-    \      \"inTransitQty\": 0.0,\r
-
-    \      \"quantity\": 50.0\r
 
     \    }\r
 

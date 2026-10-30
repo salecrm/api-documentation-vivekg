@@ -1,0 +1,39 @@
+$kind: http-request
+url: "{{Base url}}/purchase-receives/update/9"
+method: PUT
+body:
+  type: json
+  content: "{\r
+
+    \  \"supplierId\": 1,\r
+
+    \  \"purchaseOrderId\": 7,\r
+
+    \  \"receivedDate\": \"2026-10-07\",\r
+
+    \  \"trackingNumber\": \"TRK-987654321\",\r
+
+    \  \"description\": \"Received first shipment of raw materials for production.\",\r
+
+    \  \"items\": [\r
+
+    \    {\r
+
+    \      \"itemId\": 30,\r
+
+    \      \"productId\": 3,\r
+
+    \      \"orderQty\": 100.0,\r
+
+    \      \"receiveQty\": 0.0,\r
+
+    \      \"inTransitQty\": 1000.0,\r
+
+    \      \"quantity\": 100.0\r
+
+    \    }\r
+
+    \  ]\r
+
+    }"
+order: 3685405737720538

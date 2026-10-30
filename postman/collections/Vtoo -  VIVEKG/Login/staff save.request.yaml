@@ -7,37 +7,37 @@ body:
 
     //   \"id\": 1,\r
 
-    //   \"staffId\": \"STF004\",\r
+    //   \"staffId\": \"STF007\",\r
 
-    \  \"firstName\": \"Amit\",\r
+    \  \"firstName\": \"Amitabhs\",\r
 
-    \  \"lastName\": \"Sharma\",\r
+    \  \"lastName\": \"Bacchan\",\r
 
-    \  \"userName\": \"amit.sharma\",\r
+    \  \"userName\": \"amitabhs.bacchan\",\r
 
-    \  \"password\": \"password123\",\r
+    \  \"password\": \"password\",\r
 
-    \  \"email\": \"amit.sharma@example.com\",\r
+    \  \"email\": \"amitabhs.bacchan@example.com\",\r
 
-    \  \"phoneNo\": \"9876543210\",\r
+    \  \"phoneNo\": \"9876553210\",\r
 
-    \  \"gender\": \"Male\",\r
+    \  \"gender\": \"Male\"\r
 
-    \  \"roles\": [\r
+    //   \"roles\": [\r
 
-    \    {\r
+    //     {\r
 
-    \      \"id\": 1\r
+    //       \"id\": 1\r
 
-    \    }\r
+    //     }\r
 
-    \  ],\r
+    //   ]\r
 
-    \  \"department\": {\"id\": 1},\r
+    //   \"department\": {\"id\": 1},\r
 
-    \  \"designation\": {\"id\": 1},\r
+    //   \"designation\": {\"id\": 1},\r
 
-    \  \"branch\": {\"id\": 1}\r
+    //   \"branch\": {\"id\": 1}\r
 
     }"
 auth:

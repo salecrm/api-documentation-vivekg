@@ -7,33 +7,37 @@ body:
 
     \    \"accountDetails\": {\r
 
-    \        \"name\": \"BOT 3\",\r
+    \        \"name\": \"BOT 13\",\r
 
-    \        \"username\": \"bot3@vtoo\",\r
+    \        \"username\": \"bot13@vtoo\",\r
 
-    \        \"email\": \"bot3@gmail.com\",\r
+    \        \"email\": \"bot13@gmail.com\",\r
 
-    \        \"phoneNumber\": \"9111111133\",\r
+    \        \"phoneNumber\": \"9111111143\",\r
 
-    \        \"password\": \"password3\"\r
+    \        \"password\": \"password\"\r
 
     \    },\r
 
     \    \"companyDetails\": {\r
 
-    \        \"companyName\": \"BOT 3 SOFTWARES\",\r
+    \        \"companyName\": \"BOT 13 SOFTWARES\",\r
 
-    \        \"companyNo\": \"COM-0033\",\r
+    \        \"companyNo\": \"COM-0043\",\r
 
-    \        \"companyEmail\": \"bot3@gmail.com\",\r
+    \        \"companyEmail\": \"bot13@gmail.com\",\r
 
-    \        \"companyPhoneNumber\": \"9111111133\",\r
+    \        \"companyPhoneNumber\": \"9111111143\",\r
 
-    \        \"companyTrn\": \"TRN100000033\",\r
+    \        \"companyTrn\": \"TRN100000043\",\r
 
     \        \"countryId\": null\r
 
     \    }\r
 
     }"
+auth:
+  type: bearer
+  credentials:
+    token: ""
 order: 3000

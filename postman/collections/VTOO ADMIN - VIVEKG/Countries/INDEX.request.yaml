@@ -1,5 +1,5 @@
 $kind: http-request
-url: http://localhost:8085/api/v1/countries/index?search=&vatFilter=&statusFilter=
+url: "{{Super Admin Base Url}}/countries/index?search=&vatFilter=&statusFilter="
 method: GET
 queryParams:
   search: ""

@@ -1,8 +1,12 @@
 $kind: http-request
-url: "{{Base url}}/lead/findById/5"
+url: "{{Base url}}/lead/findById/1"
 method: GET
 body:
   type: file
   content: {}
+auth:
+  type: bearer
+  credentials:
+    token: "{{Password}}"
 settings: {}
 order: 3000

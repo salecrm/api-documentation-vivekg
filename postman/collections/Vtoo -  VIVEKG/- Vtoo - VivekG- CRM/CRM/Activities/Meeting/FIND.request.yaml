@@ -1,4 +1,8 @@
 $kind: http-request
-url: "{{Base Url}}/crm/activities/meeting/find/2"
+url: "{{Base url}}/crm/activities/meeting/find/5"
 method: GET
+auth:
+  type: bearer
+  credentials:
+    token: "{{Password}}"
 order: 2000

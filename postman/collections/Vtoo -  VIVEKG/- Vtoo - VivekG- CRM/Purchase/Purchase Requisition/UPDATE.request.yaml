@@ -52,4 +52,8 @@ body:
     \    \"supplierId\": 1\r
 
     }"
+auth:
+  type: bearer
+  credentials:
+    token: "{{Password}}"
 order: 1863
